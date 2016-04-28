@@ -12,10 +12,12 @@
 <meta property="og:url" content="http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html">
 <meta property="og:site_name" content="novgis's blog">
 <meta property="og:description" content="摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。">
-<meta property="og:updated_time" content="2016-04-28T04:51:45.764Z">
+<meta property="og:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/3.png">
+<meta property="og:updated_time" content="2016-04-28T09:16:17.345Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="程序员要有一个独立博客 —— GitHub Pages 与 Hexo 建站经过">
 <meta name="twitter:description" content="摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。">
+<meta name="twitter:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/3.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -171,7 +173,7 @@
         <p>摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。<br><a id="more"></a></p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这篇文章应该算是<a href="http://www.cnfeat.com" target="_blank" rel="external">陈素封</a>老师<a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">这篇文章</a>的实践篇，加入了一些我经历过的坑，记录下来，以防换了环境再来部署又要走弯路。下面以我的博客 <a href="http://www.novgis.com">www.novgis.com</a> 为例，介绍我在 Windows 7 环境下是如何实践搭建独立博客的过程。</p>
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="域名注册"><a href="#域名注册" class="headerlink" title="域名注册"></a>域名注册</h2><p>这部分简单写几句，我的域名是在<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>注册购买的，过程很简单，选个自认为有意义的域名直接购买。价格上来说万网的价格不比其它家贵多少，而且万网已经并入阿里云，阿里提供的一些服务都可以免费使用。不得不说，拼服务的时代，阿里走在了前列。购买域名后不能马上通过该域名访问任何网站，原因是还没有做域名解析，在之后的过程中我会介绍如何将域名与你自己的博客绑定。</p>
-<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>解释下为什么要安装 Node.js，<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是出在一名台湾大学生 <a href="http://twitter.com/tommy351" target="_blank" rel="external">tommy351</a> 之手，是一个基于 Node.js 的静态博客程序，Node.js 是 Hexo 的运行环境，非装不可。至于 Hexo 的<a href="http://zespia.tw/blog/2012/10/11/hexo-debut" target="_blank" rel="external">优点</a>，网上很多文章，我这里就不赘述了。到 <a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a> 官网下载相应平台的最新版安装包，一路 Next 安装即可。</p>
+<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>去 <a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a> 官网下载相应平台的最新版安装包，一路 Next 安装即可。</p>
 <h2 id="安装-Git-并与-GitHub-适配"><a href="#安装-Git-并与-GitHub-适配" class="headerlink" title="安装 Git 并与 GitHub 适配"></a>安装 Git 并与 GitHub 适配</h2><p>从 <a href="http://git-scm.com/" target="_blank" rel="external">Git</a> 官网下载安装包，同样一路 Next 安装！这里介绍三种打开 Git Bash 的方法：</p>
 <ul>
 <li><p>启动开始菜单中的 Git Bash </p>
@@ -182,11 +184,8 @@
 </li>
 </ul>
 <p>接下来访问 <a href="http://www.github.com/" target="_blank" rel="external">GitHub</a> 注册一个账号，妥善保存注册邮箱。</p>
-<p><strong>通过 ssh key 将本地的 Git 和远程的 GitHub 建立联系：</strong> </p>
-<p>首先需要检查本地现有的 ssh key，通过上述方式打开 Git Bash，执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></table></figure>
-<p>如果提示 “No such file or directory” 说明是第一次使用 Git，这时我们就要生成新的 ssh key，执行命令：</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh-keygen -t rsa -C <span class="string">"youremail@youremail.com"</span></span><br></pre></td></tr></table></figure>
+<h3 id="通过-ssh-key-将本地的-Git-和远程的-GitHub-建立联系："><a href="#通过-ssh-key-将本地的-Git-和远程的-GitHub-建立联系：" class="headerlink" title="通过 ssh key 将本地的 Git 和远程的 GitHub 建立联系："></a>通过 ssh key 将本地的 Git 和远程的 GitHub 建立联系：</h3><p>首先需要检查本地现有的 ssh key，通过上述方式打开 Git Bash，执行命令：<code>$ cd ~/.ssh</code></p>
+<p>如果提示 “No such file or directory” 说明是第一次使用 Git，这时我们就要生成新的 ssh key，执行命令：<code>$ ssh-keygen -t rsa -C &quot;youremail@youremail.com&quot;</code></p>
 <p>回车后有如下提示：<br><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa <span class="keyword">key</span> pair.</span><br><span class="line">Enter file <span class="keyword">in</span> which <span class="keyword">to</span> save the <span class="keyword">key</span> (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</span><br></pre></td></tr></table></figure></p>
 <p>然后命令行提示要你输入密码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):<span class="xml"><span class="tag">&lt;<span class="name">输入加密串</span>&gt;</span></span><br><span class="line">Enter same passphrase again:<span class="tag">&lt;<span class="name">再次输入加密串</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
 <p>这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入（我直接没填密码）。这个设置是防止别人往你的项目里提交内容。到这里一般都会成功了。</p>
@@ -196,8 +195,7 @@
 <li>登陆github系统，点击右上角图标下拉选择 Settings—&gt;SSH and GPG keys —&gt; New SSH key</li>
 <li>把刚复制的公钥粘贴到 Key 输入框中， 点击 Add SSH key</li>
 </ol>
-<p>接着测试下匹配是否成功：</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure>
+<p>接着测试下匹配是否成功：<code>$ ssh -T git@github.com</code></p>
 <p>如果是下面的反馈：</p>
 <figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity <span class="keyword">of</span> host <span class="comment">'github.com (207.97.227.239)' can't be established.</span></span><br><span class="line">RSA <span class="keyword">key</span> fingerprint <span class="keyword">is</span> <span class="number">16</span>:<span class="number">27</span>:ac:a5:<span class="number">76</span>:<span class="number">28</span>:<span class="number">2</span>d:<span class="number">36</span>:<span class="number">63</span>:<span class="number">1</span>b:<span class="number">56</span>:<span class="number">4</span>d:eb:df:a6:<span class="number">48.</span></span><br><span class="line">Are you sure you want <span class="keyword">to</span> <span class="keyword">continue</span> connecting (yes/no)?</span><br></pre></td></tr></table></figure>
 <p>输入 yes 回车就好，然后会看到：</p>
@@ -205,7 +203,51 @@
 <p>现在你已经可以通过 SSH key 链接到远程 GitHub 了，还有一些个人信息需要完善，Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的命令进行个人信息的设置（把名称和邮箱替换成你自己的）</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="selector-class">.name</span> <span class="string">"yourname"</span><span class="comment">//你自己的用户名</span></span><br><span class="line">$ git config --global user<span class="selector-class">.email</span> <span class="string">"youremail@youremail.com"</span><span class="comment">//你自己的邮箱</span></span><br></pre></td></tr></table></figure>
 <p>至此，本地 Git 与远程 GitHub 之间的联系就建立成功了。</p>
-<h1 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h1><h2 id="在-GitHub-中建立仓库"><a href="#在-GitHub-中建立仓库" class="headerlink" title="在 GitHub 中建立仓库"></a>在 GitHub 中建立仓库</h2><h2 id="用-Hexo-克隆主题"><a href="#用-Hexo-克隆主题" class="headerlink" title="用 Hexo 克隆主题"></a>用 Hexo 克隆主题</h2><h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><h2 id="config-yml-设置那些事"><a href="#config-yml-设置那些事" class="headerlink" title="_config.yml 设置那些事"></a>_config.yml 设置那些事</h2><h2 id="提交-README-md"><a href="#提交-README-md" class="headerlink" title="提交 README.md"></a>提交 README.md</h2><h2 id="独立域名与-GitHub-Pages-博客的绑定"><a href="#独立域名与-GitHub-Pages-博客的绑定" class="headerlink" title="独立域名与 GitHub Pages 博客的绑定"></a>独立域名与 GitHub Pages 博客的绑定</h2><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><h2 id="Markdown-初体验"><a href="#Markdown-初体验" class="headerlink" title="Markdown 初体验"></a>Markdown 初体验</h2><h2 id="Hexo-常见问题"><a href="#Hexo-常见问题" class="headerlink" title="Hexo 常见问题"></a>Hexo 常见问题</h2><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>[1] <a href="https://zhuanlan.zhihu.com/p/19743861" target="_blank" rel="external">为什么你要写博客？</a> by CnFeat（推荐）</p>
+<h1 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h1><p>所有的准备工作都做好后，就可以着手搭建博客了。过程会可能会遇到各种各样的问题，在最后我给出了我在搭建过程中踩过的坑，以供参考。</p>
+<h2 id="在-GitHub-中建立仓库"><a href="#在-GitHub-中建立仓库" class="headerlink" title="在 GitHub 中建立仓库"></a>在 GitHub 中建立仓库</h2><p>登录 <a href="">GitHub</a> 首页，点击页面右上角「New repository」新建仓库，填写仓库信息：</p>
+<ul>
+<li><p><strong>Repository name:</strong> novgis.github.io</p>
+</li>
+<li><p>Description (optional): novgis’s blog</p>
+</li>
+</ul>
+<p>这里一定要<strong>注意</strong>：Github Pages 的 Repository 名字是特定的，比如我 Github 账号是 novgis，那么我 Github Pages Repository 名字就是 novgis.github.io，这是规定的，必须这样写。</p>
+<p>点击「Create repository」完成创建。</p>
+<p>这个时候其实再进行一些简单的初始化操作即访问我们自己的博客了（由于 novgis  账户已经正式启用，我将使用别的 github 账号来截图作为参考），进入刚新建的仓库页面，点击「Settings」，把页面往下翻会看到「GitHub Pages」这一栏</p>
+<p><img src="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/3.png" alt=""></p>
+<p>点击「Launch automatic page generator」按钮进入页面模板设置页面「New your site」，填写一些网站基本信息后点击「Continue to layouts」进入网站模板选择页面，选择你看中的模板点「Publish page」，至此便可以通过 <a href="http://time2goo.github.io" target="_blank" rel="external">http://time2goo.github.io</a> 链接来访问博客了。</p>
+<p>以这种方式建站后，我们对博客的维护可以通过对该仓库中静态页面的修改来一步步完善，新增、修改、删除等等，路漫漫其修远兮…… 所有的操作都要手动完成，作为一个有逼格的程序员自然会想法子让事情变得简单，于是 Hexo 便应运而生。</p>
+<h2 id="Hexo-的飒爽英姿"><a href="#Hexo-的飒爽英姿" class="headerlink" title="Hexo 的飒爽英姿"></a>Hexo 的飒爽英姿</h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 出自一名台湾大学生 <a href="http://twitter.com/tommy351" target="_blank" rel="external">tommy351</a> 之手，是一个基于 Node.js 的静态博客程序。至于 Hexo 的<a href="http://zespia.tw/blog/2012/10/11/hexo-debut" target="_blank" rel="external">优点</a>，网上很多文章，我这里就不赘述了。下面来说说怎样通过 Hexo 让写博客变得简单。 </p>
+<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>打开 Git Bash，执行如下命令：<code>$ npm install -g hexo</code></p>
+<blockquote>
+<p>可能要稍微等会，我安装的时候因为没有进度显示，感觉像是卡住了，后来我 ctrl+c 暂停然后再执行一次，安装过程就快很多。</p>
+</blockquote>
+<h3 id="Hexo-初始化"><a href="#Hexo-初始化" class="headerlink" title="Hexo 初始化"></a>Hexo 初始化</h3><p>安装完成后，要执行 <code>init</code> 命令将 Hexo 初始化到你指定的目录：<code>$ hexo init &lt;folder&gt;</code></p>
+<blockquote>
+<p>也可以先在本地新建个文件夹，然后在文件夹上单击右键打开 Git Bash 亦或直接打开 Git Bash 然后用 <code>$ cd &lt;folder&gt;</code> 命令切换到你指定的文件夹下执行 <code>$ hexo init</code> （此处就不需要加目录了）</p>
+</blockquote>
+<h3 id="更换博客主题"><a href="#更换博客主题" class="headerlink" title="更换博客主题"></a>更换博客主题</h3><p>博客的主题每个人的喜好不同，我这里推荐个链接 <a href="http://github.com/tommy351/hexo/wiki/Themes" target="_blank" rel="external">Hexo Themes</a>，上面有很多优秀的主题作品，以 <a href="http://www.cnfeat.com" target="_blank" rel="external">读立写生</a> 的主题为例，要使用这些主题，</p>
+<ul>
+<li>首先在本地 <code>clone</code> 一份：在 Hexo 目录下执行 <code>$ git clone https://github.com/cnfeat/cnfeat.git themes/jacman</code> 命令</li>
+<li>修改 <strong>Hexo 根目录</strong>下的 <code>_config.yml</code> 配置文件中的 <code>theme: jacam</code> 属性启用主题</li>
+</ul>
+<p>更新主题，执行如下命令：</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>cd themes/jacam</span><br><span class="line"><span class="variable">$ </span>git pull</span><br></pre></td></tr></table></figure>
+<h3 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h3><p>打开 Git Bash，<code>$ cd &lt;your folder&gt;</code> 到你初始化的目录，执行 <code>$ hexo n &quot;filename&quot; #新建文章</code> 命令，在本地目录的 /source/_posts 目录中生成 filename.md 的 Markdown 文档，用您喜欢的 Markdown 编辑器打开该文档编辑文章即可</p>
+<h3 id="本地查看调试"><a href="#本地查看调试" class="headerlink" title="本地查看调试"></a>本地查看调试</h3><p>每次编辑保存后，想要先预览或者调试页面效果，常用的操作命令：</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo g <span class="comment">#生成静态页面</span></span><br><span class="line"><span class="variable">$ </span>hexo s <span class="comment">#启动本地服务，进行文章预览调试</span></span><br></pre></td></tr></table></figure>
+<p>再在浏览器中输入 <a href="http:\\localhost:4000" target="_blank" rel="external">localhost:4000</a> 查看结果</p>
+<blockquote>
+<p>如果不幸上述命令无效，试试在执行 <code>$ hexo g</code> 和 <code>$ hexo s</code> 命令前先执行 <code>$ hexo clean</code> 命令，非常有用，能解决很多莫名的问题，且叫他「打扫干净屋子再请客」吧！</p>
+</blockquote>
+<h3 id="提交部署"><a href="#提交部署" class="headerlink" title="提交部署"></a>提交部署</h3><p>如上调试过程觉得满意的话，则可以将修改部署到远程库当中，命令如下：</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo g <span class="comment">#生成</span></span><br><span class="line"><span class="variable">$ </span>hexo d <span class="comment">#部署</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>或者直接用组合命令 <code>$ hexo d -g</code> （很常用）</p>
+</blockquote>
+<p>部署完之后，通过链接（也就是远程库的名字）便可以访问自己的博客了！</p>
+<h2 id="独立域名与-GitHub-Pages-博客的绑定"><a href="#独立域名与-GitHub-Pages-博客的绑定" class="headerlink" title="独立域名与 GitHub Pages 博客的绑定"></a>独立域名与 GitHub Pages 博客的绑定</h2><p>在准备工作中，我们申请的独立域名在这里就有用处了。默认 GitHub Pages 服务为我们生成了形如 novgis.github.io 这样的域名，通过该域名是可以访问自己的博客的，但是为了进一步提高我们的逼格，访问形如 www.novgis.com 这样的域名是不是觉得更好呢！那么我们就来说说怎样将独立域名和GitHub Pages 博客进行绑定。</p>
+<h3 id="提交-CNAME-文件"><a href="#提交-CNAME-文件" class="headerlink" title="提交 CNAME 文件"></a>提交 CNAME 文件</h3><h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>[1] <a href="https://zhuanlan.zhihu.com/p/19743861" target="_blank" rel="external">为什么你要写博客？</a> by CnFeat（推荐）</p>
 <p>[2] <a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a> by CnFeat</p>
 <p>[3] <a href="https://github.com/litten" target="_blank" rel="external">黎小腾同学的blog</a> by Litten</p>
 <p>[4] <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo官方文档</a></p>
