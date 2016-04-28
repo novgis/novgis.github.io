@@ -13,7 +13,8 @@
 <meta property="og:site_name" content="novgis's blog">
 <meta property="og:description" content="摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。">
 <meta property="og:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/3.png">
-<meta property="og:updated_time" content="2016-04-28T09:16:17.345Z">
+<meta property="og:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/4.png">
+<meta property="og:updated_time" content="2016-04-28T09:34:32.183Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="程序员要有一个独立博客 —— GitHub Pages 与 Hexo 建站经过">
 <meta name="twitter:description" content="摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。">
@@ -247,7 +248,9 @@
 </blockquote>
 <p>部署完之后，通过链接（也就是远程库的名字）便可以访问自己的博客了！</p>
 <h2 id="独立域名与-GitHub-Pages-博客的绑定"><a href="#独立域名与-GitHub-Pages-博客的绑定" class="headerlink" title="独立域名与 GitHub Pages 博客的绑定"></a>独立域名与 GitHub Pages 博客的绑定</h2><p>在准备工作中，我们申请的独立域名在这里就有用处了。默认 GitHub Pages 服务为我们生成了形如 novgis.github.io 这样的域名，通过该域名是可以访问自己的博客的，但是为了进一步提高我们的逼格，访问形如 www.novgis.com 这样的域名是不是觉得更好呢！那么我们就来说说怎样将独立域名和GitHub Pages 博客进行绑定。</p>
-<h3 id="提交-CNAME-文件"><a href="#提交-CNAME-文件" class="headerlink" title="提交 CNAME 文件"></a>提交 CNAME 文件</h3><h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>[1] <a href="https://zhuanlan.zhihu.com/p/19743861" target="_blank" rel="external">为什么你要写博客？</a> by CnFeat（推荐）</p>
+<h3 id="提交-CNAME-文件"><a href="#提交-CNAME-文件" class="headerlink" title="提交 CNAME 文件"></a>提交 CNAME 文件</h3><p>第一步到我的 GitHub 仓库，点击右上角的「Download ZIP」，下载源文件，解压，找到CNAME文件，用记事本打开，把 www.novgis.com 替换成你的域名，保存并将文件放进 Hexo\source目录下，然后执行 <code>$ hexo d -g</code> 命令提交上去</p>
+<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>第二步到域名管理系统中对域名进行解析，<br><img src="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/4.png" alt=""> 模仿截图添加解析，其中记录值的获取可以通过 <code>ping novgis.github.io</code> 地址获取到（把地址替换成您的博客地址）。</p>
+<h1 id="Hexo-进阶"><a href="#Hexo-进阶" class="headerlink" title="Hexo 进阶"></a>Hexo 进阶</h1><h2 id="添加-README-md-文件-gt-skip-render-属性的应用"><a href="#添加-README-md-文件-gt-skip-render-属性的应用" class="headerlink" title="添加 README.md 文件-&gt; skip_render 属性的应用"></a>添加 README.md 文件-&gt; skip_render 属性的应用</h2><h2 id="文章摘要"><a href="#文章摘要" class="headerlink" title="文章摘要"></a>文章摘要</h2><h2 id="自定义页面"><a href="#自定义页面" class="headerlink" title="自定义页面"></a>自定义页面</h2><h2 id="404页面"><a href="#404页面" class="headerlink" title="404页面"></a>404页面</h2><h2 id="安装插件-gt-sitemap-和-feed-插件"><a href="#安装插件-gt-sitemap-和-feed-插件" class="headerlink" title="安装插件 -&gt; sitemap 和 feed 插件"></a>安装插件 -&gt; sitemap 和 feed 插件</h2><h2 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h2><h2 id="访问统计"><a href="#访问统计" class="headerlink" title="访问统计"></a>访问统计</h2><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>[1] <a href="https://zhuanlan.zhihu.com/p/19743861" target="_blank" rel="external">为什么你要写博客？</a> by CnFeat（推荐）</p>
 <p>[2] <a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a> by CnFeat</p>
 <p>[3] <a href="https://github.com/litten" target="_blank" rel="external">黎小腾同学的blog</a> by Litten</p>
 <p>[4] <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo官方文档</a></p>
