@@ -158,48 +158,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>摘要：这是一篇记录我搭建独立博客的经过的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。</p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这篇文章应该算是<a href="http://www.cnfeat.com" target="_blank" rel="external">陈素封</a>老师<a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">这篇文章</a>的实践篇，加入了一些我经历过的坑，记录下来，以防换了环境再来部署又要走弯路。这也算是陈老师所说的为什么我们要写自己的博客的原因之一吧。下面以我的博客 <a href="http://www.novgis.com">www.novgis.com</a> 为例，介绍我在 Windows 7 环境下是如何实践搭建独立博客的过程。</p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="域名注册"><a href="#域名注册" class="headerlink" title="域名注册"></a>域名注册</h2><p>这部分简单写几句，我的域名是在<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>注册购买的，过程很简单，选个自认为有意义的域名直接购买。价格上来说万网的价格不比其它家贵多少，而且万网已经并入阿里云，阿里提供的一些服务都可以免费使用。不得不说，拼服务的时代，阿里走在了前列。购买域名后不能马上通过该域名访问任何网站，原因是还没有做域名解析，在之后的过程中我会介绍如何将域名与你自己的博客绑定。</p>
-<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>解释下为什么要安装 Node.js，<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是出在一名台湾大学生 <a href="http://twitter.com/tommy351" target="_blank" rel="external">tommy351</a> 之手，是一个基于 Node.js 的静态博客程序，Node.js 是 Hexo 的运行环境，非装不可。至于 Hexo 的<a href="http://zespia.tw/blog/2012/10/11/hexo-debut" target="_blank" rel="external">优点</a>，网上很多文章，我这里就不赘述了。到 <a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a> 官网下载相应平台的最新版安装包，一路 Next 安装即可。</p>
-<h2 id="安装-Git-并与-GitHub-适配"><a href="#安装-Git-并与-GitHub-适配" class="headerlink" title="安装 Git 并与 GitHub 适配"></a>安装 Git 并与 GitHub 适配</h2><p>从 <a href="http://git-scm.com/" target="_blank" rel="external">Git</a> 官网下载安装包，同样一路 Next 安装！这里介绍三种打开 Git Bash 的方法：</p>
-<ul>
-<li><p>启动开始菜单中的 Git Bash </p>
-</li>
-<li><p>鼠标右键启动Git Bash</p>
-</li>
-<li><p>将 Git 的安装根目录（类似 C:\Program Files\Git）添加到系统环境变量，通过 Win+R 输入 git-bash 启动（我比较常用的）</p>
-</li>
-</ul>
-<p>接下来访问 <a href="http://www.github.com/" target="_blank" rel="external">GitHub</a> 注册一个账号，妥善保存注册邮箱。</p>
-<p><strong>通过 ssh key 将本地的 Git 和远程的 GitHub 建立联系：</strong> </p>
-<p>首先需要检查本地现有的 ssh key，通过上述方式打开 Git Bash，执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></table></figure>
-<p>如果提示 “No such file or directory” 说明是第一次使用 Git，这时我们就要生成新的 ssh key，执行命令：</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh-keygen -t rsa -C <span class="string">"youremail@youremail.com"</span></span><br></pre></td></tr></table></figure>
-<p>回车后有如下提示：<br><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa <span class="keyword">key</span> pair.</span><br><span class="line">Enter file <span class="keyword">in</span> which <span class="keyword">to</span> save the <span class="keyword">key</span> (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</span><br></pre></td></tr></table></figure></p>
-<p>然后命令行提示要你输入密码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):<span class="xml"><span class="tag">&lt;<span class="name">输入加密串</span>&gt;</span></span><br><span class="line">Enter same passphrase again:<span class="tag">&lt;<span class="name">再次输入加密串</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
-<p>这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入（我直接没填密码）。这个设置是防止别人往你的项目里提交内容。到这里一般都会成功了。</p>
-<p>剩下最后一步，将刚生成的 ssh key 添加到 GitHub 中：</p>
-<ol>
-<li>用文本打开本地C:\Documents and Settings\Administrator.ssh\id_rsa.pub文件。此文件里面内容为刚才生成的公钥。如果看不到这个文件，你需要设置显示隐藏文件。全选复制文件内容。</li>
-<li>登陆github系统，点击右上角图标下拉选择 Settings—&gt;SSH and GPG keys —&gt; New SSH key</li>
-<li>把刚复制的公钥粘贴到 Key 输入框中， 点击 Add SSH key</li>
-</ol>
-<p>接着测试下匹配是否成功：</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure>
-<p>如果是下面的反馈：</p>
-<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity <span class="keyword">of</span> host <span class="comment">'github.com (207.97.227.239)' can't be established.</span></span><br><span class="line">RSA <span class="keyword">key</span> fingerprint <span class="keyword">is</span> <span class="number">16</span>:<span class="number">27</span>:ac:a5:<span class="number">76</span>:<span class="number">28</span>:<span class="number">2</span>d:<span class="number">36</span>:<span class="number">63</span>:<span class="number">1</span>b:<span class="number">56</span>:<span class="number">4</span>d:eb:df:a6:<span class="number">48.</span></span><br><span class="line">Are you sure you want <span class="keyword">to</span> <span class="keyword">continue</span> connecting (yes/no)?</span><br></pre></td></tr></table></figure>
-<p>输入 yes 回车就好，然后会看到：</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi novgis! You've successfully authenticated, <span class="keyword">but</span> GitHub <span class="keyword">does</span> <span class="keyword">not</span> provide shell access.</span><br></pre></td></tr></table></figure>
-<p>现在你已经可以通过 SSH key 链接到远程 GitHub 了，还有一些个人信息需要完善，Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的命令进行个人信息的设置（把名称和邮箱替换成你自己的）</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="selector-class">.name</span> <span class="string">"yourname"</span><span class="comment">//你自己的用户名</span></span><br><span class="line">$ git config --global user<span class="selector-class">.email</span> <span class="string">"youremail@youremail.com"</span><span class="comment">//你自己的邮箱</span></span><br></pre></td></tr></table></figure>
-<p>至此，本地 Git 与远程 GitHub 之间的联系就建立成功了。</p>
-<h1 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h1><h2 id="在-GitHub-中建立仓库"><a href="#在-GitHub-中建立仓库" class="headerlink" title="在 GitHub 中建立仓库"></a>在 GitHub 中建立仓库</h2><h2 id="用-Hexo-克隆主题"><a href="#用-Hexo-克隆主题" class="headerlink" title="用 Hexo 克隆主题"></a>用 Hexo 克隆主题</h2><h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><h2 id="config-yml-设置那些事"><a href="#config-yml-设置那些事" class="headerlink" title="_config.yml 设置那些事"></a>_config.yml 设置那些事</h2><h2 id="提交-README-md"><a href="#提交-README-md" class="headerlink" title="提交 README.md"></a>提交 README.md</h2><h2 id="独立域名与-GitHub-Pages-博客的绑定"><a href="#独立域名与-GitHub-Pages-博客的绑定" class="headerlink" title="独立域名与 GitHub Pages 博客的绑定"></a>独立域名与 GitHub Pages 博客的绑定</h2><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><h2 id="Markdown-初体验"><a href="#Markdown-初体验" class="headerlink" title="Markdown 初体验"></a>Markdown 初体验</h2><h2 id="Hexo-常见问题"><a href="#Hexo-常见问题" class="headerlink" title="Hexo 常见问题"></a>Hexo 常见问题</h2><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>[1] <a href="https://zhuanlan.zhihu.com/p/19743861" target="_blank" rel="external">为什么你要写博客？</a> by CnFeat（推荐）</p>
-<p>[2] <a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a> by CnFeat</p>
-<p>[3] <a href="https://github.com/litten" target="_blank" rel="external">黎小腾同学的blog</a> by Litten</p>
-<p>[4] <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo官方文档</a></p>
-
+        <p>摘要：这是一篇记录我搭建独立博客的经过的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。<br>
       
     </div>
     
@@ -212,6 +171,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/blog/2016-04-26/build-my-blog-with-hexo.html#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
