@@ -41,7 +41,7 @@
     <link href="http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html"/>
     <id>http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html</id>
     <published>2016-04-26T14:57:20.000Z</published>
-    <updated>2016-04-29T03:22:05.050Z</updated>
+    <updated>2016-04-29T04:11:24.633Z</updated>
     
     <content type="html">&lt;p&gt;摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;这篇文章应该算是&lt;a href=&quot;http://www.cnfeat.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;陈素封&lt;/a&gt;老师&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这篇文章&lt;/a&gt;的实践篇，加入了一些我经历过的坑，记录下来，以防换了环境再来部署又要走弯路。下面以我的博客 &lt;a href=&quot;http://www.novgis.com&quot;&gt;www.novgis.com&lt;/a&gt; 为例，介绍我在 Windows 7 环境下是如何实践搭建独立博客的过程。&lt;/p&gt;
@@ -153,6 +153,8 @@
 &lt;p&gt;[2] &lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何搭建一个独立博客——简明Github Pages与Hexo教程&lt;/a&gt; by CnFeat&lt;/p&gt;
 &lt;p&gt;[3] &lt;a href=&quot;https://github.com/litten&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;黎小腾同学的blog&lt;/a&gt; by Litten&lt;/p&gt;
 &lt;p&gt;[4] &lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[5] &lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool&amp;amp;utm_medium=referral&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo你的博客&lt;/a&gt; by 不如&lt;/p&gt;
+&lt;p&gt;[6] &lt;a href=&quot;https://xuanwo.org/2014/08/14/hexo-usual-problem/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo常见问题解决方案&lt;/a&gt; by Xuanwo&lt;/p&gt;
 </content>
     
     <summary type="html">
