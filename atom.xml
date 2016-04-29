@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>novgis&#39;s blog</title>
+  <subtitle>i love gis</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.novgis.com/"/>
+  <updated>2016-04-28T09:48:16.135Z</updated>
+  <id>http://www.novgis.com/</id>
+  
+  <author>
+    <name>novgis</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单例模式 - so easy？</title>
+    <link href="http://www.novgis.com/blog/2016-04-28/dp-singlton.html"/>
+    <id>http://www.novgis.com/blog/2016-04-28/dp-singlton.html</id>
+    <published>2016-04-28T09:42:14.000Z</published>
+    <updated>2016-04-28T09:48:16.135Z</updated>
+    
+    <content type="html">&lt;p&gt;摘要：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;摘要：&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序员要有一个独立博客 —— GitHub Pages 与 Hexo 建站经过</title>
+    <link href="http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html"/>
+    <id>http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html</id>
+    <published>2016-04-26T14:57:20.000Z</published>
+    <updated>2016-04-29T02:48:24.160Z</updated>
+    
+    <content type="html">&lt;p&gt;摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;这篇文章应该算是&lt;a href=&quot;http://www.cnfeat.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;陈素封&lt;/a&gt;老师&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这篇文章&lt;/a&gt;的实践篇，加入了一些我经历过的坑，记录下来，以防换了环境再来部署又要走弯路。下面以我的博客 &lt;a href=&quot;http://www.novgis.com&quot;&gt;www.novgis.com&lt;/a&gt; 为例，介绍我在 Windows 7 环境下是如何实践搭建独立博客的过程。&lt;/p&gt;
+&lt;h1 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h1&gt;&lt;h2 id=&quot;域名注册&quot;&gt;&lt;a href=&quot;#域名注册&quot; class=&quot;headerlink&quot; title=&quot;域名注册&quot;&gt;&lt;/a&gt;域名注册&lt;/h2&gt;&lt;p&gt;这部分简单写几句，我的域名是在&lt;a href=&quot;https://wanwang.aliyun.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;万网&lt;/a&gt;注册购买的，过程很简单，选个自认为有意义的域名直接购买。价格上来说万网的价格不比其它家贵多少，而且万网已经并入阿里云，阿里提供的一些服务都可以免费使用。不得不说，拼服务的时代，阿里走在了前列。购买域名后不能马上通过该域名访问任何网站，原因是还没有做域名解析，在之后的过程中我会介绍如何将域名与你自己的博客绑定。&lt;/p&gt;
+&lt;h2 id=&quot;安装-Node-js&quot;&gt;&lt;a href=&quot;#安装-Node-js&quot; class=&quot;headerlink&quot; title=&quot;安装 Node.js&quot;&gt;&lt;/a&gt;安装 Node.js&lt;/h2&gt;&lt;p&gt;去 &lt;a href=&quot;http://nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node.js&lt;/a&gt; 官网下载相应平台的最新版安装包，一路 Next 安装即可。&lt;/p&gt;
+&lt;h2 id=&quot;安装-Git-并与-GitHub-适配&quot;&gt;&lt;a href=&quot;#安装-Git-并与-GitHub-适配&quot; class=&quot;headerlink&quot; title=&quot;安装 Git 并与 GitHub 适配&quot;&gt;&lt;/a&gt;安装 Git 并与 GitHub 适配&lt;/h2&gt;&lt;p&gt;从 &lt;a href=&quot;http://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&lt;/a&gt; 官网下载安装包，同样一路 Next 安装！这里介绍三种打开 Git Bash 的方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;启动开始菜单中的 Git Bash &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;鼠标右键启动Git Bash&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;将 Git 的安装根目录（类似 C:\Program Files\Git）添加到系统环境变量，通过 Win+R 输入 git-bash 启动（我比较常用的）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;接下来访问 &lt;a href=&quot;http://www.github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt; 注册一个账号，妥善保存注册邮箱。&lt;/p&gt;
+&lt;h3 id=&quot;通过-ssh-key-将本地的-Git-和远程的-GitHub-建立联系：&quot;&gt;&lt;a href=&quot;#通过-ssh-key-将本地的-Git-和远程的-GitHub-建立联系：&quot; class=&quot;headerlink&quot; title=&quot;通过 ssh key 将本地的 Git 和远程的 GitHub 建立联系：&quot;&gt;&lt;/a&gt;通过 ssh key 将本地的 Git 和远程的 GitHub 建立联系：&lt;/h3&gt;&lt;p&gt;首先需要检查本地现有的 ssh key，通过上述方式打开 Git Bash，执行命令：&lt;code&gt;$ cd ~/.ssh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果提示 “No such file or directory” 说明是第一次使用 Git，这时我们就要生成新的 ssh key，执行命令：&lt;code&gt;$ ssh-keygen -t rsa -C &amp;quot;youremail@youremail.com&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;回车后有如下提示：&lt;br&gt;&lt;figure class=&quot;highlight vbnet&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Generating &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt;/&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; rsa &lt;span class=&quot;keyword&quot;&gt;key&lt;/span&gt; pair.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter file &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; which &lt;span class=&quot;keyword&quot;&gt;to&lt;/span&gt; save the &lt;span class=&quot;keyword&quot;&gt;key&lt;/span&gt; (/Users/your_user_directory/.ssh/id_rsa):&amp;lt;回车就好&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后命令行提示要你输入密码：&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Enter passphrase (empty &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; no passphrase):&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;输入加密串&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter same passphrase again:&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;再次输入加密串&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入（我直接没填密码）。这个设置是防止别人往你的项目里提交内容。到这里一般都会成功了。&lt;/p&gt;
+&lt;p&gt;剩下最后一步，将刚生成的 ssh key 添加到 GitHub 中：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用文本打开本地C:\Documents and Settings\Administrator.ssh\id_rsa.pub文件。此文件里面内容为刚才生成的公钥。如果看不到这个文件，你需要设置显示隐藏文件。全选复制文件内容。&lt;/li&gt;
+&lt;li&gt;登陆github系统，点击右上角图标下拉选择 Settings—&amp;gt;SSH and GPG keys —&amp;gt; New SSH key&lt;/li&gt;
+&lt;li&gt;把刚复制的公钥粘贴到 Key 输入框中， 点击 Add SSH key&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;接着测试下匹配是否成功：&lt;code&gt;$ ssh -T git@github.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果是下面的反馈：&lt;/p&gt;
+&lt;figure class=&quot;highlight vbnet&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;The authenticity &lt;span class=&quot;keyword&quot;&gt;of&lt;/span&gt; host &lt;span class=&quot;comment&quot;&gt;&#39;github.com (207.97.227.239)&#39; can&#39;t be established.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;RSA &lt;span class=&quot;keyword&quot;&gt;key&lt;/span&gt; fingerprint &lt;span class=&quot;keyword&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;16&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;27&lt;/span&gt;:ac:a5:&lt;span class=&quot;number&quot;&gt;76&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;28&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;d:&lt;span class=&quot;number&quot;&gt;36&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;63&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;b:&lt;span class=&quot;number&quot;&gt;56&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;d:eb:df:a6:&lt;span class=&quot;number&quot;&gt;48.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Are you sure you want &lt;span class=&quot;keyword&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;continue&lt;/span&gt; connecting (yes/no)?&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;输入 yes 回车就好，然后会看到：&lt;/p&gt;
+&lt;figure class=&quot;highlight applescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Hi novgis! You&#39;ve successfully authenticated, &lt;span class=&quot;keyword&quot;&gt;but&lt;/span&gt; GitHub &lt;span class=&quot;keyword&quot;&gt;does&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;not&lt;/span&gt; provide shell access.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;现在你已经可以通过 SSH key 链接到远程 GitHub 了，还有一些个人信息需要完善，Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的命令进行个人信息的设置（把名称和邮箱替换成你自己的）&lt;/p&gt;
+&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git config --global user&lt;span class=&quot;selector-class&quot;&gt;.name&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;yourname&quot;&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;//你自己的用户名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git config --global user&lt;span class=&quot;selector-class&quot;&gt;.email&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;youremail@youremail.com&quot;&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;//你自己的邮箱&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;至此，本地 Git 与远程 GitHub 之间的联系就建立成功了。&lt;/p&gt;
+&lt;h1 id=&quot;搭建过程&quot;&gt;&lt;a href=&quot;#搭建过程&quot; class=&quot;headerlink&quot; title=&quot;搭建过程&quot;&gt;&lt;/a&gt;搭建过程&lt;/h1&gt;&lt;p&gt;所有的准备工作都做好后，就可以着手搭建博客了。过程会可能会遇到各种各样的问题，在最后我给出了我在搭建过程中踩过的坑，以供参考。&lt;/p&gt;
+&lt;h2 id=&quot;在-GitHub-中建立仓库&quot;&gt;&lt;a href=&quot;#在-GitHub-中建立仓库&quot; class=&quot;headerlink&quot; title=&quot;在 GitHub 中建立仓库&quot;&gt;&lt;/a&gt;在 GitHub 中建立仓库&lt;/h2&gt;&lt;p&gt;登录 &lt;a href=&quot;&quot;&gt;GitHub&lt;/a&gt; 首页，点击页面右上角「New repository」新建仓库，填写仓库信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Repository name:&lt;/strong&gt; novgis.github.io&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Description (optional): novgis’s blog&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里一定要&lt;strong&gt;注意&lt;/strong&gt;：Github Pages 的 Repository 名字是特定的，比如我 Github 账号是 novgis，那么我 Github Pages Repository 名字就是 novgis.github.io，这是规定的，必须这样写。&lt;/p&gt;
+&lt;p&gt;点击「Create repository」完成创建。&lt;/p&gt;
+&lt;p&gt;这个时候其实再进行一些简单的初始化操作即访问我们自己的博客了（由于 novgis  账户已经正式启用，我将使用别的 github 账号来截图作为参考），进入刚新建的仓库页面，点击「Settings」，把页面往下翻会看到「GitHub Pages」这一栏&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;点击「Launch automatic page generator」按钮进入页面模板设置页面「New your site」，填写一些网站基本信息后点击「Continue to layouts」进入网站模板选择页面，选择你看中的模板点「Publish page」，至此便可以通过 &lt;a href=&quot;http://time2goo.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://time2goo.github.io&lt;/a&gt; 链接来访问博客了。&lt;/p&gt;
+&lt;p&gt;以这种方式建站后，我们对博客的维护可以通过对该仓库中静态页面的修改来一步步完善，新增、修改、删除等等，路漫漫其修远兮…… 所有的操作都要手动完成，作为一个有逼格的程序员自然会想法子让事情变得简单，于是 Hexo 便应运而生。&lt;/p&gt;
+&lt;h2 id=&quot;Hexo-的飒爽英姿&quot;&gt;&lt;a href=&quot;#Hexo-的飒爽英姿&quot; class=&quot;headerlink&quot; title=&quot;Hexo 的飒爽英姿&quot;&gt;&lt;/a&gt;Hexo 的飒爽英姿&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt; 出自一名台湾大学生 &lt;a href=&quot;http://twitter.com/tommy351&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;tommy351&lt;/a&gt; 之手，是一个基于 Node.js 的静态博客程序。至于 Hexo 的&lt;a href=&quot;http://zespia.tw/blog/2012/10/11/hexo-debut&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;优点&lt;/a&gt;，网上很多文章，我这里就不赘述了。下面来说说怎样通过 Hexo 让写博客变得简单。 &lt;/p&gt;
+&lt;h3 id=&quot;安装-Hexo&quot;&gt;&lt;a href=&quot;#安装-Hexo&quot; class=&quot;headerlink&quot; title=&quot;安装 Hexo&quot;&gt;&lt;/a&gt;安装 Hexo&lt;/h3&gt;&lt;p&gt;打开 Git Bash，执行如下命令：&lt;code&gt;$ npm install -g hexo&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可能要稍微等会，我安装的时候因为没有进度显示，感觉像是卡住了，后来我 ctrl+c 暂停然后再执行一次，安装过程就快很多。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Hexo-初始化&quot;&gt;&lt;a href=&quot;#Hexo-初始化&quot; class=&quot;headerlink&quot; title=&quot;Hexo 初始化&quot;&gt;&lt;/a&gt;Hexo 初始化&lt;/h3&gt;&lt;p&gt;安装完成后，要执行 &lt;code&gt;init&lt;/code&gt; 命令将 Hexo 初始化到你指定的目录：&lt;code&gt;$ hexo init &amp;lt;folder&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;也可以先在本地新建个文件夹，然后在文件夹上单击右键打开 Git Bash 亦或直接打开 Git Bash 然后用 &lt;code&gt;$ cd &amp;lt;folder&amp;gt;&lt;/code&gt; 命令切换到你指定的文件夹下执行 &lt;code&gt;$ hexo init&lt;/code&gt; （此处就不需要加目录了）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;更换博客主题&quot;&gt;&lt;a href=&quot;#更换博客主题&quot; class=&quot;headerlink&quot; title=&quot;更换博客主题&quot;&gt;&lt;/a&gt;更换博客主题&lt;/h3&gt;&lt;p&gt;博客的主题每个人的喜好不同，我这里推荐个链接 &lt;a href=&quot;http://github.com/tommy351/hexo/wiki/Themes&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo Themes&lt;/a&gt;，上面有很多优秀的主题作品，以 &lt;a href=&quot;http://www.cnfeat.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;读立写生&lt;/a&gt; 的主题为例，要使用这些主题，&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;首先在本地 &lt;code&gt;clone&lt;/code&gt; 一份：在 Hexo 目录下执行 &lt;code&gt;$ git clone https://github.com/cnfeat/cnfeat.git themes/jacman&lt;/code&gt; 命令&lt;/li&gt;
+&lt;li&gt;修改 &lt;strong&gt;Hexo 根目录&lt;/strong&gt;下的 &lt;code&gt;_config.yml&lt;/code&gt; 配置文件中的 &lt;code&gt;theme: jacam&lt;/code&gt; 属性启用主题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更新主题，执行如下命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight elixir&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;cd themes/jacam&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;git pull&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;写文章&quot;&gt;&lt;a href=&quot;#写文章&quot; class=&quot;headerlink&quot; title=&quot;写文章&quot;&gt;&lt;/a&gt;写文章&lt;/h3&gt;&lt;p&gt;打开 Git Bash，&lt;code&gt;$ cd &amp;lt;your folder&amp;gt;&lt;/code&gt; 到你初始化的目录，执行 &lt;code&gt;$ hexo n &amp;quot;filename&amp;quot; #新建文章&lt;/code&gt; 命令，在本地目录的 /source/_posts 目录中生成 filename.md 的 Markdown 文档，用您喜欢的 Markdown 编辑器打开该文档编辑文章即可&lt;/p&gt;
+&lt;h3 id=&quot;本地查看调试&quot;&gt;&lt;a href=&quot;#本地查看调试&quot; class=&quot;headerlink&quot; title=&quot;本地查看调试&quot;&gt;&lt;/a&gt;本地查看调试&lt;/h3&gt;&lt;p&gt;每次编辑保存后，想要先预览或者调试页面效果，常用的操作命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight elixir&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;hexo g &lt;span class=&quot;comment&quot;&gt;#生成静态页面&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;hexo s &lt;span class=&quot;comment&quot;&gt;#启动本地服务，进行文章预览调试&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;再在浏览器中输入 &lt;a href=&quot;http:\\localhost:4000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;localhost:4000&lt;/a&gt; 查看结果&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果不幸上述命令无效，试试在执行 &lt;code&gt;$ hexo g&lt;/code&gt; 和 &lt;code&gt;$ hexo s&lt;/code&gt; 命令前先执行 &lt;code&gt;$ hexo clean&lt;/code&gt; 命令，非常有用，能解决很多莫名的问题，且叫他「打扫干净屋子再请客」吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;提交部署&quot;&gt;&lt;a href=&quot;#提交部署&quot; class=&quot;headerlink&quot; title=&quot;提交部署&quot;&gt;&lt;/a&gt;提交部署&lt;/h3&gt;&lt;p&gt;如上调试过程觉得满意的话，则可以将修改部署到远程库当中，命令如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight elixir&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;hexo g &lt;span class=&quot;comment&quot;&gt;#生成&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;hexo d &lt;span class=&quot;comment&quot;&gt;#部署&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;或者直接用组合命令 &lt;code&gt;$ hexo d -g&lt;/code&gt; （很常用）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;部署完之后，通过链接（也就是远程库的名字）便可以访问自己的博客了！&lt;/p&gt;
+&lt;h2 id=&quot;独立域名与-GitHub-Pages-博客的绑定&quot;&gt;&lt;a href=&quot;#独立域名与-GitHub-Pages-博客的绑定&quot; class=&quot;headerlink&quot; title=&quot;独立域名与 GitHub Pages 博客的绑定&quot;&gt;&lt;/a&gt;独立域名与 GitHub Pages 博客的绑定&lt;/h2&gt;&lt;p&gt;在准备工作中，我们申请的独立域名在这里就有用处了。默认 GitHub Pages 服务为我们生成了形如 novgis.github.io 这样的域名，通过该域名是可以访问自己的博客的，但是为了进一步提高我们的逼格，访问形如 www.novgis.com 这样的域名是不是觉得更好呢！那么我们就来说说怎样将独立域名和GitHub Pages 博客进行绑定。&lt;/p&gt;
+&lt;h3 id=&quot;提交-CNAME-文件&quot;&gt;&lt;a href=&quot;#提交-CNAME-文件&quot; class=&quot;headerlink&quot; title=&quot;提交 CNAME 文件&quot;&gt;&lt;/a&gt;提交 CNAME 文件&lt;/h3&gt;&lt;p&gt;第一步到我的 GitHub 仓库，点击右上角的「Download ZIP」，下载源文件，解压，找到CNAME文件，用记事本打开，把 www.novgis.com 替换成你的域名，保存并将文件放进 Hexo\source目录下，然后执行 &lt;code&gt;$ hexo d -g&lt;/code&gt; 命令提交上去&lt;/p&gt;
+&lt;h3 id=&quot;域名解析&quot;&gt;&lt;a href=&quot;#域名解析&quot; class=&quot;headerlink&quot; title=&quot;域名解析&quot;&gt;&lt;/a&gt;域名解析&lt;/h3&gt;&lt;p&gt;第二步到域名管理系统中对域名进行解析，&lt;br&gt;&lt;img src=&quot;http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/4.png&quot; alt=&quot;&quot;&gt; 模仿截图添加解析，其中记录值的获取可以通过 &lt;code&gt;ping novgis.github.io&lt;/code&gt; 地址获取到（把地址替换成您的博客地址）。&lt;/p&gt;
+&lt;h2 id=&quot;添加-README-md-文件-gt-skip-render-属性的应用&quot;&gt;&lt;a href=&quot;#添加-README-md-文件-gt-skip-render-属性的应用&quot; class=&quot;headerlink&quot; title=&quot;添加 README.md 文件-&amp;gt; skip_render 属性的应用&quot;&gt;&lt;/a&gt;添加 README.md 文件-&amp;gt; skip_render 属性的应用&lt;/h2&gt;&lt;p&gt;在 Hexo/source 目录下创建 README.md 文件，编辑保存。由于 Hexo 默认都将 .md 文件渲染为 .html 文件，为了防止 README.md 被渲染，编辑 Hexo 根目录中的 _config.yml 文件中的 skip_render 参数：&lt;/p&gt;
+&lt;figure class=&quot;highlight avrasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;skip_render:&lt;/span&gt; README.md&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;保存后执行 &lt;code&gt;$ hexo d -g&lt;/code&gt; 命令部署上去即可。&lt;/p&gt;
+&lt;h2 id=&quot;文章摘要&quot;&gt;&lt;a href=&quot;#文章摘要&quot; class=&quot;headerlink&quot; title=&quot;文章摘要&quot;&gt;&lt;/a&gt;文章摘要&lt;/h2&gt;&lt;p&gt;在需要显示文章摘要的地方添加如下代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;//以上是摘要内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--more--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//以下是余下全文&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;more 以上内容即是文章摘要，在主页显示，more 以下内容点击 &lt;code&gt;Read More&lt;/code&gt; 链接打开全文展示。&lt;/p&gt;
+&lt;h2 id=&quot;自定义页面&quot;&gt;&lt;a href=&quot;#自定义页面&quot; class=&quot;headerlink&quot; title=&quot;自定义页面&quot;&gt;&lt;/a&gt;自定义页面&lt;/h2&gt;&lt;p&gt;执行 new page 命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight actionscript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; page &lt;span class=&quot;string&quot;&gt;&quot;about&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在 Hexo\source\ 下会生成 about 目录，里面有个index.md，直接编辑保存，然后配置 themes 目录中的 _config.yml 文件：&lt;/p&gt;
+&lt;figure class=&quot;highlight applescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Header&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;menu:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  主页: /&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  所有文章: /archives&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  关于我: /&lt;span class=&quot;keyword&quot;&gt;about&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上述步骤，也可以手工生成，在 Hexo\source\ 下手工新建 about 和 index.md 也是完全等价的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;404页面&quot;&gt;&lt;a href=&quot;#404页面&quot; class=&quot;headerlink&quot; title=&quot;404页面&quot;&gt;&lt;/a&gt;404页面&lt;/h2&gt;&lt;p&gt;我用的是&lt;a href=&quot;http://www.qq.com/404/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;腾讯 404 页面&lt;/a&gt;，在 themes\source 目录下创建个 404.html 文件，贴入如下代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;content-type&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/html;charset=utf-8;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;X-UA-Compatible&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;IE=edge,chrome=1&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;robots&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;all&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;robots&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;index,follow&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;http://www.qq.com/404/search_children.js&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;utf-8&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;homePageUrl&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;your site url &quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;homePageName&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;回到我的主页&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意文件编码为 UTF-8&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h1&gt;&lt;p&gt;[1] &lt;a href=&quot;https://zhuanlan.zhihu.com/p/19743861&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;为什么你要写博客？&lt;/a&gt; by CnFeat（推荐）&lt;/p&gt;
+&lt;p&gt;[2] &lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何搭建一个独立博客——简明Github Pages与Hexo教程&lt;/a&gt; by CnFeat&lt;/p&gt;
+&lt;p&gt;[3] &lt;a href=&quot;https://github.com/litten&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;黎小腾同学的blog&lt;/a&gt; by Litten&lt;/p&gt;
+&lt;p&gt;[4] &lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo官方文档&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo教程" scheme="http://www.novgis.com/tags/hexo%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="建站" scheme="http://www.novgis.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+</feed>
