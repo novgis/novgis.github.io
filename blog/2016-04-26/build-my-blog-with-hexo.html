@@ -14,7 +14,9 @@
 <meta property="og:description" content="摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。">
 <meta property="og:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/3.png">
 <meta property="og:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/4.png">
-<meta property="og:updated_time" content="2016-04-29T02:48:24.160Z">
+<meta property="og:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/5.png">
+<meta property="og:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/6.png">
+<meta property="og:updated_time" content="2016-04-29T03:22:05.050Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="程序员要有一个独立博客 —— GitHub Pages 与 Hexo 建站经过">
 <meta name="twitter:description" content="摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。">
@@ -274,6 +276,15 @@
 <blockquote>
 <p>注意文件编码为 UTF-8</p>
 </blockquote>
+<h2 id="添加插件"><a href="#添加插件" class="headerlink" title="添加插件"></a>添加插件</h2><p>添加 sitemap 和 feed 插件：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-generator-feed <span class="comment">--save</span></span><br><span class="line">$ npm <span class="keyword">install</span> hexo-generator-sitemap <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/5.png" alt=""></p>
+<p>安装完成后，修改 Hexo 根目录下的 _config.yml 文件，增加以下内容：</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Extensions</span></span><br><span class="line"><span class="symbol">Plugins:</span></span><br><span class="line">- hexo-generator-feed</span><br><span class="line">- hexo-generator-sitemap</span><br><span class="line"></span><br><span class="line"><span class="meta">#Feed Atom</span></span><br><span class="line"><span class="symbol">feed:</span></span><br><span class="line"><span class="symbol">  type:</span> atom</span><br><span class="line"><span class="symbol">  path:</span> atom.xml</span><br><span class="line"><span class="symbol">  limit:</span> <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#sitemap</span></span><br><span class="line"><span class="symbol">sitemap:</span></span><br><span class="line"><span class="symbol">  path:</span> sitemap.xml</span><br></pre></td></tr></table></figure>
+<p>执行 <code>$ hexo d -g</code> 则会生成对应的 xml 文件</p>
+<p><img src="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/6.png" alt=""></p>
+<p>修改 themes 目录下 _config.yml 文件，增加 rss 链接：</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">subnav:</span></span><br><span class="line"><span class="symbol">  github:</span> <span class="string">"https://github.com/novgis"</span></span><br><span class="line"><span class="symbol">  weibo:</span> <span class="string">"http://weibo.com/u/2671860274"</span></span><br><span class="line"><span class="symbol">  mail:</span> <span class="string">"#"</span></span><br><span class="line"><span class="symbol">  rss:</span> /atom.xml <span class="meta">#rss源</span></span><br></pre></td></tr></table></figure>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>[1] <a href="https://zhuanlan.zhihu.com/p/19743861" target="_blank" rel="external">为什么你要写博客？</a> by CnFeat（推荐）</p>
 <p>[2] <a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a> by CnFeat</p>
 <p>[3] <a href="https://github.com/litten" target="_blank" rel="external">黎小腾同学的blog</a> by Litten</p>
