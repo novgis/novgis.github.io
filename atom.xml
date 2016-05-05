@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-05T09:31:30.902Z</updated>
+  <updated>2016-05-05T09:35:10.592Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</id>
     <published>2016-05-05T06:14:21.000Z</published>
-    <updated>2016-05-05T09:31:30.902Z</updated>
+    <updated>2016-05-05T09:35:10.592Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -45,7 +45,7 @@
     </summary>
     
     
-      <category term="Java Web基础" scheme="http://www.novgis.com/tags/Java-Web%E5%9F%BA%E7%A1%80/"/>
+      <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
     
   </entry>
   
