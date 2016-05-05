@@ -9,10 +9,8 @@
   <meta name="description" content="摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”
 Java Web 应用中可以包含如下内容：
 
-Servlet
-JSP
-实用类（POJO）
-静态文档如 HTM">
+Servlet（本质上就是一个 Java 类）
+JSP（会被翻">
 <meta property="og:type" content="article">
 <meta property="og:title" content="javaweb-servlet">
 <meta property="og:url" content="http://www.novgis.com/blog/2016-05-05/javaweb-servlet.html">
@@ -20,20 +18,18 @@ JSP
 <meta property="og:description" content="摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”
 Java Web 应用中可以包含如下内容：
 
-Servlet
-JSP
-实用类（POJO）
-静态文档如 HTM">
-<meta property="og:updated_time" content="2016-05-05T06:22:59.608Z">
+Servlet（本质上就是一个 Java 类）
+JSP（会被翻">
+<meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-01.png">
+<meta property="og:updated_time" content="2016-05-05T06:51:36.512Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javaweb-servlet">
 <meta name="twitter:description" content="摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”
 Java Web 应用中可以包含如下内容：
 
-Servlet
-JSP
-实用类（POJO）
-静态文档如 HTM">
+Servlet（本质上就是一个 Java 类）
+JSP（会被翻">
+<meta name="twitter:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-01.png">
   
     <link rel="alternative" href="/atom.xml" title="novgis&#39;s blog" type="application/atom+xml">
   
@@ -251,13 +247,16 @@ JSP
         <p>摘要：<br>在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”</p>
 <p>Java Web 应用中可以包含如下内容：</p>
 <ul>
-<li>Servlet</li>
-<li>JSP</li>
-<li>实用类（POJO）</li>
+<li>Servlet（本质上就是一个 Java 类）</li>
+<li>JSP（会被翻译成 Servlet 然后编译成 .class 文件 本质上也是一个 Java 类）</li>
+<li>实用类（POJO 普通的 Java 类）</li>
 <li>静态文档如 HTML、图片等</li>
 <li>描述 Web 应用的信息（web.xml）</li>
 </ul>
 <a id="more"></a>
+<h1 id="Servlet-容器的概念"><a href="#Servlet-容器的概念" class="headerlink" title="Servlet 容器的概念"></a>Servlet 容器的概念</h1><p>Servlet 容器为 JavaWeb 应用提供运行时环境，它负责管理 Servlet 和 JSP 的生命周期，以及管理它们的共享数据。目前流行的 Servlet 容器有：<a href="https://tomcat.apache.org/" target="_blank" rel="external">Tomcat</a>(免费开源也是最常用的)、<a href="http://www.oracle.com/technetwork/middleware/weblogic/overview/index.html" target="_blank" rel="external">WebLogic</a>、<a href="http://www-01.ibm.com/software/cn/websphere/" target="_blank" rel="external">WebSphere</a> 等。</p>
+<p><img src="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-01.png" alt=""></p>
+<h1 id="Tomcat-部署及目录结构简介"><a href="#Tomcat-部署及目录结构简介" class="headerlink" title="Tomcat 部署及目录结构简介"></a>Tomcat 部署及目录结构简介</h1><p>绿色部署，从 <a href="https://tomcat.apache.org/" target="_blank" rel="external">Tomcat官网</a>下载指定版本的压缩包直接解压到指定文件夹即可。</p>
 
       
     </div>
