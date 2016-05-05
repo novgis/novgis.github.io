@@ -54,7 +54,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/dp-factory.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/dp-factory.html</id>
     <published>2016-05-05T03:10:27.000Z</published>
-    <updated>2016-05-05T03:18:36.315Z</updated>
+    <updated>2016-05-05T09:33:39.727Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
@@ -68,8 +68,6 @@
     
       <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
-      <category term="创建型模式" scheme="http://www.novgis.com/tags/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/"/>
-    
   </entry>
   
   <entry>
@@ -77,7 +75,7 @@
     <link href="http://www.novgis.com/blog/2016-04-29/dp-proxy.html"/>
     <id>http://www.novgis.com/blog/2016-04-29/dp-proxy.html</id>
     <published>2016-04-29T04:54:11.000Z</published>
-    <updated>2016-05-05T03:16:33.448Z</updated>
+    <updated>2016-05-05T09:33:39.726Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -90,8 +88,6 @@
     
     
       <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-      <category term="结构型模式" scheme="http://www.novgis.com/tags/%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
@@ -100,7 +96,7 @@
     <link href="http://www.novgis.com/blog/2016-04-28/dp-singlton.html"/>
     <id>http://www.novgis.com/blog/2016-04-28/dp-singlton.html</id>
     <published>2016-04-28T09:42:14.000Z</published>
-    <updated>2016-05-05T03:16:01.657Z</updated>
+    <updated>2016-05-05T09:33:17.527Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -113,8 +109,6 @@
     
     
       <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-      <category term="创建型模式" scheme="http://www.novgis.com/tags/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
