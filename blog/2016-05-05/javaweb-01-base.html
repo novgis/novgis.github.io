@@ -15,7 +15,7 @@
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-01.png">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-02tomcat%20catalog.png">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-03-webapp%20catalog.png">
-<meta property="og:updated_time" content="2016-05-05T11:00:18.778Z">
+<meta property="og:updated_time" content="2016-05-05T11:20:13.569Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(1) Java Web 应用开发准备">
 <meta name="twitter:description" content="摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”">
@@ -264,8 +264,11 @@
 <p>配置好以上系统变量后，就可以在任意命令行目录下使用 <code>startup</code>、<code>shutdown</code>、<code>catalina run</code>、<code>catalina start</code>、<code>catalina stop</code>等命令来启动停止 Tomcat 服务器了</p>
 </blockquote>
 <h3 id="Tomcat-Manager"><a href="#Tomcat-Manager" class="headerlink" title="Tomcat Manager"></a>Tomcat Manager</h3><p>Tomcat 提供了一个管理程序：访问 <a href="http://localhost:8080/manager/html" target="_blank" rel="external">Tomcat Manager</a>，登录要求你输入用户名密码，点登录前修改 apache-tomcat-6.0.14\conf 目录下的 tomcat-users.xml 文件，添加如下代码：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?</span>xml version=<span class="string">'1.0'</span> encoding=<span class="string">'utf-8'</span><span class="meta">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="name">tomcat-users</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">""</span> <span class="attr">password</span>=<span class="string">""</span> <span class="attr">roles</span>=<span class="string">"manager"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">tomcat-users</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="Java-Web-应用的开发目录结构"><a href="#Java-Web-应用的开发目录结构" class="headerlink" title="Java Web 应用的开发目录结构"></a>Java Web 应用的开发目录结构</h1><p>一个 Web 应用程序是由一组 Servlet、Html页面、类以及其它的资源组成的运行在 Web 服务器上的完整的应用程序，以一种结构化的有层次的目录形式存在，<a href="http://localhost:8080/docs/appdev/deployment.html" target="_blank" rel="external">Tomcat 文档</a>中也介绍了该目录结构。</p>
+<h1 id="Java-Web-应用的开发目录结构"><a href="#Java-Web-应用的开发目录结构" class="headerlink" title="Java Web 应用的开发目录结构"></a>Java Web 应用的开发目录结构</h1><p>一个 Web 应用程序是由一组 Servlet、Html页面、类以及其它的资源组成的运行在 Web 服务器上的完整的应用程序，以一种结构化的有层次的目录形式存在，<a href="http://localhost:8080/docs/appdev/deployment.html" target="_blank" rel="external">Tomcat 文档</a>中规定该目录结构。</p>
 <p><img src="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-03-webapp%20catalog.png" alt=""></p>
+<h1 id="Java-Web-应用程序在-Tomcat-中部署"><a href="#Java-Web-应用程序在-Tomcat-中部署" class="headerlink" title="Java Web 应用程序在 Tomcat 中部署"></a>Java Web 应用程序在 Tomcat 中部署</h1><p>方式一：直接复制应用程序的根目录所有文件到 apache-tomcat-6.0.14\webapps 下</p>
+<p>方式二：以<a href="http://localhost:8080/docs/config/context.html" target="_blank" rel="external">虚拟目录</a>的方式，可以配置任意目录下的 Web 应用程序：</p>
+<p>在 apache-tomcat-6.0.14\conf 目录下依次创建 Catalina\localhost 目录，然后在 localhost 目录下为 test 这个 Web 应用程序建立 test.xml 文件，编辑这个文件输入以下内容：<code>&lt;Context path=&quot;/test&quot; docBase=&quot;C:/test&quot; reloadable=&quot;true&quot;/&gt;</code></p>
 <h1 id="使用-Eclipse-开发-Java-Web-应用"><a href="#使用-Eclipse-开发-Java-Web-应用" class="headerlink" title="使用 Eclipse 开发 Java Web 应用"></a>使用 Eclipse 开发 Java Web 应用</h1>
       
     </div>
