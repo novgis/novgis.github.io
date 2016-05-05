@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-05T06:51:36.512Z</updated>
+  <updated>2016-05-05T09:20:26.307Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>javaweb-servlet</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/javaweb-servlet.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/javaweb-servlet.html</id>
+    <title>（1）Java Web 开发基础</title>
+    <link href="http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html"/>
+    <id>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</id>
     <published>2016-05-05T06:14:21.000Z</published>
-    <updated>2016-05-05T06:51:36.512Z</updated>
+    <updated>2016-05-05T09:20:26.307Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”&lt;/p&gt;
 &lt;p&gt;Java Web 应用中可以包含如下内容：&lt;/p&gt;
@@ -32,10 +32,11 @@
 &lt;li&gt;描述 Web 应用的信息（web.xml）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;Servlet-容器的概念&quot;&gt;&lt;a href=&quot;#Servlet-容器的概念&quot; class=&quot;headerlink&quot; title=&quot;Servlet 容器的概念&quot;&gt;&lt;/a&gt;Servlet 容器的概念&lt;/h1&gt;&lt;p&gt;Servlet 容器为 JavaWeb 应用提供运行时环境，它负责管理 Servlet 和 JSP 的生命周期，以及管理它们的共享数据。目前流行的 Servlet 容器有：&lt;a href=&quot;https://tomcat.apache.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tomcat&lt;/a&gt;(免费开源也是最常用的)、&lt;a href=&quot;http://www.oracle.com/technetwork/middleware/weblogic/overview/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WebLogic&lt;/a&gt;、&lt;a href=&quot;http://www-01.ibm.com/software/cn/websphere/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WebSphere&lt;/a&gt; 等。&lt;/p&gt;
+&lt;h1 id=&quot;Servlet-容器&quot;&gt;&lt;a href=&quot;#Servlet-容器&quot; class=&quot;headerlink&quot; title=&quot;Servlet 容器&quot;&gt;&lt;/a&gt;Servlet 容器&lt;/h1&gt;&lt;p&gt;Servlet 容器为 JavaWeb 应用提供运行时环境，它负责管理 Servlet 和 JSP 的生命周期，以及管理它们的共享数据。目前流行的 Servlet 容器有：&lt;a href=&quot;https://tomcat.apache.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tomcat&lt;/a&gt;(免费开源也是最常用的)、&lt;a href=&quot;http://www.oracle.com/technetwork/middleware/weblogic/overview/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WebLogic&lt;/a&gt;、&lt;a href=&quot;http://www-01.ibm.com/software/cn/websphere/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WebSphere&lt;/a&gt; 等。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-01.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Tomcat-部署及目录结构简介&quot;&gt;&lt;a href=&quot;#Tomcat-部署及目录结构简介&quot; class=&quot;headerlink&quot; title=&quot;Tomcat 部署及目录结构简介&quot;&gt;&lt;/a&gt;Tomcat 部署及目录结构简介&lt;/h1&gt;&lt;p&gt;绿色部署，从 &lt;a href=&quot;https://tomcat.apache.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tomcat官网&lt;/a&gt;下载指定版本的压缩包直接解压到指定文件夹即可。&lt;/p&gt;
-</content>
+&lt;h2 id=&quot;Tomcat部署及目录结构&quot;&gt;&lt;a href=&quot;#Tomcat部署及目录结构&quot; class=&quot;headerlink&quot; title=&quot;Tomcat部署及目录结构&quot;&gt;&lt;/a&gt;Tomcat部署及目录结构&lt;/h2&gt;&lt;p&gt;绿色部署，从 &lt;a href=&quot;https://tomcat.apache.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tomcat官网&lt;/a&gt;下载指定版本的压缩包直接解压到非中文目录下，配置系统 JAVA_HOME（指向 JDK 的安装根目录） 环境变量即可。&lt;/p&gt;
+&lt;h3 id=&quot;Tomcat的安装目录结构&quot;&gt;&lt;a href=&quot;#Tomcat的安装目录结构&quot; class=&quot;headerlink&quot; title=&quot;Tomcat的安装目录结构&quot;&gt;&lt;/a&gt;Tomcat的安装目录结构&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-02tomcat%20catalog.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;启动Tomcat服务器&quot;&gt;&lt;a href=&quot;#启动Tomcat服务器&quot; class=&quot;headerlink&quot; title=&quot;启动Tomcat服务器&quot;&gt;&lt;/a&gt;启动Tomcat服务器&lt;/h3&gt;&lt;h1 id=&quot;Java-Web应用开发的目录结构&quot;&gt;&lt;a href=&quot;#Java-Web应用开发的目录结构&quot; class=&quot;headerlink&quot; title=&quot;Java Web应用开发的目录结构&quot;&gt;&lt;/a&gt;Java Web应用开发的目录结构&lt;/h1&gt;&lt;h1 id=&quot;使用-Eclipse-开发-Java-Web-应用&quot;&gt;&lt;a href=&quot;#使用-Eclipse-开发-Java-Web-应用&quot; class=&quot;headerlink&quot; title=&quot;使用 Eclipse 开发 Java Web 应用&quot;&gt;&lt;/a&gt;使用 Eclipse 开发 Java Web 应用&lt;/h1&gt;</content>
     
     <summary type="html">
     
