@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-04-29T04:54:49.185Z</updated>
+  <updated>2016-05-05T03:12:31.968Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>工厂模式</title>
+    <link href="http://www.novgis.com/blog/2016-05-05/dp-factory.html"/>
+    <id>http://www.novgis.com/blog/2016-05-05/dp-factory.html</id>
+    <published>2016-05-05T03:10:27.000Z</published>
+    <updated>2016-05-05T03:12:31.968Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>代理模式</title>
