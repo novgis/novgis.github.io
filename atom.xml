@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-05T03:12:31.968Z</updated>
+  <updated>2016-05-05T03:14:10.198Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -20,11 +20,14 @@
     <link href="http://www.novgis.com/blog/2016-05-05/dp-factory.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/dp-factory.html</id>
     <published>2016-05-05T03:10:27.000Z</published>
-    <updated>2016-05-05T03:12:31.968Z</updated>
+    <updated>2016-05-05T03:14:10.198Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;摘要：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;p&gt;摘要：&lt;br&gt;
     
     </summary>
     
@@ -38,11 +41,14 @@
     <link href="http://www.novgis.com/blog/2016-04-29/dp-proxy.html"/>
     <id>http://www.novgis.com/blog/2016-04-29/dp-proxy.html</id>
     <published>2016-04-29T04:54:11.000Z</published>
-    <updated>2016-04-29T04:54:49.185Z</updated>
+    <updated>2016-05-05T03:14:19.958Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;摘要：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;p&gt;摘要：&lt;br&gt;
     
     </summary>
     
@@ -52,11 +58,11 @@
   </entry>
   
   <entry>
-    <title>单例模式 - so easy？</title>
+    <title>单例模式</title>
     <link href="http://www.novgis.com/blog/2016-04-28/dp-singlton.html"/>
     <id>http://www.novgis.com/blog/2016-04-28/dp-singlton.html</id>
     <published>2016-04-28T09:42:14.000Z</published>
-    <updated>2016-04-28T09:48:16.135Z</updated>
+    <updated>2016-05-05T03:14:03.150Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>

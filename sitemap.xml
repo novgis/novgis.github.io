@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.novgis.com/blog/2016-04-29/dp-proxy.html</loc>
+    
+    <lastmod>2016-05-05T03:14:19.958Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.novgis.com/blog/2016-05-05/dp-factory.html</loc>
     
-    <lastmod>2016-05-05T03:12:31.968Z</lastmod>
+    <lastmod>2016-05-05T03:14:10.198Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-04-28/dp-singlton.html</loc>
+    
+    <lastmod>2016-05-05T03:14:03.150Z</lastmod>
     
   </url>
   
@@ -12,20 +26,6 @@
     <loc>http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html</loc>
     
     <lastmod>2016-04-29T04:56:33.899Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-04-29/dp-proxy.html</loc>
-    
-    <lastmod>2016-04-29T04:54:49.185Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-04-28/dp-singlton.html</loc>
-    
-    <lastmod>2016-04-28T09:48:16.135Z</lastmod>
     
   </url>
   
