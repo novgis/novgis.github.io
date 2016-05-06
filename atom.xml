@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-06T07:50:39.553Z</updated>
+  <updated>2016-05-06T09:46:34.634Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,11 +16,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>(2) JSP（上）</title>
+    <link href="http://www.novgis.com/blog/2016-05-06/javaweb-04-JSP.html"/>
+    <id>http://www.novgis.com/blog/2016-05-06/javaweb-04-JSP.html</id>
+    <published>2016-05-06T09:45:35.000Z</published>
+    <updated>2016-05-06T09:46:34.634Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
+    
+    
+      <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
+    
+  </entry>
+  
+  <entry>
     <title>(3) Servlet（下）</title>
     <link href="http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html"/>
     <id>http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html</id>
     <published>2016-05-06T07:20:21.000Z</published>
-    <updated>2016-05-06T07:50:39.553Z</updated>
+    <updated>2016-05-06T09:47:57.145Z</updated>
     
     <content type="html">&lt;p&gt;摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -30,6 +50,8 @@
       &lt;p&gt;摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。&lt;br&gt;
     
     </summary>
+    
+      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
     
     
       <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
@@ -41,7 +63,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</id>
     <published>2016-05-05T09:39:48.000Z</published>
-    <updated>2016-05-06T07:34:17.547Z</updated>
+    <updated>2016-05-06T09:46:55.585Z</updated>
     
     <content type="html">&lt;p&gt;摘要：Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;br&gt;本篇介绍 Servlet 的 HelloWorld 程序运行的基本原理、Servlet 的生命周期方法、ServletConfig、ServletContext接口等&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-05-servlet%20request.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -148,6 +170,8 @@
     
     </summary>
     
+      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
+    
     
       <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
     
@@ -158,7 +182,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</id>
     <published>2016-05-05T06:14:21.000Z</published>
-    <updated>2016-05-06T07:34:17.550Z</updated>
+    <updated>2016-05-06T09:48:03.348Z</updated>
     
     <content type="html">&lt;p&gt;摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”&lt;br&gt;本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -210,6 +234,8 @@
     
     </summary>
     
+      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
+    
     
       <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
     
@@ -220,7 +246,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/dp-factory.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/dp-factory.html</id>
     <published>2016-05-05T03:10:27.000Z</published>
-    <updated>2016-05-05T09:33:39.727Z</updated>
+    <updated>2016-05-06T09:48:16.473Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
@@ -230,6 +256,8 @@
       &lt;p&gt;摘要：&lt;/p&gt;
     
     </summary>
+    
+      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
     
     
       <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
@@ -241,7 +269,7 @@
     <link href="http://www.novgis.com/blog/2016-04-29/dp-proxy.html"/>
     <id>http://www.novgis.com/blog/2016-04-29/dp-proxy.html</id>
     <published>2016-04-29T04:54:11.000Z</published>
-    <updated>2016-05-05T09:33:39.726Z</updated>
+    <updated>2016-05-06T09:48:24.401Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -251,6 +279,8 @@
       &lt;p&gt;摘要：&lt;br&gt;
     
     </summary>
+    
+      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
     
     
       <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
@@ -262,7 +292,7 @@
     <link href="http://www.novgis.com/blog/2016-04-28/dp-singlton.html"/>
     <id>http://www.novgis.com/blog/2016-04-28/dp-singlton.html</id>
     <published>2016-04-28T09:42:14.000Z</published>
-    <updated>2016-05-05T09:33:17.527Z</updated>
+    <updated>2016-05-06T09:48:29.582Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -272,6 +302,8 @@
       &lt;p&gt;摘要：&lt;br&gt;
     
     </summary>
+    
+      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
     
     
       <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>

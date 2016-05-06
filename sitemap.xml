@@ -2,23 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.novgis.com/categories/server/index.html</loc>
+    <loc>http://www.novgis.com/blog/2016-04-28/dp-singlton.html</loc>
     
-    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/categories/opensource/index.html</loc>
-    
-    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
+    <lastmod>2016-05-06T09:48:29.582Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/mobile/index.html</loc>
+    <loc>http://www.novgis.com/blog/2016-04-29/dp-proxy.html</loc>
     
-    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
+    <lastmod>2016-05-06T09:48:24.401Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-factory.html</loc>
+    
+    <lastmod>2016-05-06T09:48:16.473Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</loc>
+    
+    <lastmod>2016-05-06T09:48:03.348Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html</loc>
+    
+    <lastmod>2016-05-06T09:47:57.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</loc>
+    
+    <lastmod>2016-05-06T09:46:55.585Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-06/javaweb-04-JSP.html</loc>
+    
+    <lastmod>2016-05-06T09:46:34.634Z</lastmod>
     
   </url>
   
@@ -37,44 +65,23 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html</loc>
+    <loc>http://www.novgis.com/categories/opensource/index.html</loc>
     
-    <lastmod>2016-05-06T07:50:39.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</loc>
-    
-    <lastmod>2016-05-06T07:34:17.550Z</lastmod>
+    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</loc>
+    <loc>http://www.novgis.com/categories/server/index.html</loc>
     
-    <lastmod>2016-05-06T07:34:17.547Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/dp-factory.html</loc>
-    
-    <lastmod>2016-05-05T09:33:39.727Z</lastmod>
+    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-04-29/dp-proxy.html</loc>
+    <loc>http://www.novgis.com/categories/mobile/index.html</loc>
     
-    <lastmod>2016-05-05T09:33:39.726Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-04-28/dp-singlton.html</loc>
-    
-    <lastmod>2016-05-05T09:33:17.527Z</lastmod>
+    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
   </url>
   
