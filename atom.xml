@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-06T07:08:57.545Z</updated>
+  <updated>2016-05-06T07:18:09.549Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</id>
     <published>2016-05-05T09:39:48.000Z</published>
-    <updated>2016-05-06T07:08:57.545Z</updated>
+    <updated>2016-05-06T07:18:09.549Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-05-servlet%20request.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -77,7 +77,7 @@
 &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(ServletConfig config)&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;throws&lt;/span&gt; ServletException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;init&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	Enumeration&amp;lt;String&amp;gt; pair = config.getInitParameterNames();&lt;span class=&quot;comment&quot;&gt;//获取所有初始化参数的名字的集合&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (pair.hasMoreElements()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		String name = (String) pair.nextElement();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		String value = config.getInitParameter(name);&lt;span class=&quot;comment&quot;&gt;//获取指定名字的初始化参数值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		System.out.println(name+&lt;span class=&quot;string&quot;&gt;&quot;:&quot;&lt;/span&gt;+value);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	String servletName = config.getServletName();&lt;span class=&quot;comment&quot;&gt;//获取该 Servlet 配置的 servlet-name，不常用！&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;ServletContext-对象（很重要），由-ServletConfig-对象获取&quot;&gt;&lt;a href=&quot;#ServletContext-对象（很重要），由-ServletConfig-对象获取&quot; class=&quot;headerlink&quot; title=&quot;ServletContext 对象（很重要），由 ServletConfig 对象获取&quot;&gt;&lt;/a&gt;ServletContext 对象（很重要），由 ServletConfig 对象获取&lt;/h3&gt;&lt;p&gt;Servlet 引擎为每个 Web 应用程序都创建一个对应的 ServletContext 对象，包含在 ServletConfig 对象中。一个 Web 应用程序中的所有 Servlet 对象都共享同一个 ServletContext 对象，所以其又被称之为 application 对象（Web 应用程序对象）。&lt;/p&gt;
+&lt;h3 id=&quot;ServletContext-对象（很重要），由-ServletConfig-getServletContext-获取&quot;&gt;&lt;a href=&quot;#ServletContext-对象（很重要），由-ServletConfig-getServletContext-获取&quot; class=&quot;headerlink&quot; title=&quot;ServletContext 对象（很重要），由 ServletConfig.getServletContext() 获取&quot;&gt;&lt;/a&gt;ServletContext 对象（很重要），由 ServletConfig.getServletContext() 获取&lt;/h3&gt;&lt;p&gt;Servlet 引擎为每个 Web 应用程序都创建一个对应的 ServletContext 对象，包含在 ServletConfig 对象中。一个 Web 应用程序中的所有 Servlet 对象都共享同一个 ServletContext 对象，所以其又被称之为 application 对象（Web 应用程序对象）。可以认为是当前 WEB 应用的大管家，可以从中获取到当前 WEB 应用的各个方面的信息。&lt;/p&gt;
 &lt;p&gt;功能：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;获取 WEB 应用程序的初始化参数&lt;/li&gt;
@@ -112,6 +112,12 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
+&lt;h4 id=&quot;跟-Attribute-相关的方法：结合-ServletRequest-再来介绍&quot;&gt;&lt;a href=&quot;#跟-Attribute-相关的方法：结合-ServletRequest-再来介绍&quot; class=&quot;headerlink&quot; title=&quot;跟 Attribute 相关的方法：结合 ServletRequest 再来介绍&quot;&gt;&lt;/a&gt;跟 Attribute 相关的方法：结合 ServletRequest 再来介绍&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;getAttribute(String name) &lt;/li&gt;
+&lt;li&gt;getAttributeName(String name) &lt;/li&gt;
+&lt;li&gt;removeAttribute(String name) &lt;/li&gt;
+&lt;li&gt;setAttribute(String name, Object object)&lt;/li&gt;
+&lt;/ul&gt;
 </content>
     
     <summary type="html">

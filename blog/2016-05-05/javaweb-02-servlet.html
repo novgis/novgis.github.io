@@ -16,7 +16,7 @@
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-06-servlet%20interface.png">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-07-servlet%20lifecycle.png">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-08-servletconfig.png">
-<meta property="og:updated_time" content="2016-05-06T07:08:57.545Z">
+<meta property="og:updated_time" content="2016-05-06T07:18:09.549Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(2) Servlet（上）">
 <meta name="twitter:description" content="摘要：Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。">
@@ -290,7 +290,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(ServletConfig config)</span> <span class="keyword">throws</span> ServletException </span>&#123;</span><br><span class="line">	System.out.println(<span class="string">"init"</span>);</span><br><span class="line">	</span><br><span class="line">	Enumeration&lt;String&gt; pair = config.getInitParameterNames();<span class="comment">//获取所有初始化参数的名字的集合</span></span><br><span class="line">	<span class="keyword">while</span> (pair.hasMoreElements()) &#123;</span><br><span class="line">		String name = (String) pair.nextElement();</span><br><span class="line">		String value = config.getInitParameter(name);<span class="comment">//获取指定名字的初始化参数值</span></span><br><span class="line">		System.out.println(name+<span class="string">":"</span>+value);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	String servletName = config.getServletName();<span class="comment">//获取该 Servlet 配置的 servlet-name，不常用！</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="ServletContext-对象（很重要），由-ServletConfig-对象获取"><a href="#ServletContext-对象（很重要），由-ServletConfig-对象获取" class="headerlink" title="ServletContext 对象（很重要），由 ServletConfig 对象获取"></a>ServletContext 对象（很重要），由 ServletConfig 对象获取</h3><p>Servlet 引擎为每个 Web 应用程序都创建一个对应的 ServletContext 对象，包含在 ServletConfig 对象中。一个 Web 应用程序中的所有 Servlet 对象都共享同一个 ServletContext 对象，所以其又被称之为 application 对象（Web 应用程序对象）。</p>
+<h3 id="ServletContext-对象（很重要），由-ServletConfig-getServletContext-获取"><a href="#ServletContext-对象（很重要），由-ServletConfig-getServletContext-获取" class="headerlink" title="ServletContext 对象（很重要），由 ServletConfig.getServletContext() 获取"></a>ServletContext 对象（很重要），由 ServletConfig.getServletContext() 获取</h3><p>Servlet 引擎为每个 Web 应用程序都创建一个对应的 ServletContext 对象，包含在 ServletConfig 对象中。一个 Web 应用程序中的所有 Servlet 对象都共享同一个 ServletContext 对象，所以其又被称之为 application 对象（Web 应用程序对象）。可以认为是当前 WEB 应用的大管家，可以从中获取到当前 WEB 应用的各个方面的信息。</p>
 <p>功能：</p>
 <ul>
 <li>获取 WEB 应用程序的初始化参数</li>
@@ -325,6 +325,12 @@
 </li>
 </ol>
 </blockquote>
+<h4 id="跟-Attribute-相关的方法：结合-ServletRequest-再来介绍"><a href="#跟-Attribute-相关的方法：结合-ServletRequest-再来介绍" class="headerlink" title="跟 Attribute 相关的方法：结合 ServletRequest 再来介绍"></a>跟 Attribute 相关的方法：结合 ServletRequest 再来介绍</h4><ul>
+<li>getAttribute(String name) </li>
+<li>getAttributeName(String name) </li>
+<li>removeAttribute(String name) </li>
+<li>setAttribute(String name, Object object)</li>
+</ul>
 
       
     </div>
