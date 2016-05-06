@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-05T09:48:40.092Z</updated>
+  <updated>2016-05-06T02:34:11.270Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -20,11 +20,14 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</id>
     <published>2016-05-05T09:39:48.000Z</published>
-    <updated>2016-05-05T09:48:40.092Z</updated>
+    <updated>2016-05-06T02:34:11.270Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;摘要：&lt;br&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;br&gt;Servlet 可以完成如下功能：&lt;br&gt;创建并返回基于客户请求的动态 HTML 页面&lt;br&gt;创建可嵌入到现有 HTML 页面中的 HTML 片段&lt;br&gt;与其它服务器资源（如数据库或基于 Java 的应用程序）进行通信&lt;/p&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;p&gt;摘要：&lt;br&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;br&gt;Servlet 可以完
     
     </summary>
     
@@ -38,13 +41,13 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</id>
     <published>2016-05-05T06:14:21.000Z</published>
-    <updated>2016-05-06T02:10:08.825Z</updated>
+    <updated>2016-05-06T02:30:15.727Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;Java Web 应用中可以包含如下内容：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Servlet（本质上就是一个 Java 类）&lt;/li&gt;
+&lt;li&gt;Servlet（本质上就是一个 Java 类，主不过其是被部署运行到 Servlet 容器当中）&lt;/li&gt;
 &lt;li&gt;JSP（会被翻译成 Servlet 然后编译成 .class 文件 本质上也是一个 Java 类）&lt;/li&gt;
 &lt;li&gt;实用类（POJO 普通的 Java 类）&lt;/li&gt;
 &lt;li&gt;静态文档如 HTML、图片等&lt;/li&gt;
@@ -80,7 +83,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-04-webapp%20deploy.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;从 Tomcat 5 开始，不建议直接在 server.xml 文件中配置 &lt;context&gt; 元素，因为 server.xml 文件作为 Tomcat 的主要配置文件，一旦 Tomcat 启动后，将不会再读取这个文件，因此无法在 Tomcat 服务器启动时发布 Web 应用程序。而在 conf/catalina/localhost 文件夹下配置 &lt;context&gt; 元素则可以在 Tomcat 已启动的情况下发布 Web 应用。Tomcat将以该 xml 文件的文件名作为 Web 应用程序的上下文路径，而不识别 &lt;context&gt; 元素的 path 属性中指定的上下文路径，所以可以在配置 &lt;context&gt; 元素时不配置 path 属性。&lt;/context&gt;&lt;/context&gt;&lt;/context&gt;&lt;/context&gt;&lt;/p&gt;
+&lt;p&gt;从 Tomcat 5 开始，不建议直接在 server.xml 文件中配置 &lt;code&gt;&amp;lt;Context&amp;gt;&lt;/code&gt; 元素，因为 server.xml 文件作为 Tomcat 的主要配置文件，一旦 Tomcat 启动后，将不会再读取这个文件，因此无法在 Tomcat 服务器启动时发布 Web 应用程序。而在 conf/catalina/localhost 文件夹下配置 &lt;code&gt;&amp;lt;Context&amp;gt;&lt;/code&gt; 元素则可以在 Tomcat 已启动的情况下发布 Web 应用。Tomcat将以该 xml 文件的文件名作为 Web 应用程序的上下文路径，而不识别 &lt;code&gt;&amp;lt;Context&amp;gt;&lt;/code&gt; 元素的 path 属性中指定的上下文路径，所以可以在配置 &lt;code&gt;&amp;lt;Context&amp;gt;&lt;/code&gt; 元素时不配置 path 属性。&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
