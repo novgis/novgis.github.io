@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-06T02:34:11.270Z</updated>
+  <updated>2016-05-06T02:37:02.192Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -20,14 +20,21 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</id>
     <published>2016-05-05T09:39:48.000Z</published>
-    <updated>2016-05-06T02:34:11.270Z</updated>
+    <updated>2016-05-06T02:37:02.192Z</updated>
     
-    <content type="html">&lt;p&gt;摘要：&lt;br&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;br&gt;Servlet 可以完成如下功能：&lt;br&gt;创建并返回基于客户请求的动态 HTML 页面&lt;br&gt;创建可嵌入到现有 HTML 页面中的 HTML 片段&lt;br&gt;与其它服务器资源（如数据库或基于 Java 的应用程序）进行通信&lt;/p&gt;
+    <content type="html">&lt;p&gt;摘要：&lt;br&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;Servlet 可以完成如下功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建并返回基于客户请求的动态 HTML 页面&lt;/li&gt;
+&lt;li&gt;创建可嵌入到现有 HTML 页面中的 HTML 片段&lt;/li&gt;
+&lt;li&gt;与其它服务器资源（如数据库或基于 Java 的应用程序）进行通信&lt;/li&gt;
+&lt;/ul&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;摘要：&lt;br&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;br&gt;Servlet 可以完
+      &lt;p&gt;摘要：&lt;br&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;/p&gt;
     
     </summary>
     
