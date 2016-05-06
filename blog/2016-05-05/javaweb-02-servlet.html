@@ -4,20 +4,20 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>(2) Servlet | novgis&#39;s blog</title>
+  <title>(2) Servlet（上） | novgis&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="摘要：Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(2) Servlet">
+<meta property="og:title" content="(2) Servlet（上）">
 <meta property="og:url" content="http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html">
 <meta property="og:site_name" content="novgis's blog">
 <meta property="og:description" content="摘要：Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-05-servlet%20request.png">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-06-servlet%20interface.png">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-07-servlet%20lifecycle.png">
-<meta property="og:updated_time" content="2016-05-06T04:01:15.868Z">
+<meta property="og:updated_time" content="2016-05-06T05:23:34.799Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="(2) Servlet">
+<meta name="twitter:title" content="(2) Servlet（上）">
 <meta name="twitter:description" content="摘要：Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。">
 <meta name="twitter:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-05-servlet%20request.png">
   
@@ -214,7 +214,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      (2) Servlet
+      (2) Servlet（上）
     </h1>
   
 
@@ -252,15 +252,34 @@
 <p><img src="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-07-servlet%20lifecycle.png" alt=""></p>
 <h3 id="Servlet-生命周期方法（都是由-Servlet-容器负责调用）："><a href="#Servlet-生命周期方法（都是由-Servlet-容器负责调用）：" class="headerlink" title="Servlet 生命周期方法（都是由 Servlet 容器负责调用）："></a>Servlet 生命周期方法（都是由 Servlet 容器负责调用）：</h3><p>构造器：只被调用一次！只有在第一次请求 Servlet 时，创建 Servlet 的实例，调用构造器。这说明 Servlet 是单实例的！（既然是单实例那就可能存在线程安全问题（要深入去看 Java 是如何实现这个单例的），所以不推荐在 Servlet 中写全局变量。）</p>
 <blockquote>
-<p>关于什么时候被实例化，在配置 Servlet 的时候</p>
+<p>在配置 Servlet 节点时，<code>load-on-startup</code> 参数可以指定该 Servlet 被创建的时机：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>secondServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>com.novgis.javaweb.SecondServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 控制 Servlet 创建的时机 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">load-on-startup</span>&gt;</span>2<span class="tag">&lt;/<span class="name">load-on-startup</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>若取值为负数，则在第一次请求时被创建</li>
+<li>若取值为 0 或任意正整数，则在当前 Web 应用被 Servlet 容器加载时创建实例，且多个 Servlet 之间数值越小的越早被创建</li>
+</ul>
 </blockquote>
 <p>init 方法：只被调用一次。在创建好实例后立即被调用，用于初始化当前 Servlet。</p>
 <blockquote>
-<p>为什么不在构造器中初始化而要在 <code>public void init(ServletConfig config)</code> 方法中执行初始化工作，因为该方法传入一个 <code>ServletConfig</code> 类型的参数，这个参数有其特殊作用，是构造器所不及的。</p>
+<p>为什么不在构造器中初始化而要在 <code>public void init(ServletConfig config)</code> 方法中执行初始化工作，因为该方法传入一个 <code>ServletConfig</code> 类型的参数，这个参数可以获取 <code>ServletContext</code> 对象，是构造器所不及的。</p>
 </blockquote>
 <p>service 方法：被多次调用。每次请求都会调用该方法。用于实际处理请求的方法。</p>
 <p>destroy 方法：只被调用一次。在当前 Servlet 所在的 Web 应用被卸载前调用，用于释放当前 Servlet 所占用的资源。</p>
-
+<h3 id="总结一下-Servlet-容器响应客户请求的过程"><a href="#总结一下-Servlet-容器响应客户请求的过程" class="headerlink" title="总结一下 Servlet 容器响应客户请求的过程"></a>总结一下 Servlet 容器响应客户请求的过程</h3><ol>
+<li>Servlet 引擎检查是否已经装载并创建了该 Servlet 的实例对象，如果是，则直接执行第 4 步，否则执行第 2 步；</li>
+<li>装载并创建该 Servlet 的一个实例对象：即调用该 Servlet 的构造器</li>
+<li>调用 Servlet 实例对象的 init() 方法</li>
+<li>创建一个用于封装请求的 ServletRequest 对象和一个代表响应信息的 ServletResponse 对象，然后调用 Servlet 的 service() 方法并将请求和响应对象作为参数传递进去</li>
+<li>Web 应用程序被停止或重新启动之前，Servlet 引擎将卸载 Servlet，并在卸载之前调用其destroy() 方法释放资源</li>
+</ol>
+<h3 id="Servlet-映射的细节"><a href="#Servlet-映射的细节" class="headerlink" title="Servlet 映射的细节"></a>Servlet 映射的细节</h3><ol>
+<li><p>同一个 Servlet 可以被映射到多个 URL 上：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- servlet-name 一致而 url-pattern 不同 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>helloServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/hello<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>helloServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/hello2<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在 Servlet 映射到的 URL 中也可以使用 <code>*</code> 通配符，但是只能有两种固定的形式：一种是<code>*.扩展名</code>，另外一种是以正斜杠 <code>/</code> 开头并以 <code>/*</code> 结尾。<code>/*.action</code> 这种形式是错误的</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>AnyName<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 以 AnyName 配置的 Servlet 将处理所有以 .do 结尾的请求 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>*.do<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>AnyName<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 以 AnyName 配置的 Servlet 将处理 /action 虚拟目录下的所有请求 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/action/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="ServletConfig-对象"><a href="#ServletConfig-对象" class="headerlink" title="ServletConfig 对象"></a>ServletConfig 对象</h3>
       
     </div>
     
@@ -287,7 +306,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="javaweb-02-servlet" data-title="(2) Servlet" data-url="http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html"></div>
+	<div class="ds-thread" data-thread-key="javaweb-02-servlet" data-title="(2) Servlet（上）" data-url="http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
