@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-06T07:18:09.549Z</updated>
+  <updated>2016-05-06T07:34:17.548Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,13 +16,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>(3) Servlet（下）</title>
+    <link href="http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html"/>
+    <id>http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html</id>
+    <published>2016-05-06T07:20:21.000Z</published>
+    <updated>2016-05-06T07:34:17.548Z</updated>
+    
+    <content type="html">&lt;p&gt;摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
+    
+  </entry>
+  
+  <entry>
     <title>(2) Servlet（上）</title>
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</id>
     <published>2016-05-05T09:39:48.000Z</published>
-    <updated>2016-05-06T07:18:09.549Z</updated>
+    <updated>2016-05-06T07:34:17.547Z</updated>
     
-    <content type="html">&lt;p&gt;摘要：&lt;br&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;/p&gt;
+    <content type="html">&lt;p&gt;摘要：Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;br&gt;本篇介绍 Servlet 的 HelloWorld 程序运行的基本原理、Servlet 的生命周期方法、ServletConfig、ServletContext接口等&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-05-servlet%20request.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;Servlet 可以完成如下功能：&lt;/p&gt;
@@ -122,7 +143,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;摘要：&lt;br&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;/p&gt;
+      &lt;p&gt;摘要：Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;br&gt;本篇介绍 Servlet 的 HelloWorld 程序运行的基本原理、Servlet 的生命周期方法、ServletConfig、ServletContext接口等&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-05-servlet%20request.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
@@ -137,9 +158,9 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</id>
     <published>2016-05-05T06:14:21.000Z</published>
-    <updated>2016-05-06T02:30:15.727Z</updated>
+    <updated>2016-05-06T07:34:17.550Z</updated>
     
-    <content type="html">&lt;p&gt;摘要：&lt;br&gt;在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”&lt;/p&gt;
+    <content type="html">&lt;p&gt;摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”&lt;br&gt;本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;Java Web 应用中可以包含如下内容：&lt;/p&gt;
 &lt;ul&gt;
@@ -185,7 +206,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;摘要：&lt;br&gt;在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”&lt;/p&gt;
+      &lt;p&gt;摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”&lt;br&gt;本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。&lt;/p&gt;
     
     </summary>
     

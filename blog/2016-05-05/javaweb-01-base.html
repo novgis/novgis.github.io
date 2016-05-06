@@ -6,20 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>(1) Java Web 应用开发准备 | novgis&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”">
+  <meta name="description" content="摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="(1) Java Web 应用开发准备">
 <meta property="og:url" content="http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html">
 <meta property="og:site_name" content="novgis's blog">
-<meta property="og:description" content="摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”">
+<meta property="og:description" content="摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-01.png">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-02tomcat%20catalog.png">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-03-webapp%20catalog.png">
 <meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-04-webapp%20deploy.png">
-<meta property="og:updated_time" content="2016-05-06T02:30:15.727Z">
+<meta property="og:updated_time" content="2016-05-06T07:34:17.550Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(1) Java Web 应用开发准备">
-<meta name="twitter:description" content="摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”">
+<meta name="twitter:description" content="摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。">
 <meta name="twitter:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-01.png">
   
     <link rel="alternative" href="/atom.xml" title="novgis&#39;s blog" type="application/atom+xml">
@@ -122,7 +122,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Java-Web/" style="font-size: 15px;">Java Web</a> <a href="/tags/建站/" style="font-size: 10px;">建站</a> <a href="/tags/设计模式/" style="font-size: 20px;">设计模式</a>
+						<a href="/tags/Java-Web/" style="font-size: 20px;">Java Web</a> <a href="/tags/建站/" style="font-size: 10px;">建站</a> <a href="/tags/设计模式/" style="font-size: 20px;">设计模式</a>
 					</div>
 				</section>
 				
@@ -235,7 +235,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>摘要：<br>在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”</p>
+        <p>摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”<br>本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。</p>
 <a id="more"></a>
 <p>Java Web 应用中可以包含如下内容：</p>
 <ul>

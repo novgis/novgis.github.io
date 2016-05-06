@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>代理模式 | novgis&#39;s blog</title>
+  <title>(3) Servlet（下） | novgis&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="摘要：">
+  <meta name="description" content="摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="代理模式">
-<meta property="og:url" content="http://www.novgis.com/blog/2016-04-29/dp-proxy.html">
+<meta property="og:title" content="(3) Servlet（下）">
+<meta property="og:url" content="http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html">
 <meta property="og:site_name" content="novgis's blog">
-<meta property="og:description" content="摘要：">
-<meta property="og:updated_time" content="2016-05-05T09:33:39.726Z">
+<meta property="og:description" content="摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。">
+<meta property="og:updated_time" content="2016-05-06T07:34:17.548Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="代理模式">
-<meta name="twitter:description" content="摘要：">
+<meta name="twitter:title" content="(3) Servlet（下）">
+<meta name="twitter:description" content="摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。">
   
     <link rel="alternative" href="/atom.xml" title="novgis&#39;s blog" type="application/atom+xml">
   
@@ -193,11 +193,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-dp-proxy" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-javaweb-03-servlet2" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/blog/2016-04-29/dp-proxy.html" class="article-date">
-  	<time datetime="2016-04-29T04:54:11.000Z" itemprop="datePublished">2016-04-29</time>
+      <a href="/blog/2016-05-06/javaweb-03-servlet2.html" class="article-date">
+  	<time datetime="2016-05-06T07:20:21.000Z" itemprop="datePublished">2016-05-06</time>
 </a>
     </div>
   
@@ -210,7 +210,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      代理模式
+      (3) Servlet（下）
     </h1>
   
 
@@ -219,7 +219,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java-Web/">Java Web</a></li></ul>
 	</div>
 
         
@@ -230,7 +230,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>摘要：<br><a id="more"></a></p>
+        <p>摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。<br><a id="more"></a></p>
 
       
     </div>
@@ -240,18 +240,9 @@
     
 <nav id="article-nav">
   
-    <a href="/blog/2016-05-05/dp-factory.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          工厂模式
-        
-      </div>
-    </a>
   
-  
-    <a href="/blog/2016-04-28/dp-singlton.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">单例模式</div>
+    <a href="/blog/2016-05-05/javaweb-02-servlet.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">(2) Servlet（上）</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -267,7 +258,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="dp-proxy" data-title="代理模式" data-url="http://www.novgis.com/blog/2016-04-29/dp-proxy.html"></div>
+	<div class="ds-thread" data-thread-key="javaweb-03-servlet2" data-title="(3) Servlet（下）" data-url="http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
