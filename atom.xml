@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-06T07:34:17.548Z</updated>
+  <updated>2016-05-06T07:50:39.553Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html"/>
     <id>http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html</id>
     <published>2016-05-06T07:20:21.000Z</published>
-    <updated>2016-05-06T07:34:17.548Z</updated>
+    <updated>2016-05-06T07:50:39.553Z</updated>
     
     <content type="html">&lt;p&gt;摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
