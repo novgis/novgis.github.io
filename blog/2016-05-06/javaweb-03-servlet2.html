@@ -6,16 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>(3) Servlet（下） | novgis&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。">
+  <meta name="description" content="接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="(3) Servlet（下）">
 <meta property="og:url" content="http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html">
 <meta property="og:site_name" content="novgis's blog">
-<meta property="og:description" content="摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。">
-<meta property="og:updated_time" content="2016-05-06T09:47:57.145Z">
+<meta property="og:description" content="接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。">
+<meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-10-http.png">
+<meta property="og:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-11-http2.png">
+<meta property="og:updated_time" content="2016-05-12T08:49:40.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(3) Servlet（下）">
-<meta name="twitter:description" content="摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。">
+<meta name="twitter:description" content="接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。">
+<meta name="twitter:image" content="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-10-http.png">
   
     <link rel="alternative" href="/atom.xml" title="novgis&#39;s blog" type="application/atom+xml">
   
@@ -125,7 +128,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Java-Web/" style="font-size: 20px;">Java Web</a> <a href="/tags/建站/" style="font-size: 10px;">建站</a> <a href="/tags/设计模式/" style="font-size: 15px;">设计模式</a>
+						<a href="/tags/Java-Web/" style="font-size: 20px;">Java Web</a> <a href="/tags/gis/" style="font-size: 10px;">gis</a> <a href="/tags/建站/" style="font-size: 10px;">建站</a> <a href="/tags/设计模式/" style="font-size: 15px;">设计模式</a>
 					</div>
 				</section>
 				
@@ -250,7 +253,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。<br><a id="more"></a></p>
+        <p>接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。<br><a id="more"></a></p>
+<h1 id="Http-协议简介"><a href="#Http-协议简介" class="headerlink" title="Http 协议简介"></a>Http 协议简介</h1><p>Http 协议用于定义 Web 浏览器与 Web 服务器之间交换数据的过程以及数据本身的格式。是一种短暂的无状态的协议，每次连接只处理一个请求和响应。浏览器到 WEB 服务器之间的所有通讯都是完全独立分开的请求和响应对。Http 协议的会话方式如下图：</p>
+<p><img src="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-10-http.png" alt=""></p>
+<p>当我们访问一个有多张图片的网页的时候其过程如下：</p>
+<p><img src="http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-11-http2.png" alt=""></p>
+<h3 id="Http-请求消息的结构"><a href="#Http-请求消息的结构" class="headerlink" title="Http 请求消息的结构"></a>Http 请求消息的结构</h3><p>基本结构：一个请求行，若干消息头、以及实体内容，其中的一些消息头和实体内容都是可选的，消息头和实体内容之间要用空行隔开。</p>
+<h3 id="Http-响应消息的结构"><a href="#Http-响应消息的结构" class="headerlink" title="Http 响应消息的结构"></a>Http 响应消息的结构</h3><p>基本结构：一个状态行、若干消息头、以及实体内容，其中的一些消息头和实体内容都是可选的，消息头和实体内容之间要用空行隔开。</p>
 
       
     </div>
@@ -264,7 +273,7 @@
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          (2) JSP（上）
+          (4) JSP（上）
         
       </div>
     </a>

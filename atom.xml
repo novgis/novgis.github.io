@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-06T09:46:34.634Z</updated>
+  <updated>2016-05-12T08:48:44.570Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,11 +16,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>(2) JSP（上）</title>
+    <title>森林防火标绘业务系统实现（一）</title>
+    <link href="http://www.novgis.com/blog/2016-05-12/GJB-1.html"/>
+    <id>http://www.novgis.com/blog/2016-05-12/GJB-1.html</id>
+    <published>2016-05-12T08:44:15.000Z</published>
+    <updated>2016-05-12T08:48:44.570Z</updated>
+    
+    <content type="html">&lt;p&gt;本系列文章主要介绍基于 ArcGIS Engine 实现的森林防火标绘业务系统&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本系列文章主要介绍基于 ArcGIS Engine 实现的森林防火标绘业务系统&lt;br&gt;
+    
+    </summary>
+    
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
+    
+    
+      <category term="gis" scheme="http://www.novgis.com/tags/gis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>(4) JSP（上）</title>
     <link href="http://www.novgis.com/blog/2016-05-06/javaweb-04-JSP.html"/>
     <id>http://www.novgis.com/blog/2016-05-06/javaweb-04-JSP.html</id>
     <published>2016-05-06T09:45:35.000Z</published>
-    <updated>2016-05-06T09:46:34.634Z</updated>
+    <updated>2016-05-06T14:19:58.799Z</updated>
     
     <content type="html"></content>
     
@@ -40,14 +63,20 @@
     <link href="http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html"/>
     <id>http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html</id>
     <published>2016-05-06T07:20:21.000Z</published>
-    <updated>2016-05-06T09:47:57.145Z</updated>
+    <updated>2016-05-12T08:49:40.430Z</updated>
     
-    <content type="html">&lt;p&gt;摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Http-协议简介&quot;&gt;&lt;a href=&quot;#Http-协议简介&quot; class=&quot;headerlink&quot; title=&quot;Http 协议简介&quot;&gt;&lt;/a&gt;Http 协议简介&lt;/h1&gt;&lt;p&gt;Http 协议用于定义 Web 浏览器与 Web 服务器之间交换数据的过程以及数据本身的格式。是一种短暂的无状态的协议，每次连接只处理一个请求和响应。浏览器到 WEB 服务器之间的所有通讯都是完全独立分开的请求和响应对。Http 协议的会话方式如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-10-http.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;当我们访问一个有多张图片的网页的时候其过程如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-11-http2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Http-请求消息的结构&quot;&gt;&lt;a href=&quot;#Http-请求消息的结构&quot; class=&quot;headerlink&quot; title=&quot;Http 请求消息的结构&quot;&gt;&lt;/a&gt;Http 请求消息的结构&lt;/h3&gt;&lt;p&gt;基本结构：一个请求行，若干消息头、以及实体内容，其中的一些消息头和实体内容都是可选的，消息头和实体内容之间要用空行隔开。&lt;/p&gt;
+&lt;h3 id=&quot;Http-响应消息的结构&quot;&gt;&lt;a href=&quot;#Http-响应消息的结构&quot; class=&quot;headerlink&quot; title=&quot;Http 响应消息的结构&quot;&gt;&lt;/a&gt;Http 响应消息的结构&lt;/h3&gt;&lt;p&gt;基本结构：一个状态行、若干消息头、以及实体内容，其中的一些消息头和实体内容都是可选的，消息头和实体内容之间要用空行隔开。&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;摘要：接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。&lt;br&gt;
+      &lt;p&gt;接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。&lt;br&gt;
     
     </summary>
     
@@ -63,9 +92,9 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</id>
     <published>2016-05-05T09:39:48.000Z</published>
-    <updated>2016-05-06T09:46:55.585Z</updated>
+    <updated>2016-05-12T08:50:09.945Z</updated>
     
-    <content type="html">&lt;p&gt;摘要：Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;br&gt;本篇介绍 Servlet 的 HelloWorld 程序运行的基本原理、Servlet 的生命周期方法、ServletConfig、ServletContext接口等&lt;/p&gt;
+    <content type="html">&lt;p&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。本篇介绍 Servlet 的 HelloWorld 程序运行的基本原理、Servlet 的生命周期方法、ServletConfig、ServletContext接口等&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-05-servlet%20request.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;Servlet 可以完成如下功能：&lt;/p&gt;
@@ -165,7 +194,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;摘要：Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。&lt;br&gt;本篇介绍 Servlet 的 HelloWorld 程序运行的基本原理、Servlet 的生命周期方法、ServletConfig、ServletContext接口等&lt;/p&gt;
+      &lt;p&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。本篇介绍 Servlet 的 HelloWorld 程序运行的基本原理、Servlet 的生命周期方法、ServletConfig、ServletContext接口等&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-05-servlet%20request.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
@@ -182,9 +211,9 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</id>
     <published>2016-05-05T06:14:21.000Z</published>
-    <updated>2016-05-06T09:48:03.348Z</updated>
+    <updated>2016-05-12T08:50:33.691Z</updated>
     
-    <content type="html">&lt;p&gt;摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”&lt;br&gt;本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。&lt;/p&gt;
+    <content type="html">&lt;p&gt;在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;Java Web 应用中可以包含如下内容：&lt;/p&gt;
 &lt;ul&gt;
@@ -230,7 +259,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;摘要：在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”&lt;br&gt;本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。&lt;/p&gt;
+      &lt;p&gt;在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。&lt;/p&gt;
     
     </summary>
     
@@ -315,9 +344,9 @@
     <link href="http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html"/>
     <id>http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html</id>
     <published>2016-04-26T14:57:20.000Z</published>
-    <updated>2016-04-29T04:56:33.899Z</updated>
+    <updated>2016-05-12T08:49:10.872Z</updated>
     
-    <content type="html">&lt;p&gt;摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;这篇文章应该算是&lt;a href=&quot;http://www.cnfeat.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;陈素封&lt;/a&gt;老师&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这篇文章&lt;/a&gt;的实践篇，加入了一些我经历过的坑，记录下来，以防换了环境再来部署又要走弯路。下面以我的博客 &lt;a href=&quot;http://www.novgis.com&quot;&gt;www.novgis.com&lt;/a&gt; 为例，介绍我在 Windows 7 环境下是如何实践搭建独立博客的过程。&lt;/p&gt;
 &lt;h1 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h1&gt;&lt;h2 id=&quot;域名注册&quot;&gt;&lt;a href=&quot;#域名注册&quot; class=&quot;headerlink&quot; title=&quot;域名注册&quot;&gt;&lt;/a&gt;域名注册&lt;/h2&gt;&lt;p&gt;这部分简单写几句，我的域名是在&lt;a href=&quot;https://wanwang.aliyun.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;万网&lt;/a&gt;注册购买的，过程很简单，选个自认为有意义的域名直接购买。价格上来说万网的价格不比其它家贵多少，而且万网已经并入阿里云，阿里提供的一些服务都可以免费使用。不得不说，拼服务的时代，阿里走在了前列。购买域名后不能马上通过该域名访问任何网站，原因是还没有做域名解析，在之后的过程中我会介绍如何将域名与你自己的博客绑定。&lt;/p&gt;
 &lt;h2 id=&quot;安装-Node-js&quot;&gt;&lt;a href=&quot;#安装-Node-js&quot; class=&quot;headerlink&quot; title=&quot;安装 Node.js&quot;&gt;&lt;/a&gt;安装 Node.js&lt;/h2&gt;&lt;p&gt;去 &lt;a href=&quot;http://nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node.js&lt;/a&gt; 官网下载相应平台的最新版安装包，一路 Next 安装即可。&lt;/p&gt;
@@ -433,7 +462,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;摘要：这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。&lt;br&gt;
+      &lt;p&gt;这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。&lt;br&gt;
     
     </summary>
     
