@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>novgis&#39;s blog</title>
-  <subtitle>i love gis</subtitle>
+  <subtitle>GIS - Creating our Future</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
