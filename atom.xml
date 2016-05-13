@@ -43,7 +43,7 @@
     <link href="http://www.novgis.com/blog/2016-05-06/javaweb-04-JSP.html"/>
     <id>http://www.novgis.com/blog/2016-05-06/javaweb-04-JSP.html</id>
     <published>2016-05-06T09:45:35.000Z</published>
-    <updated>2016-05-06T14:19:58.799Z</updated>
+    <updated>2016-05-13T02:09:00.251Z</updated>
     
     <content type="html"></content>
     
@@ -51,7 +51,7 @@
     
     </summary>
     
-      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
       <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
@@ -63,7 +63,7 @@
     <link href="http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html"/>
     <id>http://www.novgis.com/blog/2016-05-06/javaweb-03-servlet2.html</id>
     <published>2016-05-06T07:20:21.000Z</published>
-    <updated>2016-05-12T08:49:40.430Z</updated>
+    <updated>2016-05-13T02:08:55.570Z</updated>
     
     <content type="html">&lt;p&gt;接上篇，本篇介绍两组重要的接口 ServletRequest 和 HttpServletRequest，ServletResponse 和 HttpServletResponse，两个基础类 GenericServlet 和 HttpServlet 以及 GET、POST 请求、请求转发、请求重定向等知识域。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;Http-协议简介&quot;&gt;&lt;a href=&quot;#Http-协议简介&quot; class=&quot;headerlink&quot; title=&quot;Http 协议简介&quot;&gt;&lt;/a&gt;Http 协议简介&lt;/h1&gt;&lt;p&gt;Http 协议用于定义 Web 浏览器与 Web 服务器之间交换数据的过程以及数据本身的格式。是一种短暂的无状态的协议，每次连接只处理一个请求和响应。浏览器到 WEB 服务器之间的所有通讯都是完全独立分开的请求和响应对。Http 协议的会话方式如下图：&lt;/p&gt;
@@ -80,7 +80,7 @@
     
     </summary>
     
-      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
       <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
@@ -92,7 +92,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</id>
     <published>2016-05-05T09:39:48.000Z</published>
-    <updated>2016-05-12T08:50:09.945Z</updated>
+    <updated>2016-05-13T02:08:50.398Z</updated>
     
     <content type="html">&lt;p&gt;Java Servlet 是和平台无关的服务器端组件，它运行在 Servlet 容器中。Servlet 容器负责 Servlet 和客户的通信以及调用 Servlet 的方法。Servlet 和客户的通信采用“请求/响应”的模式。本篇介绍 Servlet 的 HelloWorld 程序运行的基本原理、Servlet 的生命周期方法、ServletConfig、ServletContext接口等&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fjavaweb-05-servlet%20request.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -199,7 +199,7 @@
     
     </summary>
     
-      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
       <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
@@ -211,7 +211,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</id>
     <published>2016-05-05T06:14:21.000Z</published>
-    <updated>2016-05-12T08:50:33.691Z</updated>
+    <updated>2016-05-13T02:08:46.331Z</updated>
     
     <content type="html">&lt;p&gt;在 Sun 的 Java Servlet 规范中，对 Java Web 应用作了这样的定义：“Java Web 应用由一组 Servlet、HTML页、实用类（POJO）以及其它可以被绑定的资源构成。它可以在各种供应商提供的实现 Servlet 规范的 Servlet 容器中运行。”本篇介绍了 Tomcat 的安装部署与配置以及 Java WEB 开发的目录结构等内容。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -263,7 +263,7 @@
     
     </summary>
     
-      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
       <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
@@ -275,7 +275,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/dp-factory.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/dp-factory.html</id>
     <published>2016-05-05T03:10:27.000Z</published>
-    <updated>2016-05-06T09:48:16.473Z</updated>
+    <updated>2016-05-13T02:08:42.895Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
@@ -286,7 +286,7 @@
     
     </summary>
     
-      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
       <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
@@ -298,7 +298,7 @@
     <link href="http://www.novgis.com/blog/2016-04-29/dp-proxy.html"/>
     <id>http://www.novgis.com/blog/2016-04-29/dp-proxy.html</id>
     <published>2016-04-29T04:54:11.000Z</published>
-    <updated>2016-05-06T09:48:24.401Z</updated>
+    <updated>2016-05-13T02:08:35.627Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -309,7 +309,7 @@
     
     </summary>
     
-      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
       <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
@@ -321,7 +321,7 @@
     <link href="http://www.novgis.com/blog/2016-04-28/dp-singlton.html"/>
     <id>http://www.novgis.com/blog/2016-04-28/dp-singlton.html</id>
     <published>2016-04-28T09:42:14.000Z</published>
-    <updated>2016-05-06T09:48:29.582Z</updated>
+    <updated>2016-05-13T02:08:29.450Z</updated>
     
     <content type="html">&lt;p&gt;摘要：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -332,7 +332,7 @@
     
     </summary>
     
-      <category term="server" scheme="http://www.novgis.com/categories/server/"/>
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
       <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
