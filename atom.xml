@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-12T08:48:44.570Z</updated>
+  <updated>2016-05-19T08:43:53.939Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>osmdroid源码解析(一)</title>
+    <link href="http://www.novgis.com/blog/2016-05-19/osmdroid-1.html"/>
+    <id>http://www.novgis.com/blog/2016-05-19/osmdroid-1.html</id>
+    <published>2016-05-19T08:14:54.000Z</published>
+    <updated>2016-05-19T08:43:53.939Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;a href=&quot;&quot;&gt;OSMDroid&lt;/a&gt; 是一款很好的开源 Android 地图开发库，设计用于替代 Google 自带的地图类库，包含了自定义的 MapView 控件、瓦片地图引擎 TileProvider，支持在线和离线地图、地图缓存以及各类覆盖物图层和绘制图形等。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;&quot;&gt;OSMDroid&lt;/a&gt; 是一款很好的开源 Android 地图开发库，设计用于替代 Google 自带的地图类库，包含了自定义的 MapView 控件、瓦片地图引擎 TileProvider，支持在线和离线地图、地图缓存以及各类覆盖物图层和绘制图形等。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="android" scheme="http://www.novgis.com/tags/android/"/>
+    
+      <category term="osmdroid" scheme="http://www.novgis.com/tags/osmdroid/"/>
+    
+  </entry>
   
   <entry>
     <title>森林防火标绘业务系统实现（一）</title>
