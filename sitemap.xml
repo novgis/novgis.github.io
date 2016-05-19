@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.novgis.com/blog/2016-05-12/GJB-1.html</loc>
+    
+    <lastmod>2016-05-19T15:08:17.475Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html</loc>
     
     <lastmod>2016-05-19T15:05:06.853Z</lastmod>
@@ -68,13 +75,6 @@
     <loc>http://www.novgis.com/blog/2016-04-28/dp-singlton.html</loc>
     
     <lastmod>2016-05-13T02:08:29.450Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-05-12/GJB-1.html</loc>
-    
-    <lastmod>2016-05-12T08:48:44.570Z</lastmod>
     
   </url>
   
