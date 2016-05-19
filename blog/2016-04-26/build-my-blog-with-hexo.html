@@ -16,7 +16,7 @@
 <meta property="og:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/4.png">
 <meta property="og:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/5.png">
 <meta property="og:image" content="http://7xteqg.com2.z0.glb.clouddn.com/2016-4-28/6.png">
-<meta property="og:updated_time" content="2016-05-12T08:49:10.872Z">
+<meta property="og:updated_time" content="2016-05-19T15:05:06.853Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="程序员要有一个独立博客 —— GitHub Pages 与 Hexo 建站经过">
 <meta name="twitter:description" content="这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。">
@@ -126,7 +126,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Java-Web/" style="font-size: 20px;">Java Web</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/gis/" style="font-size: 10px;">gis</a> <a href="/tags/osmdroid/" style="font-size: 10px;">osmdroid</a> <a href="/tags/建站/" style="font-size: 10px;">建站</a> <a href="/tags/设计模式/" style="font-size: 15px;">设计模式</a>
+						<a href="/tags/Java-Web/" style="font-size: 20px;">Java Web</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/gis/" style="font-size: 10px;">gis</a> <a href="/tags/osmdroid/" style="font-size: 10px;">osmdroid</a> <a href="/tags/tile/" style="font-size: 10px;">tile</a> <a href="/tags/建站/" style="font-size: 10px;">建站</a> <a href="/tags/设计模式/" style="font-size: 15px;">设计模式</a>
 					</div>
 				</section>
 				
@@ -355,7 +355,9 @@
 <p>[4] <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo官方文档</a></p>
 <p>[5] <a href="http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="external">hexo你的博客</a> by 不如</p>
 <p>[6] <a href="https://xuanwo.org/2014/08/14/hexo-usual-problem/" target="_blank" rel="external">Hexo常见问题解决方案</a> by Xuanwo</p>
-
+<h1 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h1><h3 id="localhost-4000-不能访问本地-blog-的解决方案"><a href="#localhost-4000-不能访问本地-blog-的解决方案" class="headerlink" title="localhost:4000 不能访问本地 blog 的解决方案"></a>localhost:4000 不能访问本地 blog 的解决方案</h3><p>第一步想到的是执行 <code>hexo clean</code> 命令，然后再 <code>hexo s -g</code>，大部分情况下这种方式都能行得通，但是有时不行。那么就要想是不是 4000 端口被占用了，那么可以试着在执行时使用 -p 选项指定其他端口<code>hexo s -p 9100</code>，访问时输入 localhost:9100 。</p>
+<h3 id="中文排版段首缩进"><a href="#中文排版段首缩进" class="headerlink" title="中文排版段首缩进"></a>中文排版段首缩进</h3><p>首先，Markdown 语言不负责实现段首缩进。段首缩进这件事，应该是 CSS 或者其他排版工具的事情，Markdown 奉行的是样式和内容分开的哲学。所以即使手动输入空格 <code>&amp;nbsp;</code> 也是很不推荐的做法。这里推荐使用全角空格，切换到全角模式下（一般的中文输入法都是按 shift + space）输入两个空格就行了。这个相对 <code>&amp;nbsp;</code> 来说稍微干净一点，而且宽度是整整两个汉字，很整齐。</p>
+<h3 id="给-yilia-主题添加文章分类"><a href="#给-yilia-主题添加文章分类" class="headerlink" title="给 yilia 主题添加文章分类"></a>给 yilia 主题添加文章分类</h3>
       
     </div>
     

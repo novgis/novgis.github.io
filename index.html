@@ -120,7 +120,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Java-Web/" style="font-size: 20px;">Java Web</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/gis/" style="font-size: 10px;">gis</a> <a href="/tags/osmdroid/" style="font-size: 10px;">osmdroid</a> <a href="/tags/建站/" style="font-size: 10px;">建站</a> <a href="/tags/设计模式/" style="font-size: 15px;">设计模式</a>
+						<a href="/tags/Java-Web/" style="font-size: 20px;">Java Web</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/gis/" style="font-size: 10px;">gis</a> <a href="/tags/osmdroid/" style="font-size: 10px;">osmdroid</a> <a href="/tags/tile/" style="font-size: 10px;">tile</a> <a href="/tags/建站/" style="font-size: 10px;">建站</a> <a href="/tags/设计模式/" style="font-size: 15px;">设计模式</a>
 					</div>
 				</section>
 				
@@ -201,6 +201,70 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-bing-map-tile-system" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/blog/2016-05-19/bing-map-tile-system.html" class="article-date">
+  	<time datetime="2016-05-19T13:45:51.000Z" itemprop="datePublished">2016-05-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2016-05-19/bing-map-tile-system.html">必应地图瓦片系统（译）</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的地图瓦片系统。<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tile/">tile</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/gis/">gis</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/blog/2016-05-19/bing-map-tile-system.html#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-osmdroid-1" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -775,66 +839,10 @@
 
 
   
-    <article id="post-build-my-blog-with-hexo" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/blog/2016-04-26/build-my-blog-with-hexo.html" class="article-date">
-  	<time datetime="2016-04-26T14:57:20.000Z" itemprop="datePublished">2016-04-26</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2016-04-26/build-my-blog-with-hexo.html">程序员要有一个独立博客 —— GitHub Pages 与 Hexo 建站经过</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/建站/">建站</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/blog/2016-04-26/build-my-blog-with-hexo.html#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 </div>
       <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
