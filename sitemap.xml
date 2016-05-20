@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html</loc>
+    
+    <lastmod>2016-05-20T02:51:30.008Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.novgis.com/blog/2016-05-12/GJB-1.html</loc>
     
     <lastmod>2016-05-19T15:08:17.475Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html</loc>
     
     <lastmod>2016-05-19T15:05:06.853Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html</loc>
-    
-    <lastmod>2016-05-19T14:52:04.140Z</lastmod>
     
   </url>
   

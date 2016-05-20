@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>必应地图瓦片系统（译） | novgis&#39;s blog</title>
+  <title>Bing 地图切片规则分析 | novgis&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比">
 <meta property="og:type" content="article">
-<meta property="og:title" content="必应地图瓦片系统（译）">
+<meta property="og:title" content="Bing 地图切片规则分析">
 <meta property="og:url" content="http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html">
 <meta property="og:site_name" content="novgis's blog">
 <meta property="og:description" content="Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比">
-<meta property="og:updated_time" content="2016-05-19T14:52:04.140Z">
+<meta property="og:updated_time" content="2016-05-20T02:51:30.008Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="必应地图瓦片系统（译）">
+<meta name="twitter:title" content="Bing 地图切片规则分析">
 <meta name="twitter:description" content="Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比">
   
     <link rel="alternative" href="/atom.xml" title="novgis&#39;s blog" type="application/atom+xml">
@@ -218,7 +218,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      必应地图瓦片系统（译）
+      Bing 地图切片规则分析
     </h1>
   
 
@@ -242,8 +242,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的地图瓦片系统。<br><a id="more"></a></p>
-<h1 id="地图投影"><a href="#地图投影" class="headerlink" title="地图投影"></a>地图投影</h1>
+        <p>　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对 Bing Map 的地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的<a href="https://msdn.microsoft.com/en-us/library/bb259689.aspx," title="原文链接" target="_blank" rel="external">地图瓦片系统</a>。<br><a id="more"></a></p>
+<h1 id="地图投影"><a href="#地图投影" class="headerlink" title="地图投影"></a>地图投影</h1><p>为了使地图看起来是无缝的，并且确保来自不同数据源的影像图能够完美拼接，必须要有一个统一的投影</p>
+
       
     </div>
     
@@ -270,7 +271,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="bing-map-tile-system" data-title="必应地图瓦片系统（译）" data-url="http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html"></div>
+	<div class="ds-thread" data-thread-key="bing-map-tile-system" data-title="Bing 地图切片规则分析" data-url="http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

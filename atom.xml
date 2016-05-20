@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-19T14:52:04.140Z</updated>
+  <updated>2016-05-20T02:51:30.008Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,18 +16,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>必应地图瓦片系统（译）</title>
+    <title>Bing 地图切片规则分析</title>
     <link href="http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html"/>
     <id>http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html</id>
     <published>2016-05-19T13:45:51.000Z</published>
-    <updated>2016-05-19T14:52:04.140Z</updated>
+    <updated>2016-05-20T02:51:30.008Z</updated>
     
-    <content type="html">&lt;p&gt;　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的地图瓦片系统。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;地图投影&quot;&gt;&lt;a href=&quot;#地图投影&quot; class=&quot;headerlink&quot; title=&quot;地图投影&quot;&gt;&lt;/a&gt;地图投影&lt;/h1&gt;</content>
+    <content type="html">&lt;p&gt;　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对 Bing Map 的地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb259689.aspx,&quot; title=&quot;原文链接&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;地图瓦片系统&lt;/a&gt;。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;地图投影&quot;&gt;&lt;a href=&quot;#地图投影&quot; class=&quot;headerlink&quot; title=&quot;地图投影&quot;&gt;&lt;/a&gt;地图投影&lt;/h1&gt;&lt;p&gt;为了使地图看起来是无缝的，并且确保来自不同数据源的影像图能够完美拼接，必须要有一个统一的投影&lt;/p&gt;
+</content>
     
     <summary type="html">
     
-      &lt;p&gt;　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的地图瓦片系统。&lt;br&gt;
+      &lt;p&gt;　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对 Bing Map 的地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb259689.aspx,&quot; title=&quot;原文链接&quot;&gt;地图瓦片系统&lt;/a&gt;。&lt;br&gt;
     
     </summary>
     
