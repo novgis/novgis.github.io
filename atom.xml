@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-20T11:09:21.465Z</updated>
+  <updated>2016-06-01T03:25:38.293Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -20,28 +20,17 @@
     <link href="http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html"/>
     <id>http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html</id>
     <published>2016-05-19T13:45:51.000Z</published>
-    <updated>2016-05-20T11:09:21.465Z</updated>
+    <updated>2016-06-01T03:25:38.293Z</updated>
     
-    <content type="html">&lt;p&gt;　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对 Bing Map 的地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb259689.aspx,&quot; title=&quot;原文链接&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;地图瓦片系统&lt;/a&gt;。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对 Bing Map 的地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb259689.aspx&quot; title=&quot;原文链接&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;地图瓦片系统&lt;/a&gt;。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;地图投影&quot;&gt;&lt;a href=&quot;#地图投影&quot; class=&quot;headerlink&quot; title=&quot;地图投影&quot;&gt;&lt;/a&gt;地图投影&lt;/h1&gt;&lt;p&gt;为了使地图看起来是无缝的，并且确保来自不同数据源的影像图能够完美拼接，必须要有一个统一的地图投影，Bing Map 采用了 Mercator 投影（实际应该是 Web Mercator 或叫 Spherical Mercator，为了计算和实现方便，直接将地球椭球体视为正球体然后再投影到正轴圆柱上），按这种方式投影后的平面地图是一张正方形的图片：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fbing%20web%20mercator.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Mercator 投影的“等角”特性，保证了对象的形状不变形，正方形的物体投影后不会变成长方形，同时“等角”特性也保证了物体方向和相互位置的正确性；“圆柱”特性，保证了经线、纬线在投影之后都是平行直线，相互垂直，经线间隔相同，纬线从标准纬线向两级逐渐增大。这些特性符合我们的视觉心理并易于进行距离、方位、面积等量算，因此墨卡托投影在网络地图方面应用十分广泛。但是我们知道在投影分类中，等角投影和等积投影是永远冲突的，“等角”不可避免地带来了面积的巨大变形，特别是两极地区，明显的如格林兰岛比实际面积扩大了 N 倍。把圆柱当作投影面，也导致了 Mercator 投影在两极附近是趋于无限值，于是为了计算和实现的方便，人们便割舍了属于企鹅和北极熊的世界部分，将投影后的全球地图干脆依照赤道的周长整成正方形，这便形成了今后的 Web Mercator（Spherical Mercator）投影。&lt;br&gt;此时的 Web Mercator 投影坐标系（平面坐标系）以赤道和本初子午线交点为原点，向东向北为正，向西向南为负， X 轴和 Y 轴 取值范围都为赤道周长: [ -20037508.3427892, 20037508.3427892 ] (2πr = 2 x 3.1415926 x 6378137 ≈ 20037508.3427892) 而对应的地理坐标系（经纬度坐标），经度范围毫无疑问取全球[ -180, 180 ]，纬度通过反算，约为 85.05112877980659，因此纬度的取值范围即为 [ -85.05112877980659, 85.05112877980659 ]&lt;/p&gt;
 &lt;h1 id=&quot;地面分辨率和地图比例尺&quot;&gt;&lt;a href=&quot;#地面分辨率和地图比例尺&quot; class=&quot;headerlink&quot; title=&quot;地面分辨率和地图比例尺&quot;&gt;&lt;/a&gt;地面分辨率和地图比例尺&lt;/h1&gt;&lt;p&gt;Ground Resolution，地面分辨率：即一个像素（pixel）代表的实际地面尺寸（米）。在经过上述 Web Mercator 投影后的地图缩放级别为 Level1 的时候，图片大小为 512＊512 pixel，以赤道为标准纬线那么赤道的地面分辨率为：赤道周长/512 (m/p)。一方面随着缩放级别的增加，地图的宽高也都分别以乘 2 的倍数递增，Level2 时图片大小为 1024＊1024，Level3 时为 2048＊2048，以此类推… 另一方面，随着纬度的向北向南递减，纬线圈的长度也会随之变化。那么很明显了，地面分辨率取决于两个参数：&lt;strong&gt;地图缩放级别level&lt;/strong&gt;和&lt;strong&gt;地理纬度latitude&lt;/strong&gt;，公式为：&lt;/p&gt;
-&lt;blockquote&gt;
 &lt;p&gt;$$Ground Resolution = (cos(latitude × π/180) × 2 × π × 6378137 meters) / (256 × 2^l pixels)(meters/pixel)$$&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Map Scale，地图比例尺：即图上距离比上实际距离，以米为单位。在 Ground Resolution 的计算过程中，由地图缩放级别可以得到地图的像素大小，像素和实际距离是何种对应关系？&lt;strong&gt;DPI（dots per inch）&lt;/strong&gt;用来描述屏幕像素密度，屏幕上一英寸有多少个像素点，那么通过公式 $$256×2^l/DPI$$ 即得到相应的英寸，英寸再除以 0.0254 转换为米。因此地图比例尺的公式即为：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$$Map Scale = 256×2^l / screen dpi / 0.0254 / (cos(latitude×π/180)×2×π×6378137)$$&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;比例尺一般都转换为 1：xxx，&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$$Map Scale = 1 : (cos(latitude×π/180) × 2 × π × 6378137 × screen dpi) / (256 × 2^l × 0.0254)$$&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;既然 Ground Resolution 和 Map Scale 都是描述和地图实际距离相关的参数，那么这两者的关系通过以上公式可以转换为：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$$Map Scale = 1 : Ground Resolution × screen dpi / 0.0254 (meters/inch)$$ &lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Map Scale，地图比例尺：即图上距离比上实际距离，以米为单位。在 Ground Resolution 的计算过程中，由地图缩放级别可以得到地图的像素大小，像素和实际距离是何种对应关系？&lt;strong&gt;DPI（dots per inch）&lt;/strong&gt;用来描述屏幕像素密度，屏幕上一英寸有多少个像素点，那么通过公式 $$256×2^l/DPI$$ 即得到相应的英寸，英寸再除以 0.0254 转换为米。因此地图比例尺的公式即为：&lt;br&gt;$$Map Scale = 256×2^l / screen dpi / 0.0254 / (cos(latitude×π/180)×2×π×6378137)$$&lt;/p&gt;
+&lt;p&gt;比例尺一般都转换为 1：xxx，&lt;br&gt;$$Map Scale = 1 : (cos(latitude×π/180) × 2 × π × 6378137 × screen dpi) / (256 × 2^l × 0.0254)$$&lt;/p&gt;
+&lt;p&gt;既然 Ground Resolution 和 Map Scale 都是描述和地图实际距离相关的参数，那么这两者的关系通过以上公式可以转换为：&lt;br&gt;$$Map Scale = 1 : Ground Resolution × screen dpi / 0.0254 (meters/inch)$$ &lt;/p&gt;
 &lt;p&gt;下表显示了 Web Mercator 投影下不同地图缩放级别时的各参数对比：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -193,12 +182,13 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;# &lt;/p&gt;
-</content>
+&lt;h1 id=&quot;地理坐标与像素坐标的转换&quot;&gt;&lt;a href=&quot;#地理坐标与像素坐标的转换&quot; class=&quot;headerlink&quot; title=&quot;地理坐标与像素坐标的转换&quot;&gt;&lt;/a&gt;地理坐标与像素坐标的转换&lt;/h1&gt;&lt;p&gt;我们按上述规则选定了投影坐标系和地图比例尺之后，我们便可以将平面的地理坐标转换为对应的像素坐标。地图在某个缩放级别下像素大小是固定的，Bing Map 以地图的左上角为原点，那么右下角的坐标通过公式便可以很方便的计算出来 (256×2^level-1, 256×2^level-1)。例如，在 Level3 的时候，像素坐标的范围即为(0,0) 到 (2047,2047)，如下图：&lt;br&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fpixel%20cordinates.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;那给出一个 WGS84 基准面下的点经纬度坐标，便可以通过如下公式计算出其像素坐标：&lt;br&gt;$$sinLatitude = sin(latitude×π/180)$$&lt;br&gt;$$pixelX = ((longitude + 180)/360)×256×2^l$$&lt;br&gt;$$pixelY = (0.5 - log((1 + sinLatitude)/(1 - sinLatitude))/(4×π))×256×2^l$$&lt;/p&gt;
+&lt;h1 id=&quot;Bing-Map-采用的四叉树瓦片编码规则&quot;&gt;&lt;a href=&quot;#Bing-Map-采用的四叉树瓦片编码规则&quot; class=&quot;headerlink&quot; title=&quot;Bing Map 采用的四叉树瓦片编码规则&quot;&gt;&lt;/a&gt;Bing Map 采用的四叉树瓦片编码规则&lt;/h1&gt;</content>
     
     <summary type="html">
     
-      &lt;p&gt;　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对 Bing Map 的地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb259689.aspx,&quot; title=&quot;原文链接&quot;&gt;地图瓦片系统&lt;/a&gt;。&lt;br&gt;
+      &lt;p&gt;　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对 Bing Map 的地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb259689.aspx&quot; title=&quot;原文链接&quot;&gt;地图瓦片系统&lt;/a&gt;。&lt;br&gt;
     
     </summary>
     
