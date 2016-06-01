@@ -248,6 +248,26 @@
   </entry>
   
   <entry>
+    <title>设计模式系列目录</title>
+    <link href="http://www.novgis.com/blog/2016-05-07/dp-index.html"/>
+    <id>http://www.novgis.com/blog/2016-05-07/dp-index.html</id>
+    <published>2016-05-07T06:07:06.000Z</published>
+    <updated>2016-06-01T06:07:50.922Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>(4) JSP（上）</title>
     <link href="http://www.novgis.com/blog/2016-05-06/javaweb-04-JSP.html"/>
     <id>http://www.novgis.com/blog/2016-05-06/javaweb-04-JSP.html</id>
@@ -705,26 +725,6 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-chain-of-responsibility.html</id>
     <published>2016-05-05T03:36:48.000Z</published>
     <updated>2016-06-01T04:11:13.763Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>享元模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-flyweight.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-flyweight.html</id>
-    <published>2016-05-05T03:34:57.000Z</published>
-    <updated>2016-06-01T04:11:28.492Z</updated>
     
     <content type="html"></content>
     

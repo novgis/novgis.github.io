@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.novgis.com/blog/2016-05-07/dp-index.html</loc>
+    
+    <lastmod>2016-06-01T06:07:50.922Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.novgis.com/blog/2016-05-05/dp-adapter.html</loc>
     
     <lastmod>2016-06-01T04:12:05.802Z</lastmod>
@@ -219,7 +226,7 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/note/index.html</loc>
+    <loc>http://www.novgis.com/categories/gis/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
@@ -233,7 +240,7 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/gis/index.html</loc>
+    <loc>http://www.novgis.com/categories/note/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
