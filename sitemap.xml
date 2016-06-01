@@ -2,6 +2,153 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-adapter.html</loc>
+    
+    <lastmod>2016-06-01T04:12:05.802Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-composite.html</loc>
+    
+    <lastmod>2016-06-01T04:11:56.766Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-bridge.html</loc>
+    
+    <lastmod>2016-06-01T04:11:48.881Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-facade.html</loc>
+    
+    <lastmod>2016-06-01T04:11:40.364Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-flyweight.html</loc>
+    
+    <lastmod>2016-06-01T04:11:28.492Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-chain-of-responsibility.html</loc>
+    
+    <lastmod>2016-06-01T04:11:13.763Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-command.html</loc>
+    
+    <lastmod>2016-06-01T04:10:52.963Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-interpreter.html</loc>
+    
+    <lastmod>2016-06-01T04:10:44.258Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-iterator.html</loc>
+    
+    <lastmod>2016-06-01T04:10:33.405Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-mediator.html</loc>
+    
+    <lastmod>2016-06-01T04:10:21.706Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-memento.html</loc>
+    
+    <lastmod>2016-06-01T04:10:07.008Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-observer.html</loc>
+    
+    <lastmod>2016-06-01T04:09:53.205Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-state.html</loc>
+    
+    <lastmod>2016-06-01T04:09:42.752Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-strategy.html</loc>
+    
+    <lastmod>2016-06-01T04:09:35.133Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-template-method.html</loc>
+    
+    <lastmod>2016-06-01T04:09:17.757Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-visitor.html</loc>
+    
+    <lastmod>2016-06-01T04:09:05.977Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html</loc>
+    
+    <lastmod>2016-06-01T04:08:44.242Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-factory-method.html</loc>
+    
+    <lastmod>2016-06-01T04:08:27.389Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-builder.html</loc>
+    
+    <lastmod>2016-06-01T04:08:20.432Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-prototype.html</loc>
+    
+    <lastmod>2016-06-01T04:08:06.758Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-decorator.html</loc>
+    
+    <lastmod>2016-06-01T04:07:32.918Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html</loc>
     
     <lastmod>2016-06-01T03:25:38.293Z</lastmod>
@@ -54,13 +201,6 @@
     <loc>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</loc>
     
     <lastmod>2016-05-13T02:08:46.331Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/dp-factory.html</loc>
-    
-    <lastmod>2016-05-13T02:08:42.895Z</lastmod>
     
   </url>
   
