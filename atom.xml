@@ -225,11 +225,34 @@
   </entry>
   
   <entry>
-    <title>(5) JSP（下）</title>
+    <title>(6) JSP（下）</title>
+    <link href="http://www.novgis.com/blog/2016-05-06/javaweb-06-JSP3.html"/>
+    <id>http://www.novgis.com/blog/2016-05-06/javaweb-06-JSP3.html</id>
+    <published>2016-05-06T14:00:35.000Z</published>
+    <updated>2016-06-15T09:43:36.098Z</updated>
+    
+    <content type="html">&lt;p&gt;上篇我们对 JSP 的运行原理及其最基本的语法做了简单总结，这篇我们来学习 JSP 中和属性有关的方法，结合请求的转发和重定向，看看能发挥出怎样的威力！&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上篇我们对 JSP 的运行原理及其最基本的语法做了简单总结，这篇我们来学习 JSP 中和属性有关的方法，结合请求的转发和重定向，看看能发挥出怎样的威力！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="Java Web" scheme="http://www.novgis.com/tags/Java-Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>(5) JSP（中）</title>
     <link href="http://www.novgis.com/blog/2016-05-06/javaweb-05-JSP2.html"/>
     <id>http://www.novgis.com/blog/2016-05-06/javaweb-05-JSP2.html</id>
     <published>2016-05-06T11:50:35.000Z</published>
-    <updated>2016-06-15T08:25:18.944Z</updated>
+    <updated>2016-06-15T09:41:40.506Z</updated>
     
     <content type="html">&lt;p&gt;上篇我们对 JSP 的运行原理及其最基本的语法做了简单总结，这篇我们来学习 JSP 中和属性有关的方法，结合请求的转发和重定向，看看能发挥出怎样的威力！&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;JSP-中和属性-Attribute-相关的方法&quot;&gt;&lt;a href=&quot;#JSP-中和属性-Attribute-相关的方法&quot; class=&quot;headerlink&quot; title=&quot;JSP 中和属性(Attribute)相关的方法&quot;&gt;&lt;/a&gt;JSP 中和属性(Attribute)相关的方法&lt;/h1&gt;&lt;p&gt;前面我们介绍了 JSP 中包含 9 个隐式对象，其中有这么 4 个对象我们称之为域对象，&lt;strong&gt;pageContext&lt;/strong&gt;、&lt;strong&gt;request&lt;/strong&gt;、&lt;strong&gt;session&lt;/strong&gt;、&lt;strong&gt;application&lt;/strong&gt;，这些对象中都有以下和属性相关的方法：&lt;/p&gt;
@@ -765,26 +788,6 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-chain-of-responsibility.html</id>
     <published>2016-05-05T03:36:48.000Z</published>
     <updated>2016-06-01T04:11:13.763Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>享元模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-flyweight.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-flyweight.html</id>
-    <published>2016-05-05T03:34:57.000Z</published>
-    <updated>2016-06-01T04:11:28.492Z</updated>
     
     <content type="html"></content>
     
