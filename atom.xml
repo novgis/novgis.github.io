@@ -225,29 +225,6 @@
   </entry>
   
   <entry>
-    <title>森林防火标绘业务系统实现（一）</title>
-    <link href="http://www.novgis.com/blog/2016-05-12/GJB-1.html"/>
-    <id>http://www.novgis.com/blog/2016-05-12/GJB-1.html</id>
-    <published>2016-05-12T08:44:15.000Z</published>
-    <updated>2016-05-19T15:08:17.475Z</updated>
-    
-    <content type="html">&lt;p&gt;本系列文章主要介绍基于 ArcGIS Engine 实现的森林防火标绘业务系统&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本系列文章主要介绍基于 ArcGIS Engine 实现的森林防火标绘业务系统&lt;br&gt;
-    
-    </summary>
-    
-      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
-    
-    
-      <category term="plot" scheme="http://www.novgis.com/tags/plot/"/>
-    
-  </entry>
-  
-  <entry>
     <title>(5) JSP（下）</title>
     <link href="http://www.novgis.com/blog/2016-05-06/javaweb-05-JSP2.html"/>
     <id>http://www.novgis.com/blog/2016-05-06/javaweb-05-JSP2.html</id>
@@ -788,6 +765,26 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-chain-of-responsibility.html</id>
     <published>2016-05-05T03:36:48.000Z</published>
     <updated>2016-06-01T04:11:13.763Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>享元模式</title>
+    <link href="http://www.novgis.com/blog/2016-05-05/dp-flyweight.html"/>
+    <id>http://www.novgis.com/blog/2016-05-05/dp-flyweight.html</id>
+    <published>2016-05-05T03:34:57.000Z</published>
+    <updated>2016-06-01T04:11:28.492Z</updated>
     
     <content type="html"></content>
     
