@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-06-01T03:25:38.293Z</updated>
+  <updated>2016-06-29T09:35:36.677Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -14,6 +14,98 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>(5) Java 框架技术点之面向切面编程</title>
+    <link href="http://www.novgis.com/blog/2016-06-29/javacore-05-AOP.html"/>
+    <id>http://www.novgis.com/blog/2016-06-29/javacore-05-AOP.html</id>
+    <published>2016-06-29T09:26:38.000Z</published>
+    <updated>2016-06-29T09:35:36.677Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>(4) Java 框架技术点之动态代理</title>
+    <link href="http://www.novgis.com/blog/2016-06-29/javacore-04-Dynamic-Proxy.html"/>
+    <id>http://www.novgis.com/blog/2016-06-29/javacore-04-Dynamic-Proxy.html</id>
+    <published>2016-06-29T09:26:17.000Z</published>
+    <updated>2016-06-29T09:36:12.953Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>(3) Java 框架技术点之依赖注入</title>
+    <link href="http://www.novgis.com/blog/2016-06-29/javacore-03-Dependency-Injection.html"/>
+    <id>http://www.novgis.com/blog/2016-06-29/javacore-03-Dependency-Injection.html</id>
+    <published>2016-06-29T09:25:56.000Z</published>
+    <updated>2016-06-29T09:34:28.716Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>(2) Java 框架技术点之反射</title>
+    <link href="http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html"/>
+    <id>http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html</id>
+    <published>2016-06-29T09:23:28.000Z</published>
+    <updated>2016-06-29T09:34:29.818Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="Java Core" scheme="http://www.novgis.com/tags/Java-Core/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>(1) Java 框架技术点之注解</title>
+    <link href="http://www.novgis.com/blog/2016-06-29/javacore-01-Annotation.html"/>
+    <id>http://www.novgis.com/blog/2016-06-29/javacore-01-Annotation.html</id>
+    <published>2016-06-29T08:16:12.000Z</published>
+    <updated>2016-06-29T09:34:09.681Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="Java Core" scheme="http://www.novgis.com/tags/Java-Core/"/>
+    
+  </entry>
   
   <entry>
     <title>Bing 地图切片规则分析</title>
@@ -221,6 +313,30 @@
       <category term="android" scheme="http://www.novgis.com/tags/android/"/>
     
       <category term="osmdroid" scheme="http://www.novgis.com/tags/osmdroid/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maven 实战笔记（一）</title>
+    <link href="http://www.novgis.com/blog/2016-05-07/maven-01.html"/>
+    <id>http://www.novgis.com/blog/2016-05-07/maven-01.html</id>
+    <published>2016-05-07T05:48:48.000Z</published>
+    <updated>2016-06-16T07:47:52.570Z</updated>
+    
+    <content type="html">&lt;p&gt;在最近工作学习中，经常碰到 Maven 构建的项目源码，一个对 Maven 知之甚少却也抵制不住源码诱惑的程序猿会因此而望而却步嘛？必须不会！这篇我们就来看看 Maven 究竟是怎么一回事。本文并没有对 Maven 进行全面解析，而是通过 Maven 来构建运行一个 Hello World 程序，切身体会一下不用任何 IDE环境 的纯 Maven 工具是咋回事，看看它到底为我们做了什么。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;Maven 是一个用于项目构建的工具，通过它便捷的管理项目的生命周期，即项目的 jar 包依赖、开发、测试及发布打包等过程。&lt;/p&gt;
+&lt;h1 id=&quot;Maven-的下载安装&quot;&gt;&lt;a href=&quot;#Maven-的下载安装&quot; class=&quot;headerlink&quot; title=&quot;Maven 的下载安装&quot;&gt;&lt;/a&gt;Maven 的下载安装&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;下载&lt;/strong&gt;&lt;br&gt;在&lt;a href=&quot;https://maven.apache.org/download.cgi&quot; title=&quot;去这里下载&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;下载 Maven 的安装包，注意 Maven 安装包有 JDK 版本的限制，必须下载你安装的 JDK 版本对应的安装包&lt;br&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fmaven-01.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;配置环境变量&lt;/strong&gt;&lt;br&gt;第一步将下载下来的安装包解压到硬盘目录，在环境变量中新建 M2_HOME 用户变量，填入刚才安装包的解压路径，注意一定是 bin 文件夹的父目录：&lt;br&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fmaven-02.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;第二步将 Maven 安装目录下 bin 目录路径拷贝到 Path 环境变量中：&lt;br&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fmaven-03.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;第三部进入命令提示符，输入 &lt;code&gt;mvn -v&lt;/code&gt; 命令，如果安装成功会显示当前安装的 Maven 版本信息：&lt;br&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fmaven-04.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;至此，Maven 安装成功。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在最近工作学习中，经常碰到 Maven 构建的项目源码，一个对 Maven 知之甚少却也抵制不住源码诱惑的程序猿会因此而望而却步嘛？必须不会！这篇我们就来看看 Maven 究竟是怎么一回事。本文并没有对 Maven 进行全面解析，而是通过 Maven 来构建运行一个 Hello World 程序，切身体会一下不用任何 IDE环境 的纯 Maven 工具是咋回事，看看它到底为我们做了什么。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="Maven" scheme="http://www.novgis.com/tags/Maven/"/>
     
   </entry>
   
@@ -668,126 +784,6 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-observer.html</id>
     <published>2016-05-05T03:38:35.000Z</published>
     <updated>2016-06-01T04:09:53.205Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>备忘录模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-memento.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-memento.html</id>
-    <published>2016-05-05T03:38:23.000Z</published>
-    <updated>2016-06-01T04:10:07.008Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>中介者模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-mediator.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-mediator.html</id>
-    <published>2016-05-05T03:38:01.000Z</published>
-    <updated>2016-06-01T04:10:21.706Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>迭代器模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-iterator.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-iterator.html</id>
-    <published>2016-05-05T03:37:43.000Z</published>
-    <updated>2016-06-01T04:10:33.405Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解释器模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-interpreter.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-interpreter.html</id>
-    <published>2016-05-05T03:37:30.000Z</published>
-    <updated>2016-06-01T04:10:44.258Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>命令模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-command.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-command.html</id>
-    <published>2016-05-05T03:37:10.000Z</published>
-    <updated>2016-06-01T04:10:52.963Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>职责链模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-chain-of-responsibility.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-chain-of-responsibility.html</id>
-    <published>2016-05-05T03:36:48.000Z</published>
-    <updated>2016-06-01T04:11:13.763Z</updated>
     
     <content type="html"></content>
     

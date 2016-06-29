@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.novgis.com/blog/2016-06-29/javacore-04-Dynamic-Proxy.html</loc>
+    
+    <lastmod>2016-06-29T09:36:12.953Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-06-29/javacore-05-AOP.html</loc>
+    
+    <lastmod>2016-06-29T09:35:36.677Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html</loc>
+    
+    <lastmod>2016-06-29T09:34:29.818Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-06-29/javacore-03-Dependency-Injection.html</loc>
+    
+    <lastmod>2016-06-29T09:34:28.716Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-06-29/javacore-01-Annotation.html</loc>
+    
+    <lastmod>2016-06-29T09:34:09.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-07/maven-01.html</loc>
+    
+    <lastmod>2016-06-16T07:47:52.570Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.novgis.com/blog/2016-05-06/javaweb-06-JSP3.html</loc>
     
     <lastmod>2016-06-15T09:43:36.098Z</lastmod>
@@ -233,14 +275,14 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/programming/index.html</loc>
+    <loc>http://www.novgis.com/categories/note/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/note/index.html</loc>
+    <loc>http://www.novgis.com/categories/programming/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
