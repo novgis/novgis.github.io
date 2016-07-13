@@ -4,18 +4,114 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>(2) 框架技术点之反射 | novgis&#39;s blog</title>
+  <title>(1) 基本数据类型的拆装箱 | novgis&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="反射就是把 Java 类中的各种成分映射成相应的 Java 类。反射的基石–Class类">
+  <meta name="description" content="基本类型
+大小
+数值范围
+默认值
+包装类型 
+
+
+
+
+boolean
+—
+true,false
+false
+java.lang.Boolean
+
+
+byte
+8bit
+-2^7 ~ 2^7-1
+0
+java.lang.Byte
+
+
+char
+16bit
+\u0000 ~ \uffff
+\u0000
+java.lang.Character
+
+
+short
+16bit
+-2^15 ~ 2^15-">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(2) 框架技术点之反射">
-<meta property="og:url" content="http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html">
+<meta property="og:title" content="(1) 基本数据类型的拆装箱">
+<meta property="og:url" content="http://www.novgis.com/blog/2016-07-06/javabase-01-primitive-types.html">
 <meta property="og:site_name" content="novgis's blog">
-<meta property="og:description" content="反射就是把 Java 类中的各种成分映射成相应的 Java 类。反射的基石–Class类">
-<meta property="og:updated_time" content="2016-07-13T04:55:24.554Z">
+<meta property="og:description" content="基本类型
+大小
+数值范围
+默认值
+包装类型 
+
+
+
+
+boolean
+—
+true,false
+false
+java.lang.Boolean
+
+
+byte
+8bit
+-2^7 ~ 2^7-1
+0
+java.lang.Byte
+
+
+char
+16bit
+\u0000 ~ \uffff
+\u0000
+java.lang.Character
+
+
+short
+16bit
+-2^15 ~ 2^15-">
+<meta property="og:updated_time" content="2016-07-07T04:28:22.609Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="(2) 框架技术点之反射">
-<meta name="twitter:description" content="反射就是把 Java 类中的各种成分映射成相应的 Java 类。反射的基石–Class类">
+<meta name="twitter:title" content="(1) 基本数据类型的拆装箱">
+<meta name="twitter:description" content="基本类型
+大小
+数值范围
+默认值
+包装类型 
+
+
+
+
+boolean
+—
+true,false
+false
+java.lang.Boolean
+
+
+byte
+8bit
+-2^7 ~ 2^7-1
+0
+java.lang.Byte
+
+
+char
+16bit
+\u0000 ~ \uffff
+\u0000
+java.lang.Character
+
+
+short
+16bit
+-2^15 ~ 2^15-">
   
     <link rel="alternative" href="/atom.xml" title="novgis&#39;s blog" type="application/atom+xml">
   
@@ -201,11 +297,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-javacore-02-Reflection" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-javabase-01-primitive-types" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/blog/2016-06-29/javacore-02-Reflection.html" class="article-date">
-  	<time datetime="2016-06-29T09:23:28.000Z" itemprop="datePublished">2016-06-29</time>
+      <a href="/blog/2016-07-06/javabase-01-primitive-types.html" class="article-date">
+  	<time datetime="2016-07-06T11:55:22.000Z" itemprop="datePublished">2016-07-06</time>
 </a>
     </div>
   
@@ -218,7 +314,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      (2) 框架技术点之反射
+      (1) 基本数据类型的拆装箱
     </h1>
   
 
@@ -227,7 +323,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java-Core/">Java Core</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
 	</div>
 
         
@@ -242,9 +338,84 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>反射就是把 Java 类中的各种成分映射成相应的 Java 类。反射的基石–<strong>Class</strong>类<br><a id="more"></a></p>
-<h1 id="构造方法的反射应用-Constructor"><a href="#构造方法的反射应用-Constructor" class="headerlink" title="构造方法的反射应用 Constructor"></a>构造方法的反射应用 Constructor</h1><pre><code class="java">
-</code></pre>
+        <table>
+<thead>
+<tr>
+<th><strong>基本类型</strong></th>
+<th><strong>大小</strong></th>
+<th><strong>数值范围</strong></th>
+<th><strong>默认值</strong></th>
+<th><strong>包装类型</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>—</td>
+<td>true,false</td>
+<td>false</td>
+<td>java.lang.Boolean</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>8bit</td>
+<td>-2^7 ~ 2^7-1</td>
+<td>0</td>
+<td>java.lang.Byte</td>
+</tr>
+<tr>
+<td>char</td>
+<td>16bit</td>
+<td>\u0000 ~ \uffff</td>
+<td>\u0000</td>
+<td>java.lang.Character</td>
+</tr>
+<tr>
+<td>short</td>
+<td>16bit</td>
+<td>-2^15 ~ 2^15-1</td>
+<td>0</td>
+<td>java.lang.Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td>32bit</td>
+<td>-2^31 ~ 2^31-1</td>
+<td>0</td>
+<td>java.lang.Integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>64bit</td>
+<td>-2^63 ~ 2^63-1</td>
+<td>0</td>
+<td>java.lang.Long</td>
+</tr>
+<tr>
+<td>float</td>
+<td>32bit</td>
+<td>IEEE 754</td>
+<td>0.0f</td>
+<td>java.lang.Float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>64bit</td>
+<td>IEEE 754</td>
+<td>0.0d</td>
+<td>java.lang.Double</td>
+</tr>
+<tr>
+<td>void</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>java.lang.Void</td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+<p>基本的数值类型都确定了其所占存储空间大小，直接存储“值”而非引用，置于堆栈中，通过堆栈指针可以从处理器那里获得直接支持，效率仅次于处理器中的寄存器。</p>
 
       
     </div>
@@ -254,18 +425,9 @@
     
 <nav id="article-nav">
   
-    <a href="/blog/2016-06-29/javacore-03-Dependency-Injection.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          (3) 框架技术点之依赖注入
-        
-      </div>
-    </a>
   
-  
-    <a href="/blog/2016-06-29/javacore-01-Annotation.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">(1) 框架技术点之注解</div>
+    <a href="/blog/2016-07-06/mybatis-01.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">(1) MyBatis 快速入门</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -281,7 +443,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="javacore-02-Reflection" data-title="(2) 框架技术点之反射" data-url="http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html"></div>
+	<div class="ds-thread" data-thread-key="javabase-01-primitive-types" data-title="(1) 基本数据类型的拆装箱" data-url="http://www.novgis.com/blog/2016-07-06/javabase-01-primitive-types.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

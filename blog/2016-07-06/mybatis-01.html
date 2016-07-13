@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>(2) 框架技术点之反射 | novgis&#39;s blog</title>
+  <title>(1) MyBatis 快速入门 | novgis&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="反射就是把 Java 类中的各种成分映射成相应的 Java 类。反射的基石–Class类">
+  <meta name="description" content="MyBatis 是支持普通 SQL 查询、存储过程和高级映射的优秀持久层框架。MyBatis 消除了几乎所有的 JDBC 代码和参数的手工设置以及对结果集的检索封装。MyBatis 可以使用简单的 XML 或注解用于配置和原始映射，将接口和 Java 的 POJO 映射成数据库中的记录。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(2) 框架技术点之反射">
-<meta property="og:url" content="http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html">
+<meta property="og:title" content="(1) MyBatis 快速入门">
+<meta property="og:url" content="http://www.novgis.com/blog/2016-07-06/mybatis-01.html">
 <meta property="og:site_name" content="novgis's blog">
-<meta property="og:description" content="反射就是把 Java 类中的各种成分映射成相应的 Java 类。反射的基石–Class类">
-<meta property="og:updated_time" content="2016-07-13T04:55:24.554Z">
+<meta property="og:description" content="MyBatis 是支持普通 SQL 查询、存储过程和高级映射的优秀持久层框架。MyBatis 消除了几乎所有的 JDBC 代码和参数的手工设置以及对结果集的检索封装。MyBatis 可以使用简单的 XML 或注解用于配置和原始映射，将接口和 Java 的 POJO 映射成数据库中的记录。">
+<meta property="og:updated_time" content="2016-07-06T07:38:44.556Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="(2) 框架技术点之反射">
-<meta name="twitter:description" content="反射就是把 Java 类中的各种成分映射成相应的 Java 类。反射的基石–Class类">
+<meta name="twitter:title" content="(1) MyBatis 快速入门">
+<meta name="twitter:description" content="MyBatis 是支持普通 SQL 查询、存储过程和高级映射的优秀持久层框架。MyBatis 消除了几乎所有的 JDBC 代码和参数的手工设置以及对结果集的检索封装。MyBatis 可以使用简单的 XML 或注解用于配置和原始映射，将接口和 Java 的 POJO 映射成数据库中的记录。">
   
     <link rel="alternative" href="/atom.xml" title="novgis&#39;s blog" type="application/atom+xml">
   
@@ -201,11 +201,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-javacore-02-Reflection" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-mybatis-01" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/blog/2016-06-29/javacore-02-Reflection.html" class="article-date">
-  	<time datetime="2016-06-29T09:23:28.000Z" itemprop="datePublished">2016-06-29</time>
+      <a href="/blog/2016-07-06/mybatis-01.html" class="article-date">
+  	<time datetime="2016-07-06T03:43:58.000Z" itemprop="datePublished">2016-07-06</time>
 </a>
     </div>
   
@@ -218,7 +218,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      (2) 框架技术点之反射
+      (1) MyBatis 快速入门
     </h1>
   
 
@@ -227,7 +227,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java-Core/">Java Core</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mybatis/">mybatis</a></li></ul>
 	</div>
 
         
@@ -242,10 +242,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>反射就是把 Java 类中的各种成分映射成相应的 Java 类。反射的基石–<strong>Class</strong>类<br><a id="more"></a></p>
-<h1 id="构造方法的反射应用-Constructor"><a href="#构造方法的反射应用-Constructor" class="headerlink" title="构造方法的反射应用 Constructor"></a>构造方法的反射应用 Constructor</h1><pre><code class="java">
-</code></pre>
-
+        <p>MyBatis 是支持普通 SQL 查询、存储过程和高级映射的优秀持久层框架。MyBatis 消除了几乎所有的 JDBC 代码和参数的手工设置以及对结果集的检索封装。MyBatis 可以使用简单的 XML 或注解用于配置和原始映射，将接口和 Java 的 POJO 映射成数据库中的记录。<br><a id="more"></a><br>首先回顾下常见的一些持久层框架：<br>→ JDBC：Connection Statement PrepareStatement ResultSet<br>→ DBUtils：自动封装查询结果集，但是要在代码中写 SQL 语句且传参数需要一个个传<br>→ Hibernate：不需要写任何 SQL 语句，自动生成那就可能存在浪费<br>→ MyBatis：相比 DBUtils 它不用在代码中写 SQL 语句，而是在配置文件中写；相比 Hibernate 的自动生成，其手动写 SQL 增加了一些灵活性</p>
+<p>映射 xxxMapper.xml 文件</p>
+<ul>
+<li>resource</li>
+</ul>
+<p>注解实现</p>
+<ul>
+<li>class</li>
+</ul>
+<p>conf.xml 配置中导入 Properties 键值对文件</p>
+<ul>
+<li>properties</li>
+</ul>
+<p>为实体类定义别名</p>
+<ul>
+<li>typeAlias</li>
+</ul>
+<p>log4j 的添加和配置</p>
+<p>解决字段名和实体类字段名不相同的冲突</p>
+<ul>
+<li>resultMap</li>
+</ul>
+<h1 id="实现关联表查询"><a href="#实现关联表查询" class="headerlink" title="实现关联表查询"></a>实现关联表查询</h1><h2 id="一对一关联"><a href="#一对一关联" class="headerlink" title="一对一关联"></a>一对一关联</h2><ul>
+<li>association</li>
+</ul>
+<h2 id="一对多关联"><a href="#一对多关联" class="headerlink" title="一对多关联"></a>一对多关联</h2><h2 id="多对多关联"><a href="#多对多关联" class="headerlink" title="多对多关联"></a>多对多关联</h2>
       
     </div>
     
@@ -254,18 +276,18 @@
     
 <nav id="article-nav">
   
-    <a href="/blog/2016-06-29/javacore-03-Dependency-Injection.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/blog/2016-07-06/javabase-01-primitive-types.html" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          (3) 框架技术点之依赖注入
+          (1) 基本数据类型的拆装箱
         
       </div>
     </a>
   
   
-    <a href="/blog/2016-06-29/javacore-01-Annotation.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">(1) 框架技术点之注解</div>
+    <a href="/blog/2016-06-29/javacore-05-AOP.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">(5) 框架技术点之面向切面编程</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -281,7 +303,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="javacore-02-Reflection" data-title="(2) 框架技术点之反射" data-url="http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html"></div>
+	<div class="ds-thread" data-thread-key="mybatis-01" data-title="(1) MyBatis 快速入门" data-url="http://www.novgis.com/blog/2016-07-06/mybatis-01.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

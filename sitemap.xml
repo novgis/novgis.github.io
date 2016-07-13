@@ -2,37 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-06-29/javacore-04-Dynamic-Proxy.html</loc>
-    
-    <lastmod>2016-06-29T09:36:12.953Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.novgis.com/blog/2016-06-29/javacore-05-AOP.html</loc>
     
-    <lastmod>2016-06-29T09:35:36.677Z</lastmod>
+    <lastmod>2016-07-13T04:55:24.557Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html</loc>
+    <loc>http://www.novgis.com/blog/2016-06-29/javacore-04-Dynamic-Proxy.html</loc>
     
-    <lastmod>2016-06-29T09:34:29.818Z</lastmod>
+    <lastmod>2016-07-13T04:55:24.556Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.novgis.com/blog/2016-06-29/javacore-03-Dependency-Injection.html</loc>
     
-    <lastmod>2016-06-29T09:34:28.716Z</lastmod>
+    <lastmod>2016-07-13T04:55:24.555Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html</loc>
+    
+    <lastmod>2016-07-13T04:55:24.554Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.novgis.com/blog/2016-06-29/javacore-01-Annotation.html</loc>
     
-    <lastmod>2016-06-29T09:34:09.681Z</lastmod>
+    <lastmod>2016-07-13T04:54:48.253Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-07-06/javabase-01-primitive-types.html</loc>
+    
+    <lastmod>2016-07-07T04:28:22.609Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-07-06/mybatis-01.html</loc>
+    
+    <lastmod>2016-07-06T07:38:44.556Z</lastmod>
     
   </url>
   
@@ -268,13 +282,6 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/gis/index.html</loc>
-    
-    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.novgis.com/categories/note/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
@@ -283,6 +290,13 @@
   
   <url>
     <loc>http://www.novgis.com/categories/programming/index.html</loc>
+    
+    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/categories/gis/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-06-29T09:35:36.677Z</updated>
+  <updated>2016-07-07T04:28:22.609Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,11 +16,233 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>(5) Java 框架技术点之面向切面编程</title>
+    <title>(1) 基本数据类型的拆装箱</title>
+    <link href="http://www.novgis.com/blog/2016-07-06/javabase-01-primitive-types.html"/>
+    <id>http://www.novgis.com/blog/2016-07-06/javabase-01-primitive-types.html</id>
+    <published>2016-07-06T11:55:22.000Z</published>
+    <updated>2016-07-07T04:28:22.609Z</updated>
+    
+    <content type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;基本类型&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;大小&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;数值范围&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;默认值&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;包装类型&lt;/strong&gt; &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;true,false&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;java.lang.Boolean&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;byte&lt;/td&gt;
+&lt;td&gt;8bit&lt;/td&gt;
+&lt;td&gt;-2^7 ~ 2^7-1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;java.lang.Byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;char&lt;/td&gt;
+&lt;td&gt;16bit&lt;/td&gt;
+&lt;td&gt;\u0000 ~ \uffff&lt;/td&gt;
+&lt;td&gt;\u0000&lt;/td&gt;
+&lt;td&gt;java.lang.Character&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;short&lt;/td&gt;
+&lt;td&gt;16bit&lt;/td&gt;
+&lt;td&gt;-2^15 ~ 2^15-1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;java.lang.Short&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;int&lt;/td&gt;
+&lt;td&gt;32bit&lt;/td&gt;
+&lt;td&gt;-2^31 ~ 2^31-1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;java.lang.Integer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;long&lt;/td&gt;
+&lt;td&gt;64bit&lt;/td&gt;
+&lt;td&gt;-2^63 ~ 2^63-1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;java.lang.Long&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;float&lt;/td&gt;
+&lt;td&gt;32bit&lt;/td&gt;
+&lt;td&gt;IEEE 754&lt;/td&gt;
+&lt;td&gt;0.0f&lt;/td&gt;
+&lt;td&gt;java.lang.Float&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;double&lt;/td&gt;
+&lt;td&gt;64bit&lt;/td&gt;
+&lt;td&gt;IEEE 754&lt;/td&gt;
+&lt;td&gt;0.0d&lt;/td&gt;
+&lt;td&gt;java.lang.Double&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;void&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;java.lang.Void&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;基本的数值类型都确定了其所占存储空间大小，直接存储“值”而非引用，置于堆栈中，通过堆栈指针可以从处理器那里获得直接支持，效率仅次于处理器中的寄存器。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;基本类型&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;大小&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;数值范围&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;默认值&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;包装类型&lt;/strong&gt; &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;true,false&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;java.lang.Boolean&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;byte&lt;/td&gt;
+&lt;td&gt;8bit&lt;/td&gt;
+&lt;td&gt;-2^7 ~ 2^7-1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;java.lang.Byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;char&lt;/td&gt;
+&lt;td&gt;16bit&lt;/td&gt;
+&lt;td&gt;\u0000 ~ \uffff&lt;/td&gt;
+&lt;td&gt;\u0000&lt;/td&gt;
+&lt;td&gt;java.lang.Character&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;short&lt;/td&gt;
+&lt;td&gt;16bit&lt;/td&gt;
+&lt;td&gt;-2^15 ~ 2^15-1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;java.lang.Short&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;int&lt;/td&gt;
+&lt;td&gt;32bit&lt;/td&gt;
+&lt;td&gt;-2^31 ~ 2^31-1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;java.lang.Integer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;long&lt;/td&gt;
+&lt;td&gt;64bit&lt;/td&gt;
+&lt;td&gt;-2^63 ~ 2^63-1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;java.lang.Long&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;float&lt;/td&gt;
+&lt;td&gt;32bit&lt;/td&gt;
+&lt;td&gt;IEEE 754&lt;/td&gt;
+&lt;td&gt;0.0f&lt;/td&gt;
+&lt;td&gt;java.lang.Float&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;double&lt;/td&gt;
+&lt;td&gt;64bit&lt;/td&gt;
+&lt;td&gt;IEEE 754&lt;/td&gt;
+&lt;td&gt;0.0d&lt;/td&gt;
+&lt;td&gt;java.lang.Double&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;void&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;java.lang.Void&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="java" scheme="http://www.novgis.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>(1) MyBatis 快速入门</title>
+    <link href="http://www.novgis.com/blog/2016-07-06/mybatis-01.html"/>
+    <id>http://www.novgis.com/blog/2016-07-06/mybatis-01.html</id>
+    <published>2016-07-06T03:43:58.000Z</published>
+    <updated>2016-07-06T07:38:44.556Z</updated>
+    
+    <content type="html">&lt;p&gt;MyBatis 是支持普通 SQL 查询、存储过程和高级映射的优秀持久层框架。MyBatis 消除了几乎所有的 JDBC 代码和参数的手工设置以及对结果集的检索封装。MyBatis 可以使用简单的 XML 或注解用于配置和原始映射，将接口和 Java 的 POJO 映射成数据库中的记录。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;首先回顾下常见的一些持久层框架：&lt;br&gt;→ JDBC：Connection Statement PrepareStatement ResultSet&lt;br&gt;→ DBUtils：自动封装查询结果集，但是要在代码中写 SQL 语句且传参数需要一个个传&lt;br&gt;→ Hibernate：不需要写任何 SQL 语句，自动生成那就可能存在浪费&lt;br&gt;→ MyBatis：相比 DBUtils 它不用在代码中写 SQL 语句，而是在配置文件中写；相比 Hibernate 的自动生成，其手动写 SQL 增加了一些灵活性&lt;/p&gt;
+&lt;p&gt;映射 xxxMapper.xml 文件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;resource&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注解实现&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;class&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;conf.xml 配置中导入 Properties 键值对文件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;properties&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为实体类定义别名&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;typeAlias&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;log4j 的添加和配置&lt;/p&gt;
+&lt;p&gt;解决字段名和实体类字段名不相同的冲突&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;resultMap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;实现关联表查询&quot;&gt;&lt;a href=&quot;#实现关联表查询&quot; class=&quot;headerlink&quot; title=&quot;实现关联表查询&quot;&gt;&lt;/a&gt;实现关联表查询&lt;/h1&gt;&lt;h2 id=&quot;一对一关联&quot;&gt;&lt;a href=&quot;#一对一关联&quot; class=&quot;headerlink&quot; title=&quot;一对一关联&quot;&gt;&lt;/a&gt;一对一关联&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;association&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;一对多关联&quot;&gt;&lt;a href=&quot;#一对多关联&quot; class=&quot;headerlink&quot; title=&quot;一对多关联&quot;&gt;&lt;/a&gt;一对多关联&lt;/h2&gt;&lt;h2 id=&quot;多对多关联&quot;&gt;&lt;a href=&quot;#多对多关联&quot; class=&quot;headerlink&quot; title=&quot;多对多关联&quot;&gt;&lt;/a&gt;多对多关联&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;MyBatis 是支持普通 SQL 查询、存储过程和高级映射的优秀持久层框架。MyBatis 消除了几乎所有的 JDBC 代码和参数的手工设置以及对结果集的检索封装。MyBatis 可以使用简单的 XML 或注解用于配置和原始映射，将接口和 Java 的 POJO 映射成数据库中的记录。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="mybatis" scheme="http://www.novgis.com/tags/mybatis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>(5) 框架技术点之面向切面编程</title>
     <link href="http://www.novgis.com/blog/2016-06-29/javacore-05-AOP.html"/>
     <id>http://www.novgis.com/blog/2016-06-29/javacore-05-AOP.html</id>
     <published>2016-06-29T09:26:38.000Z</published>
-    <updated>2016-06-29T09:35:36.677Z</updated>
+    <updated>2016-07-13T04:55:24.557Z</updated>
     
     <content type="html"></content>
     
@@ -32,11 +254,11 @@
   </entry>
   
   <entry>
-    <title>(4) Java 框架技术点之动态代理</title>
+    <title>(4) 框架技术点之动态代理</title>
     <link href="http://www.novgis.com/blog/2016-06-29/javacore-04-Dynamic-Proxy.html"/>
     <id>http://www.novgis.com/blog/2016-06-29/javacore-04-Dynamic-Proxy.html</id>
     <published>2016-06-29T09:26:17.000Z</published>
-    <updated>2016-06-29T09:36:12.953Z</updated>
+    <updated>2016-07-13T04:55:24.556Z</updated>
     
     <content type="html"></content>
     
@@ -48,11 +270,11 @@
   </entry>
   
   <entry>
-    <title>(3) Java 框架技术点之依赖注入</title>
+    <title>(3) 框架技术点之依赖注入</title>
     <link href="http://www.novgis.com/blog/2016-06-29/javacore-03-Dependency-Injection.html"/>
     <id>http://www.novgis.com/blog/2016-06-29/javacore-03-Dependency-Injection.html</id>
     <published>2016-06-29T09:25:56.000Z</published>
-    <updated>2016-06-29T09:34:28.716Z</updated>
+    <updated>2016-07-13T04:55:24.555Z</updated>
     
     <content type="html"></content>
     
@@ -64,17 +286,20 @@
   </entry>
   
   <entry>
-    <title>(2) Java 框架技术点之反射</title>
+    <title>(2) 框架技术点之反射</title>
     <link href="http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html"/>
     <id>http://www.novgis.com/blog/2016-06-29/javacore-02-Reflection.html</id>
     <published>2016-06-29T09:23:28.000Z</published>
-    <updated>2016-06-29T09:34:29.818Z</updated>
+    <updated>2016-07-13T04:55:24.554Z</updated>
     
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    <content type="html">&lt;p&gt;反射就是把 Java 类中的各种成分映射成相应的 Java 类。反射的基石–&lt;strong&gt;Class&lt;/strong&gt;类&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;构造方法的反射应用-Constructor&quot;&gt;&lt;a href=&quot;#构造方法的反射应用-Constructor&quot; class=&quot;headerlink&quot; title=&quot;构造方法的反射应用 Constructor&quot;&gt;&lt;/a&gt;构造方法的反射应用 Constructor&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+      &lt;p&gt;反射就是把 Java 类中的各种成分映射成相应的 Java 类。反射的基石–&lt;strong&gt;Class&lt;/strong&gt;类&lt;br&gt;
     
     </summary>
     
@@ -86,11 +311,11 @@
   </entry>
   
   <entry>
-    <title>(1) Java 框架技术点之注解</title>
+    <title>(1) 框架技术点之注解</title>
     <link href="http://www.novgis.com/blog/2016-06-29/javacore-01-Annotation.html"/>
     <id>http://www.novgis.com/blog/2016-06-29/javacore-01-Annotation.html</id>
     <published>2016-06-29T08:16:12.000Z</published>
-    <updated>2016-06-29T09:34:09.681Z</updated>
+    <updated>2016-07-13T04:54:48.253Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
     
@@ -744,46 +969,6 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-strategy.html</id>
     <published>2016-05-05T03:39:08.000Z</published>
     <updated>2016-06-01T04:09:35.133Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>状态模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-state.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-state.html</id>
-    <published>2016-05-05T03:38:47.000Z</published>
-    <updated>2016-06-01T04:09:42.752Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>观察者模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-observer.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-observer.html</id>
-    <published>2016-05-05T03:38:35.000Z</published>
-    <updated>2016-06-01T04:09:53.205Z</updated>
     
     <content type="html"></content>
     
