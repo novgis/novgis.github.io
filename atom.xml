@@ -908,7 +908,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html</id>
     <published>2016-05-05T03:42:09.000Z</published>
-    <updated>2016-06-01T04:08:44.242Z</updated>
+    <updated>2016-07-13T05:17:15.018Z</updated>
     
     <content type="html"></content>
     
@@ -919,7 +919,7 @@
       <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
     
   </entry>
   
@@ -928,7 +928,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/dp-visitor.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/dp-visitor.html</id>
     <published>2016-05-05T03:39:56.000Z</published>
-    <updated>2016-06-01T04:09:05.977Z</updated>
+    <updated>2016-07-13T05:17:15.017Z</updated>
     
     <content type="html"></content>
     
@@ -939,7 +939,7 @@
       <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
     
   </entry>
   
@@ -948,7 +948,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/dp-template-method.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/dp-template-method.html</id>
     <published>2016-05-05T03:39:34.000Z</published>
-    <updated>2016-06-01T04:09:17.757Z</updated>
+    <updated>2016-07-13T05:17:15.016Z</updated>
     
     <content type="html"></content>
     
@@ -959,7 +959,7 @@
       <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
     
   </entry>
   
@@ -968,7 +968,7 @@
     <link href="http://www.novgis.com/blog/2016-05-05/dp-strategy.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/dp-strategy.html</id>
     <published>2016-05-05T03:39:08.000Z</published>
-    <updated>2016-06-01T04:09:35.133Z</updated>
+    <updated>2016-07-13T05:17:15.015Z</updated>
     
     <content type="html"></content>
     
@@ -979,7 +979,7 @@
       <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
     
     
-      <category term="设计模式" scheme="http://www.novgis.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
     
   </entry>
   
