@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</loc>
+    
+    <lastmod>2016-07-13T04:58:09.537Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.novgis.com/blog/2016-06-29/javacore-05-AOP.html</loc>
     
     <lastmod>2016-07-13T04:55:24.557Z</lastmod>
@@ -257,13 +264,6 @@
     <loc>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</loc>
     
     <lastmod>2016-05-13T02:08:50.398Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/javaweb-01-base.html</loc>
-    
-    <lastmod>2016-05-13T02:08:46.331Z</lastmod>
     
   </url>
   
