@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.novgis.com/blog/2016-07-19/openplot-01-intro.html</loc>
+    
+    <lastmod>2016-07-19T07:04:54.361Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html</loc>
     
     <lastmod>2016-07-13T05:17:15.018Z</lastmod>
@@ -37,14 +44,14 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/dp-mediator.html</loc>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-memento.html</loc>
     
     <lastmod>2016-07-13T05:17:15.013Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/dp-memento.html</loc>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-mediator.html</loc>
     
     <lastmod>2016-07-13T05:17:15.013Z</lastmod>
     
@@ -205,27 +212,6 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-07-06/javabase-01-primitive-types.html</loc>
-    
-    <lastmod>2016-07-07T04:28:22.609Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-07-06/mybatis-01.html</loc>
-    
-    <lastmod>2016-07-06T07:38:44.556Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-05-07/maven-01.html</loc>
-    
-    <lastmod>2016-06-16T07:47:52.570Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.novgis.com/blog/2016-05-06/javaweb-06-JSP3.html</loc>
     
     <lastmod>2016-06-15T09:43:36.098Z</lastmod>
@@ -268,16 +254,16 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-19/osmdroid-1.html</loc>
+    <loc>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</loc>
     
-    <lastmod>2016-05-19T09:21:57.315Z</lastmod>
+    <lastmod>2016-05-13T02:08:50.398Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/javaweb-02-servlet.html</loc>
+    <loc>http://www.novgis.com/categories/gis/index.html</loc>
     
-    <lastmod>2016-05-13T02:08:50.398Z</lastmod>
+    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
   </url>
   
@@ -290,13 +276,6 @@
   
   <url>
     <loc>http://www.novgis.com/categories/programming/index.html</loc>
-    
-    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/categories/gis/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-07-07T04:28:22.609Z</updated>
+  <updated>2016-07-19T07:04:54.361Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,224 +16,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>(1) 基本数据类型的拆装箱</title>
-    <link href="http://www.novgis.com/blog/2016-07-06/javabase-01-primitive-types.html"/>
-    <id>http://www.novgis.com/blog/2016-07-06/javabase-01-primitive-types.html</id>
-    <published>2016-07-06T11:55:22.000Z</published>
-    <updated>2016-07-07T04:28:22.609Z</updated>
+    <title>OpenPlot 开源GIS标绘组件</title>
+    <link href="http://www.novgis.com/blog/2016-07-19/openplot-01-intro.html"/>
+    <id>http://www.novgis.com/blog/2016-07-19/openplot-01-intro.html</id>
+    <published>2016-07-19T06:49:46.000Z</published>
+    <updated>2016-07-19T07:04:54.361Z</updated>
     
-    <content type="html">&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;基本类型&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;大小&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;数值范围&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;默认值&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;包装类型&lt;/strong&gt; &lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;boolean&lt;/td&gt;
-&lt;td&gt;—&lt;/td&gt;
-&lt;td&gt;true,false&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;td&gt;java.lang.Boolean&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;byte&lt;/td&gt;
-&lt;td&gt;8bit&lt;/td&gt;
-&lt;td&gt;-2^7 ~ 2^7-1&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;java.lang.Byte&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;char&lt;/td&gt;
-&lt;td&gt;16bit&lt;/td&gt;
-&lt;td&gt;\u0000 ~ \uffff&lt;/td&gt;
-&lt;td&gt;\u0000&lt;/td&gt;
-&lt;td&gt;java.lang.Character&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;short&lt;/td&gt;
-&lt;td&gt;16bit&lt;/td&gt;
-&lt;td&gt;-2^15 ~ 2^15-1&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;java.lang.Short&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;int&lt;/td&gt;
-&lt;td&gt;32bit&lt;/td&gt;
-&lt;td&gt;-2^31 ~ 2^31-1&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;java.lang.Integer&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;long&lt;/td&gt;
-&lt;td&gt;64bit&lt;/td&gt;
-&lt;td&gt;-2^63 ~ 2^63-1&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;java.lang.Long&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;float&lt;/td&gt;
-&lt;td&gt;32bit&lt;/td&gt;
-&lt;td&gt;IEEE 754&lt;/td&gt;
-&lt;td&gt;0.0f&lt;/td&gt;
-&lt;td&gt;java.lang.Float&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;double&lt;/td&gt;
-&lt;td&gt;64bit&lt;/td&gt;
-&lt;td&gt;IEEE 754&lt;/td&gt;
-&lt;td&gt;0.0d&lt;/td&gt;
-&lt;td&gt;java.lang.Double&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;void&lt;/td&gt;
-&lt;td&gt;—&lt;/td&gt;
-&lt;td&gt;—&lt;/td&gt;
-&lt;td&gt;—&lt;/td&gt;
-&lt;td&gt;java.lang.Void&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;基本的数值类型都确定了其所占存储空间大小，直接存储“值”而非引用，置于堆栈中，通过堆栈指针可以从处理器那里获得直接支持，效率仅次于处理器中的寄存器。&lt;/p&gt;
+    <content type="html">&lt;p&gt;OpenPlot 是一款开源的地理信息标绘组件，设计用于地理信息系统中标绘&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;基本类型&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;大小&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;数值范围&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;默认值&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;包装类型&lt;/strong&gt; &lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;boolean&lt;/td&gt;
-&lt;td&gt;—&lt;/td&gt;
-&lt;td&gt;true,false&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;td&gt;java.lang.Boolean&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;byte&lt;/td&gt;
-&lt;td&gt;8bit&lt;/td&gt;
-&lt;td&gt;-2^7 ~ 2^7-1&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;java.lang.Byte&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;char&lt;/td&gt;
-&lt;td&gt;16bit&lt;/td&gt;
-&lt;td&gt;\u0000 ~ \uffff&lt;/td&gt;
-&lt;td&gt;\u0000&lt;/td&gt;
-&lt;td&gt;java.lang.Character&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;short&lt;/td&gt;
-&lt;td&gt;16bit&lt;/td&gt;
-&lt;td&gt;-2^15 ~ 2^15-1&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;java.lang.Short&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;int&lt;/td&gt;
-&lt;td&gt;32bit&lt;/td&gt;
-&lt;td&gt;-2^31 ~ 2^31-1&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;java.lang.Integer&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;long&lt;/td&gt;
-&lt;td&gt;64bit&lt;/td&gt;
-&lt;td&gt;-2^63 ~ 2^63-1&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;java.lang.Long&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;float&lt;/td&gt;
-&lt;td&gt;32bit&lt;/td&gt;
-&lt;td&gt;IEEE 754&lt;/td&gt;
-&lt;td&gt;0.0f&lt;/td&gt;
-&lt;td&gt;java.lang.Float&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;double&lt;/td&gt;
-&lt;td&gt;64bit&lt;/td&gt;
-&lt;td&gt;IEEE 754&lt;/td&gt;
-&lt;td&gt;0.0d&lt;/td&gt;
-&lt;td&gt;java.lang.Double&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;void&lt;/td&gt;
-&lt;td&gt;—&lt;/td&gt;
-&lt;td&gt;—&lt;/td&gt;
-&lt;td&gt;—&lt;/td&gt;
-&lt;td&gt;java.lang.Void&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+      &lt;p&gt;OpenPlot 是一款开源的地理信息标绘组件，设计用于地理信息系统中标绘&lt;br&gt;
     
     </summary>
     
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
     
     
-      <category term="java" scheme="http://www.novgis.com/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>(1) MyBatis 快速入门</title>
-    <link href="http://www.novgis.com/blog/2016-07-06/mybatis-01.html"/>
-    <id>http://www.novgis.com/blog/2016-07-06/mybatis-01.html</id>
-    <published>2016-07-06T03:43:58.000Z</published>
-    <updated>2016-07-06T07:38:44.556Z</updated>
-    
-    <content type="html">&lt;p&gt;MyBatis 是支持普通 SQL 查询、存储过程和高级映射的优秀持久层框架。MyBatis 消除了几乎所有的 JDBC 代码和参数的手工设置以及对结果集的检索封装。MyBatis 可以使用简单的 XML 或注解用于配置和原始映射，将接口和 Java 的 POJO 映射成数据库中的记录。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;首先回顾下常见的一些持久层框架：&lt;br&gt;→ JDBC：Connection Statement PrepareStatement ResultSet&lt;br&gt;→ DBUtils：自动封装查询结果集，但是要在代码中写 SQL 语句且传参数需要一个个传&lt;br&gt;→ Hibernate：不需要写任何 SQL 语句，自动生成那就可能存在浪费&lt;br&gt;→ MyBatis：相比 DBUtils 它不用在代码中写 SQL 语句，而是在配置文件中写；相比 Hibernate 的自动生成，其手动写 SQL 增加了一些灵活性&lt;/p&gt;
-&lt;p&gt;映射 xxxMapper.xml 文件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;resource&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;注解实现&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;class&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;conf.xml 配置中导入 Properties 键值对文件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;properties&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;为实体类定义别名&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;typeAlias&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;log4j 的添加和配置&lt;/p&gt;
-&lt;p&gt;解决字段名和实体类字段名不相同的冲突&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;resultMap&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;实现关联表查询&quot;&gt;&lt;a href=&quot;#实现关联表查询&quot; class=&quot;headerlink&quot; title=&quot;实现关联表查询&quot;&gt;&lt;/a&gt;实现关联表查询&lt;/h1&gt;&lt;h2 id=&quot;一对一关联&quot;&gt;&lt;a href=&quot;#一对一关联&quot; class=&quot;headerlink&quot; title=&quot;一对一关联&quot;&gt;&lt;/a&gt;一对一关联&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;association&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;一对多关联&quot;&gt;&lt;a href=&quot;#一对多关联&quot; class=&quot;headerlink&quot; title=&quot;一对多关联&quot;&gt;&lt;/a&gt;一对多关联&lt;/h2&gt;&lt;h2 id=&quot;多对多关联&quot;&gt;&lt;a href=&quot;#多对多关联&quot; class=&quot;headerlink&quot; title=&quot;多对多关联&quot;&gt;&lt;/a&gt;多对多关联&lt;/h2&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;MyBatis 是支持普通 SQL 查询、存储过程和高级映射的优秀持久层框架。MyBatis 消除了几乎所有的 JDBC 代码和参数的手工设置以及对结果集的检索封装。MyBatis 可以使用简单的 XML 或注解用于配置和原始映射，将接口和 Java 的 POJO 映射成数据库中的记录。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="mybatis" scheme="http://www.novgis.com/tags/mybatis/"/>
+      <category term="OpenPlot" scheme="http://www.novgis.com/tags/OpenPlot/"/>
     
   </entry>
   
@@ -513,55 +314,6 @@
     
     
       <category term="tile" scheme="http://www.novgis.com/tags/tile/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>osmdroid源码解析</title>
-    <link href="http://www.novgis.com/blog/2016-05-19/osmdroid-1.html"/>
-    <id>http://www.novgis.com/blog/2016-05-19/osmdroid-1.html</id>
-    <published>2016-05-19T08:14:54.000Z</published>
-    <updated>2016-05-19T09:21:57.315Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;a href=&quot;&quot;&gt;osmdroid&lt;/a&gt; 是一款开源 Android 地图开发库，设计用于替代 Google 自带的地图类库，包含了自定义的 MapView 控件、瓦片地图引擎 TileProvider，支持在线和离线地图、地图缓存以及各类覆盖物图层和绘制图形等。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;功能介绍&quot;&gt;&lt;a href=&quot;#功能介绍&quot; class=&quot;headerlink&quot; title=&quot;功能介绍&quot;&gt;&lt;/a&gt;功能介绍&lt;/h2&gt;&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;h3 id=&quot;核心概念&quot;&gt;&lt;a href=&quot;#核心概念&quot; class=&quot;headerlink&quot; title=&quot;核心概念&quot;&gt;&lt;/a&gt;核心概念&lt;/h3&gt;&lt;h2 id=&quot;总体设计&quot;&gt;&lt;a href=&quot;#总体设计&quot; class=&quot;headerlink&quot; title=&quot;总体设计&quot;&gt;&lt;/a&gt;总体设计&lt;/h2&gt;&lt;h2 id=&quot;流程图&quot;&gt;&lt;a href=&quot;#流程图&quot; class=&quot;headerlink&quot; title=&quot;流程图&quot;&gt;&lt;/a&gt;流程图&lt;/h2&gt;&lt;h2 id=&quot;详细设计&quot;&gt;&lt;a href=&quot;#详细设计&quot; class=&quot;headerlink&quot; title=&quot;详细设计&quot;&gt;&lt;/a&gt;详细设计&lt;/h2&gt;&lt;h3 id=&quot;系统架构图&quot;&gt;&lt;a href=&quot;#系统架构图&quot; class=&quot;headerlink&quot; title=&quot;系统架构图&quot;&gt;&lt;/a&gt;系统架构图&lt;/h3&gt;&lt;h3 id=&quot;核心类功能介绍&quot;&gt;&lt;a href=&quot;#核心类功能介绍&quot; class=&quot;headerlink&quot; title=&quot;核心类功能介绍&quot;&gt;&lt;/a&gt;核心类功能介绍&lt;/h3&gt;&lt;h2 id=&quot;小结&quot;&gt;&lt;a href=&quot;#小结&quot; class=&quot;headerlink&quot; title=&quot;小结&quot;&gt;&lt;/a&gt;小结&lt;/h2&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;&quot;&gt;osmdroid&lt;/a&gt; 是一款开源 Android 地图开发库，设计用于替代 Google 自带的地图类库，包含了自定义的 MapView 控件、瓦片地图引擎 TileProvider，支持在线和离线地图、地图缓存以及各类覆盖物图层和绘制图形等。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="android" scheme="http://www.novgis.com/tags/android/"/>
-    
-      <category term="osmdroid" scheme="http://www.novgis.com/tags/osmdroid/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Maven 实战笔记（一）</title>
-    <link href="http://www.novgis.com/blog/2016-05-07/maven-01.html"/>
-    <id>http://www.novgis.com/blog/2016-05-07/maven-01.html</id>
-    <published>2016-05-07T05:48:48.000Z</published>
-    <updated>2016-06-16T07:47:52.570Z</updated>
-    
-    <content type="html">&lt;p&gt;在最近工作学习中，经常碰到 Maven 构建的项目源码，一个对 Maven 知之甚少却也抵制不住源码诱惑的程序猿会因此而望而却步嘛？必须不会！这篇我们就来看看 Maven 究竟是怎么一回事。本文并没有对 Maven 进行全面解析，而是通过 Maven 来构建运行一个 Hello World 程序，切身体会一下不用任何 IDE环境 的纯 Maven 工具是咋回事，看看它到底为我们做了什么。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;Maven 是一个用于项目构建的工具，通过它便捷的管理项目的生命周期，即项目的 jar 包依赖、开发、测试及发布打包等过程。&lt;/p&gt;
-&lt;h1 id=&quot;Maven-的下载安装&quot;&gt;&lt;a href=&quot;#Maven-的下载安装&quot; class=&quot;headerlink&quot; title=&quot;Maven 的下载安装&quot;&gt;&lt;/a&gt;Maven 的下载安装&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;下载&lt;/strong&gt;&lt;br&gt;在&lt;a href=&quot;https://maven.apache.org/download.cgi&quot; title=&quot;去这里下载&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;下载 Maven 的安装包，注意 Maven 安装包有 JDK 版本的限制，必须下载你安装的 JDK 版本对应的安装包&lt;br&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fmaven-01.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;配置环境变量&lt;/strong&gt;&lt;br&gt;第一步将下载下来的安装包解压到硬盘目录，在环境变量中新建 M2_HOME 用户变量，填入刚才安装包的解压路径，注意一定是 bin 文件夹的父目录：&lt;br&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fmaven-02.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;第二步将 Maven 安装目录下 bin 目录路径拷贝到 Path 环境变量中：&lt;br&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fmaven-03.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;第三部进入命令提示符，输入 &lt;code&gt;mvn -v&lt;/code&gt; 命令，如果安装成功会显示当前安装的 Maven 版本信息：&lt;br&gt;&lt;img src=&quot;http://7xteqg.com1.z0.glb.clouddn.com/novgis%2Fmaven-04.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;至此，Maven 安装成功。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在最近工作学习中，经常碰到 Maven 构建的项目源码，一个对 Maven 知之甚少却也抵制不住源码诱惑的程序猿会因此而望而却步嘛？必须不会！这篇我们就来看看 Maven 究竟是怎么一回事。本文并没有对 Maven 进行全面解析，而是通过 Maven 来构建运行一个 Hello World 程序，切身体会一下不用任何 IDE环境 的纯 Maven 工具是咋回事，看看它到底为我们做了什么。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="Maven" scheme="http://www.novgis.com/tags/Maven/"/>
     
   </entry>
   
@@ -969,6 +721,66 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-strategy.html</id>
     <published>2016-05-05T03:39:08.000Z</published>
     <updated>2016-07-13T05:17:15.015Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>状态模式</title>
+    <link href="http://www.novgis.com/blog/2016-05-05/dp-state.html"/>
+    <id>http://www.novgis.com/blog/2016-05-05/dp-state.html</id>
+    <published>2016-05-05T03:38:47.000Z</published>
+    <updated>2016-07-13T05:17:15.014Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>观察者模式</title>
+    <link href="http://www.novgis.com/blog/2016-05-05/dp-observer.html"/>
+    <id>http://www.novgis.com/blog/2016-05-05/dp-observer.html</id>
+    <published>2016-05-05T03:38:35.000Z</published>
+    <updated>2016-07-13T05:14:56.077Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>备忘录模式</title>
+    <link href="http://www.novgis.com/blog/2016-05-05/dp-memento.html"/>
+    <id>http://www.novgis.com/blog/2016-05-05/dp-memento.html</id>
+    <published>2016-05-05T03:38:23.000Z</published>
+    <updated>2016-07-13T05:17:15.013Z</updated>
     
     <content type="html"></content>
     
