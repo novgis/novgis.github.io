@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-12/learn-osmdroid.html</loc>
+    <loc>http://www.novgis.com/blog/2016-06-12/learn-osmdroid.html</loc>
     
-    <lastmod>2016-07-20T06:11:23.901Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/learn-nts-and-esri-geometry-api.html</loc>
-    
-    <lastmod>2016-07-20T06:11:23.900Z</lastmod>
+    <lastmod>2016-07-20T06:14:26.808Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-04-25/learn-brutile.html</loc>
+    <loc>http://www.novgis.com/blog/2016-06-05/learn-nts-and-esri-geometry-api.html</loc>
     
-    <lastmod>2016-07-20T06:11:23.899Z</lastmod>
+    <lastmod>2016-07-20T06:14:26.807Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-04-20/learn-proj-net.html</loc>
+    <loc>http://www.novgis.com/blog/2016-06-25/learn-brutile.html</loc>
     
-    <lastmod>2016-07-20T06:10:57.141Z</lastmod>
+    <lastmod>2016-07-20T06:14:26.807Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-06-20/learn-proj-net.html</loc>
+    
+    <lastmod>2016-07-20T06:14:26.806Z</lastmod>
     
   </url>
   

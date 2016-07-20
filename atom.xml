@@ -134,6 +134,86 @@
   </entry>
   
   <entry>
+    <title>BruTile 源码解析</title>
+    <link href="http://www.novgis.com/blog/2016-06-25/learn-brutile.html"/>
+    <id>http://www.novgis.com/blog/2016-06-25/learn-brutile.html</id>
+    <published>2016-06-25T06:05:47.000Z</published>
+    <updated>2016-07-20T06:14:26.807Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
+    
+    
+      <category term="Tile" scheme="http://www.novgis.com/tags/Tile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Proj.Net 源码解析</title>
+    <link href="http://www.novgis.com/blog/2016-06-20/learn-proj-net.html"/>
+    <id>http://www.novgis.com/blog/2016-06-20/learn-proj-net.html</id>
+    <published>2016-06-20T06:05:27.000Z</published>
+    <updated>2016-07-20T06:14:26.806Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
+    
+    
+      <category term="Proj.Net" scheme="http://www.novgis.com/tags/Proj-Net/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OSMDroid 源码分析</title>
+    <link href="http://www.novgis.com/blog/2016-06-12/learn-osmdroid.html"/>
+    <id>http://www.novgis.com/blog/2016-06-12/learn-osmdroid.html</id>
+    <published>2016-06-12T06:06:51.000Z</published>
+    <updated>2016-07-20T06:14:26.808Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
+    
+    
+      <category term="OSMDroid" scheme="http://www.novgis.com/tags/OSMDroid/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NTS 与 ESRI Geometry API 对比分析</title>
+    <link href="http://www.novgis.com/blog/2016-06-05/learn-nts-and-esri-geometry-api.html"/>
+    <id>http://www.novgis.com/blog/2016-06-05/learn-nts-and-esri-geometry-api.html</id>
+    <published>2016-06-05T06:06:21.000Z</published>
+    <updated>2016-07-20T06:14:26.807Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
+    
+    
+      <category term="spatial relation" scheme="http://www.novgis.com/tags/spatial-relation/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Bing 地图切片规则分析</title>
     <link href="http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html"/>
     <id>http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html</id>
@@ -339,26 +419,6 @@
       <category term="android" scheme="http://www.novgis.com/tags/android/"/>
     
       <category term="osmdroid" scheme="http://www.novgis.com/tags/osmdroid/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OSMDroid 源码分析</title>
-    <link href="http://www.novgis.com/blog/2016-05-12/learn-osmdroid.html"/>
-    <id>http://www.novgis.com/blog/2016-05-12/learn-osmdroid.html</id>
-    <published>2016-05-12T06:06:51.000Z</published>
-    <updated>2016-07-20T06:11:23.901Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
-    
-    
-      <category term="OSMDroid" scheme="http://www.novgis.com/tags/OSMDroid/"/>
     
   </entry>
   
@@ -701,26 +761,6 @@
   </entry>
   
   <entry>
-    <title>NTS 与 ESRI Geometry API 对比分析</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/learn-nts-and-esri-geometry-api.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/learn-nts-and-esri-geometry-api.html</id>
-    <published>2016-05-05T06:06:21.000Z</published>
-    <updated>2016-07-20T06:11:23.900Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
-    
-    
-      <category term="spatial relation" scheme="http://www.novgis.com/tags/spatial-relation/"/>
-    
-  </entry>
-  
-  <entry>
     <title>抽象工厂模式</title>
     <link href="http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html</id>
@@ -746,46 +786,6 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-visitor.html</id>
     <published>2016-05-05T03:39:56.000Z</published>
     <updated>2016-07-13T05:17:15.017Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模板方法模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-template-method.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-template-method.html</id>
-    <published>2016-05-05T03:39:34.000Z</published>
-    <updated>2016-07-13T05:17:15.016Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>策略模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-strategy.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-strategy.html</id>
-    <published>2016-05-05T03:39:08.000Z</published>
-    <updated>2016-07-13T05:17:15.015Z</updated>
     
     <content type="html"></content>
     
