@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html</loc>
+    
+    <lastmod>2016-07-20T06:36:43.628Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.novgis.com/blog/2016-06-12/learn-osmdroid.html</loc>
     
     <lastmod>2016-07-20T06:35:49.766Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://www.novgis.com/blog/2016-07-19/openplot-01-intro.html</loc>
     
     <lastmod>2016-07-20T06:24:09.473Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html</loc>
-    
-    <lastmod>2016-07-20T06:23:49.830Z</lastmod>
     
   </url>
   
@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/dp-memento.html</loc>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-mediator.html</loc>
     
     <lastmod>2016-07-13T05:17:15.013Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/dp-mediator.html</loc>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-memento.html</loc>
     
     <lastmod>2016-07-13T05:17:15.013Z</lastmod>
     
@@ -296,14 +296,14 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/note/index.html</loc>
+    <loc>http://www.novgis.com/categories/programming/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/programming/index.html</loc>
+    <loc>http://www.novgis.com/categories/note/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
