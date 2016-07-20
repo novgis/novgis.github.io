@@ -138,7 +138,7 @@
     <link href="http://www.novgis.com/blog/2016-06-25/learn-brutile.html"/>
     <id>http://www.novgis.com/blog/2016-06-25/learn-brutile.html</id>
     <published>2016-06-25T06:05:47.000Z</published>
-    <updated>2016-07-20T06:22:46.122Z</updated>
+    <updated>2016-07-20T06:35:39.350Z</updated>
     
     <content type="html"></content>
     
@@ -149,7 +149,7 @@
       <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
     
     
-      <category term="Tile" scheme="http://www.novgis.com/tags/Tile/"/>
+      <category term="Tileaa" scheme="http://www.novgis.com/tags/Tileaa/"/>
     
   </entry>
   
@@ -178,7 +178,7 @@
     <link href="http://www.novgis.com/blog/2016-06-12/learn-osmdroid.html"/>
     <id>http://www.novgis.com/blog/2016-06-12/learn-osmdroid.html</id>
     <published>2016-06-12T06:06:51.000Z</published>
-    <updated>2016-07-20T06:22:46.124Z</updated>
+    <updated>2016-07-20T06:35:49.766Z</updated>
     
     <content type="html">&lt;p&gt;&lt;a href=&quot;&quot;&gt;osmdroid&lt;/a&gt; 是一款开源 Android 地图开发库，设计用于替代 Google 自带的地图类库，包含了自定义的 MapView 控件、瓦片地图引擎 TileProvider，支持在线和离线地图、地图缓存以及各类覆盖物图层和绘制图形等。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;功能介绍&quot;&gt;&lt;a href=&quot;#功能介绍&quot; class=&quot;headerlink&quot; title=&quot;功能介绍&quot;&gt;&lt;/a&gt;功能介绍&lt;/h2&gt;&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;h3 id=&quot;核心概念&quot;&gt;&lt;a href=&quot;#核心概念&quot; class=&quot;headerlink&quot; title=&quot;核心概念&quot;&gt;&lt;/a&gt;核心概念&lt;/h3&gt;&lt;h2 id=&quot;总体设计&quot;&gt;&lt;a href=&quot;#总体设计&quot; class=&quot;headerlink&quot; title=&quot;总体设计&quot;&gt;&lt;/a&gt;总体设计&lt;/h2&gt;&lt;h2 id=&quot;流程图&quot;&gt;&lt;a href=&quot;#流程图&quot; class=&quot;headerlink&quot; title=&quot;流程图&quot;&gt;&lt;/a&gt;流程图&lt;/h2&gt;&lt;h2 id=&quot;详细设计&quot;&gt;&lt;a href=&quot;#详细设计&quot; class=&quot;headerlink&quot; title=&quot;详细设计&quot;&gt;&lt;/a&gt;详细设计&lt;/h2&gt;&lt;h3 id=&quot;系统架构图&quot;&gt;&lt;a href=&quot;#系统架构图&quot; class=&quot;headerlink&quot; title=&quot;系统架构图&quot;&gt;&lt;/a&gt;系统架构图&lt;/h3&gt;&lt;h3 id=&quot;核心类功能介绍&quot;&gt;&lt;a href=&quot;#核心类功能介绍&quot; class=&quot;headerlink&quot; title=&quot;核心类功能介绍&quot;&gt;&lt;/a&gt;核心类功能介绍&lt;/h3&gt;&lt;h2 id=&quot;小结&quot;&gt;&lt;a href=&quot;#小结&quot; class=&quot;headerlink&quot; title=&quot;小结&quot;&gt;&lt;/a&gt;小结&lt;/h2&gt;</content>
@@ -192,7 +192,7 @@
       <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
     
     
-      <category term="OSMDroid" scheme="http://www.novgis.com/tags/OSMDroid/"/>
+      <category term="OSMDroidaa" scheme="http://www.novgis.com/tags/OSMDroidaa/"/>
     
   </entry>
   
@@ -201,7 +201,7 @@
     <link href="http://www.novgis.com/blog/2016-06-05/learn-nts-and-esri-geometry-api.html"/>
     <id>http://www.novgis.com/blog/2016-06-05/learn-nts-and-esri-geometry-api.html</id>
     <published>2016-06-05T06:06:21.000Z</published>
-    <updated>2016-07-20T06:22:46.123Z</updated>
+    <updated>2016-07-20T06:35:26.634Z</updated>
     
     <content type="html"></content>
     
@@ -212,7 +212,7 @@
       <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
     
     
-      <category term="Spatial Relation" scheme="http://www.novgis.com/tags/Spatial-Relation/"/>
+      <category term="Spatial RelationAA" scheme="http://www.novgis.com/tags/Spatial-RelationAA/"/>
     
   </entry>
   
