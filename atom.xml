@@ -138,7 +138,7 @@
     <link href="http://www.novgis.com/blog/2016-06-25/learn-brutile.html"/>
     <id>http://www.novgis.com/blog/2016-06-25/learn-brutile.html</id>
     <published>2016-06-25T06:05:47.000Z</published>
-    <updated>2016-07-20T06:35:39.350Z</updated>
+    <updated>2016-07-20T06:37:40.688Z</updated>
     
     <content type="html"></content>
     
@@ -149,7 +149,7 @@
       <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
     
     
-      <category term="Tileaa" scheme="http://www.novgis.com/tags/Tileaa/"/>
+      <category term="Tile" scheme="http://www.novgis.com/tags/Tile/"/>
     
   </entry>
   
@@ -178,7 +178,7 @@
     <link href="http://www.novgis.com/blog/2016-06-12/learn-osmdroid.html"/>
     <id>http://www.novgis.com/blog/2016-06-12/learn-osmdroid.html</id>
     <published>2016-06-12T06:06:51.000Z</published>
-    <updated>2016-07-20T06:35:49.766Z</updated>
+    <updated>2016-07-20T06:37:40.689Z</updated>
     
     <content type="html">&lt;p&gt;&lt;a href=&quot;&quot;&gt;osmdroid&lt;/a&gt; 是一款开源 Android 地图开发库，设计用于替代 Google 自带的地图类库，包含了自定义的 MapView 控件、瓦片地图引擎 TileProvider，支持在线和离线地图、地图缓存以及各类覆盖物图层和绘制图形等。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;功能介绍&quot;&gt;&lt;a href=&quot;#功能介绍&quot; class=&quot;headerlink&quot; title=&quot;功能介绍&quot;&gt;&lt;/a&gt;功能介绍&lt;/h2&gt;&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;h3 id=&quot;核心概念&quot;&gt;&lt;a href=&quot;#核心概念&quot; class=&quot;headerlink&quot; title=&quot;核心概念&quot;&gt;&lt;/a&gt;核心概念&lt;/h3&gt;&lt;h2 id=&quot;总体设计&quot;&gt;&lt;a href=&quot;#总体设计&quot; class=&quot;headerlink&quot; title=&quot;总体设计&quot;&gt;&lt;/a&gt;总体设计&lt;/h2&gt;&lt;h2 id=&quot;流程图&quot;&gt;&lt;a href=&quot;#流程图&quot; class=&quot;headerlink&quot; title=&quot;流程图&quot;&gt;&lt;/a&gt;流程图&lt;/h2&gt;&lt;h2 id=&quot;详细设计&quot;&gt;&lt;a href=&quot;#详细设计&quot; class=&quot;headerlink&quot; title=&quot;详细设计&quot;&gt;&lt;/a&gt;详细设计&lt;/h2&gt;&lt;h3 id=&quot;系统架构图&quot;&gt;&lt;a href=&quot;#系统架构图&quot; class=&quot;headerlink&quot; title=&quot;系统架构图&quot;&gt;&lt;/a&gt;系统架构图&lt;/h3&gt;&lt;h3 id=&quot;核心类功能介绍&quot;&gt;&lt;a href=&quot;#核心类功能介绍&quot; class=&quot;headerlink&quot; title=&quot;核心类功能介绍&quot;&gt;&lt;/a&gt;核心类功能介绍&lt;/h3&gt;&lt;h2 id=&quot;小结&quot;&gt;&lt;a href=&quot;#小结&quot; class=&quot;headerlink&quot; title=&quot;小结&quot;&gt;&lt;/a&gt;小结&lt;/h2&gt;</content>
@@ -192,7 +192,7 @@
       <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
     
     
-      <category term="OSMDroidaa" scheme="http://www.novgis.com/tags/OSMDroidaa/"/>
+      <category term="OSMDroid" scheme="http://www.novgis.com/tags/OSMDroid/"/>
     
   </entry>
   
@@ -201,7 +201,7 @@
     <link href="http://www.novgis.com/blog/2016-06-05/learn-nts-and-esri-geometry-api.html"/>
     <id>http://www.novgis.com/blog/2016-06-05/learn-nts-and-esri-geometry-api.html</id>
     <published>2016-06-05T06:06:21.000Z</published>
-    <updated>2016-07-20T06:35:26.634Z</updated>
+    <updated>2016-07-20T06:37:40.687Z</updated>
     
     <content type="html"></content>
     
@@ -212,7 +212,7 @@
       <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
     
     
-      <category term="Spatial RelationAA" scheme="http://www.novgis.com/tags/Spatial-RelationAA/"/>
+      <category term="Spatial Relation" scheme="http://www.novgis.com/tags/Spatial-Relation/"/>
     
   </entry>
   
@@ -221,7 +221,7 @@
     <link href="http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html"/>
     <id>http://www.novgis.com/blog/2016-05-19/bing-map-tile-system.html</id>
     <published>2016-05-19T13:45:51.000Z</published>
-    <updated>2016-07-20T06:36:43.628Z</updated>
+    <updated>2016-07-20T06:37:40.690Z</updated>
     
     <content type="html">&lt;p&gt;　　Bing Map 提供了一套全球的在线电子地图服务，用户可以在其上进行平移、缩放等操作。偌大数据量的全球地图，为了尽可能快地加速地图交互的响应速度，像其他几乎所有的在线地图一样，我们需要对地图数据进行预处理，把投影后的全球地图按照显示细节的层级分别切割成一块块的小图片（“瓦片”这个词描述的很形象），然后通过特定的索引算法快速地获取到区域内某个显示层级下的所有瓦片，然后进行无缝拼接展示，此时就比一次性展示整张地图数据要快的多得多。本文对 Bing Map 的地图投影、坐标系统以及地图瓦片的编码体系进行介绍，建立一套统一有规律、标准的&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb259689.aspx&quot; title=&quot;原文链接&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;地图瓦片系统&lt;/a&gt;。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;地图投影&quot;&gt;&lt;a href=&quot;#地图投影&quot; class=&quot;headerlink&quot; title=&quot;地图投影&quot;&gt;&lt;/a&gt;地图投影&lt;/h1&gt;&lt;p&gt;为了使地图看起来是无缝的，并且确保来自不同数据源的影像图能够完美拼接，必须要有一个统一的地图投影，Bing Map 采用了 Mercator 投影（实际应该是 Web Mercator 或叫 Spherical Mercator，为了计算和实现方便，直接将地球椭球体视为正球体然后再投影到正轴圆柱上），按这种方式投影后的平面地图是一张正方形的图片：&lt;/p&gt;
@@ -396,7 +396,7 @@
       <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
     
     
-      <category term="Tileaa" scheme="http://www.novgis.com/tags/Tileaa/"/>
+      <category term="Tile" scheme="http://www.novgis.com/tags/Tile/"/>
     
   </entry>
   
