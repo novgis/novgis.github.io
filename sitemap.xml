@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/dp-mediator.html</loc>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-memento.html</loc>
     
     <lastmod>2016-07-13T05:17:15.013Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/dp-memento.html</loc>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-mediator.html</loc>
     
     <lastmod>2016-07-13T05:17:15.013Z</lastmod>
     
@@ -289,13 +289,6 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/note/index.html</loc>
-    
-    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.novgis.com/categories/gis/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
@@ -304,6 +297,13 @@
   
   <url>
     <loc>http://www.novgis.com/categories/programming/index.html</loc>
+    
+    <lastmod>2016-05-06T09:30:15.403Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/categories/note/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
