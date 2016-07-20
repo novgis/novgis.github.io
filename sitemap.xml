@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.novgis.com/blog/2016-05-12/learn-osmdroid.html</loc>
+    
+    <lastmod>2016-07-20T06:11:23.901Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-05-05/learn-nts-and-esri-geometry-api.html</loc>
+    
+    <lastmod>2016-07-20T06:11:23.900Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-04-25/learn-brutile.html</loc>
+    
+    <lastmod>2016-07-20T06:11:23.899Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-04-20/learn-proj-net.html</loc>
+    
+    <lastmod>2016-07-20T06:10:57.141Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.novgis.com/blog/2016-07-19/openplot-01-intro.html</loc>
     
     <lastmod>2016-07-19T08:09:00.639Z</lastmod>
@@ -51,14 +79,14 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/dp-memento.html</loc>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-mediator.html</loc>
     
     <lastmod>2016-07-13T05:17:15.013Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-05-05/dp-mediator.html</loc>
+    <loc>http://www.novgis.com/blog/2016-05-05/dp-memento.html</loc>
     
     <lastmod>2016-07-13T05:17:15.013Z</lastmod>
     
@@ -275,14 +303,14 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/note/index.html</loc>
+    <loc>http://www.novgis.com/categories/programming/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/programming/index.html</loc>
+    <loc>http://www.novgis.com/categories/note/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     

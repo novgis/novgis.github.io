@@ -343,6 +343,26 @@
   </entry>
   
   <entry>
+    <title>OSMDroid 源码分析</title>
+    <link href="http://www.novgis.com/blog/2016-05-12/learn-osmdroid.html"/>
+    <id>http://www.novgis.com/blog/2016-05-12/learn-osmdroid.html</id>
+    <published>2016-05-12T06:06:51.000Z</published>
+    <updated>2016-07-20T06:11:23.901Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
+    
+    
+      <category term="OSMDroid" scheme="http://www.novgis.com/tags/OSMDroid/"/>
+    
+  </entry>
+  
+  <entry>
     <title>(6) JSP（下）</title>
     <link href="http://www.novgis.com/blog/2016-05-06/javaweb-06-JSP3.html"/>
     <id>http://www.novgis.com/blog/2016-05-06/javaweb-06-JSP3.html</id>
@@ -681,6 +701,26 @@
   </entry>
   
   <entry>
+    <title>NTS 与 ESRI Geometry API 对比分析</title>
+    <link href="http://www.novgis.com/blog/2016-05-05/learn-nts-and-esri-geometry-api.html"/>
+    <id>http://www.novgis.com/blog/2016-05-05/learn-nts-and-esri-geometry-api.html</id>
+    <published>2016-05-05T06:06:21.000Z</published>
+    <updated>2016-07-20T06:11:23.900Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
+    
+    
+      <category term="spatial relation" scheme="http://www.novgis.com/tags/spatial-relation/"/>
+    
+  </entry>
+  
+  <entry>
     <title>抽象工厂模式</title>
     <link href="http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html"/>
     <id>http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html</id>
@@ -746,46 +786,6 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-strategy.html</id>
     <published>2016-05-05T03:39:08.000Z</published>
     <updated>2016-07-13T05:17:15.015Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>状态模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-state.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-state.html</id>
-    <published>2016-05-05T03:38:47.000Z</published>
-    <updated>2016-07-13T05:17:15.014Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>观察者模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-observer.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-observer.html</id>
-    <published>2016-05-05T03:38:35.000Z</published>
-    <updated>2016-07-13T05:14:56.077Z</updated>
     
     <content type="html"></content>
     
