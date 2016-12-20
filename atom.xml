@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-07-20T06:24:09.473Z</updated>
+  <updated>2016-12-20T09:09:43.772Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leaflet_01</title>
+    <link href="http://www.novgis.com/blog/2016-12-20/leaflet-01.html"/>
+    <id>http://www.novgis.com/blog/2016-12-20/leaflet-01.html</id>
+    <published>2016-12-20T09:09:43.000Z</published>
+    <updated>2016-12-20T09:09:43.772Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>图解JavaScript关键技术点-变量 &amp; 执行环境 &amp; 作用域</title>
+    <link href="http://www.novgis.com/blog/2016-09-14/Illustrated-JS-Variable-Context-Scope.html"/>
+    <id>http://www.novgis.com/blog/2016-09-14/Illustrated-JS-Variable-Context-Scope.html</id>
+    <published>2016-09-14T01:26:53.000Z</published>
+    <updated>2016-09-14T01:33:09.161Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="JavaScript" scheme="http://www.novgis.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>OpenPlot 开源GIS标绘组件</title>
@@ -138,11 +176,15 @@
     <link href="http://www.novgis.com/blog/2016-06-25/learn-brutile.html"/>
     <id>http://www.novgis.com/blog/2016-06-25/learn-brutile.html</id>
     <published>2016-06-25T06:05:47.000Z</published>
-    <updated>2016-07-20T06:37:40.688Z</updated>
+    <updated>2016-09-14T01:35:57.190Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;功能介绍&quot;&gt;&lt;a href=&quot;#功能介绍&quot; class=&quot;headerlink&quot; title=&quot;功能介绍&quot;&gt;&lt;/a&gt;功能介绍&lt;/h2&gt;&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;h3 id=&quot;核心概念&quot;&gt;&lt;a href=&quot;#核心概念&quot; class=&quot;headerlink&quot; title=&quot;核心概念&quot;&gt;&lt;/a&gt;核心概念&lt;/h3&gt;&lt;h2 id=&quot;总体设计&quot;&gt;&lt;a href=&quot;#总体设计&quot; class=&quot;headerlink&quot; title=&quot;总体设计&quot;&gt;&lt;/a&gt;总体设计&lt;/h2&gt;&lt;h2 id=&quot;流程图&quot;&gt;&lt;a href=&quot;#流程图&quot; class=&quot;headerlink&quot; title=&quot;流程图&quot;&gt;&lt;/a&gt;流程图&lt;/h2&gt;&lt;h2 id=&quot;详细设计&quot;&gt;&lt;a href=&quot;#详细设计&quot; class=&quot;headerlink&quot; title=&quot;详细设计&quot;&gt;&lt;/a&gt;详细设计&lt;/h2&gt;&lt;h3 id=&quot;系统架构图&quot;&gt;&lt;a href=&quot;#系统架构图&quot; class=&quot;headerlink&quot; title=&quot;系统架构图&quot;&gt;&lt;/a&gt;系统架构图&lt;/h3&gt;&lt;h3 id=&quot;核心类功能介绍&quot;&gt;&lt;a href=&quot;#核心类功能介绍&quot; class=&quot;headerlink&quot; title=&quot;核心类功能介绍&quot;&gt;&lt;/a&gt;核心类功能介绍&lt;/h3&gt;&lt;h2 id=&quot;小结&quot;&gt;&lt;a href=&quot;#小结&quot; class=&quot;headerlink&quot; title=&quot;小结&quot;&gt;&lt;/a&gt;小结&lt;/h2&gt;</content>
     
     <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;功能介绍&quot;&gt;&lt;a href=&quot;#功能介绍&quot; class=&quot;headerlink&quot; title=&quot;功能介绍&quot;&gt;&lt;/a&gt;功能介绍&lt;/h2&gt;&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; ti
     
     </summary>
     
@@ -744,46 +786,6 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html</id>
     <published>2016-05-05T03:42:09.000Z</published>
     <updated>2016-07-13T05:17:15.018Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>访问者模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-visitor.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-visitor.html</id>
-    <published>2016-05-05T03:39:56.000Z</published>
-    <updated>2016-07-13T05:17:15.017Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模板方法模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-template-method.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-template-method.html</id>
-    <published>2016-05-05T03:39:34.000Z</published>
-    <updated>2016-07-13T05:17:15.016Z</updated>
     
     <content type="html"></content>
     
