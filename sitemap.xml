@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-12-20/leaflet-01.html</loc>
-    
-    <lastmod>2016-12-20T09:09:43.772Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.novgis.com/blog/2016-06-25/learn-brutile.html</loc>
     
     <lastmod>2016-09-14T01:35:57.190Z</lastmod>
@@ -303,14 +296,14 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/note/index.html</loc>
+    <loc>http://www.novgis.com/categories/gis/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/gis/index.html</loc>
+    <loc>http://www.novgis.com/categories/note/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     

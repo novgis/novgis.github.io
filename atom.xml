@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-12-20T09:09:43.772Z</updated>
+  <updated>2016-09-14T01:33:09.161Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -14,22 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>leaflet_01</title>
-    <link href="http://www.novgis.com/blog/2016-12-20/leaflet-01.html"/>
-    <id>http://www.novgis.com/blog/2016-12-20/leaflet-01.html</id>
-    <published>2016-12-20T09:09:43.000Z</published>
-    <updated>2016-12-20T09:09:43.772Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>图解JavaScript关键技术点-变量 &amp; 执行环境 &amp; 作用域</title>
@@ -786,6 +770,26 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html</id>
     <published>2016-05-05T03:42:09.000Z</published>
     <updated>2016-07-13T05:17:15.018Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
+    
+    
+      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>访问者模式</title>
+    <link href="http://www.novgis.com/blog/2016-05-05/dp-visitor.html"/>
+    <id>http://www.novgis.com/blog/2016-05-05/dp-visitor.html</id>
+    <published>2016-05-05T03:39:56.000Z</published>
+    <updated>2016-07-13T05:17:15.017Z</updated>
     
     <content type="html"></content>
     
