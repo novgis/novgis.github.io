@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-09-14T01:33:09.161Z</updated>
+  <updated>2017-04-27T05:29:43.785Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我踩过的坑</title>
+    <link href="http://www.novgis.com/blog/2017-04-27/tips-for-learn-android.html"/>
+    <id>http://www.novgis.com/blog/2017-04-27/tips-for-learn-android.html</id>
+    <published>2017-04-27T05:19:45.000Z</published>
+    <updated>2017-04-27T05:29:43.785Z</updated>
+    
+    <content type="html">&lt;p&gt;#1. build.gradle 依赖管理&lt;/p&gt;
+&lt;p&gt;#2. AS Logcat控制台打印输出过滤&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#1. build.gradle 依赖管理&lt;/p&gt;
+&lt;p&gt;#2. AS Logcat控制台打印输出过滤&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>图解JavaScript关键技术点-变量 &amp; 执行环境 &amp; 作用域</title>
@@ -770,26 +792,6 @@
     <id>http://www.novgis.com/blog/2016-05-05/dp-abstract-factory.html</id>
     <published>2016-05-05T03:42:09.000Z</published>
     <updated>2016-07-13T05:17:15.018Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="programming" scheme="http://www.novgis.com/categories/programming/"/>
-    
-    
-      <category term="Design Pattern" scheme="http://www.novgis.com/tags/Design-Pattern/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>访问者模式</title>
-    <link href="http://www.novgis.com/blog/2016-05-05/dp-visitor.html"/>
-    <id>http://www.novgis.com/blog/2016-05-05/dp-visitor.html</id>
-    <published>2016-05-05T03:39:56.000Z</published>
-    <updated>2016-07-13T05:17:15.017Z</updated>
     
     <content type="html"></content>
     
