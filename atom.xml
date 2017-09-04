@@ -44,10 +44,11 @@
     <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html"/>
     <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html</id>
     <published>2017-09-04T06:42:42.000Z</published>
-    <updated>2017-09-04T16:12:35.136Z</updated>
+    <updated>2017-09-04T16:19:29.958Z</updated>
     
     <content type="html">&lt;p&gt;有很多方式在各操作系统中安装 GeoServer，本节就来讨论这些方式。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;如果您用的是 Windows 或 OS X 系统，我们建议您使用 installers 进行安装。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/stable/en/user/installation/index.html#installation&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#Windows安装程序&quot;&gt;Windows 安装程序&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Windows 二进制文件安装[未译]&lt;/li&gt;
