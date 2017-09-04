@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>novgis&#39;s blog</title>
-  <subtitle>GIS - Creating our Future</subtitle>
+  <title>GIS create our future</title>
+  <subtitle>厚积薄发</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2016-05-19T15:05:06.853Z</updated>
+  <updated>2017-09-04T03:44:33.939Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,11 +16,75 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>简介</title>
+    <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html"/>
+    <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html</id>
+    <published>2017-09-04T03:40:36.000Z</published>
+    <updated>2017-09-04T03:44:33.939Z</updated>
+    
+    <content type="html">&lt;p&gt;Geoserver 简介&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Geoserver 简介&lt;br&gt;
+    
+    </summary>
+    
+      <category term="geoserver" scheme="http://www.novgis.com/categories/geoserver/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>GeoServer-2.11.1 用户手册[译]</title>
+    <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html"/>
+    <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html</id>
+    <published>2017-09-04T03:00:00.000Z</published>
+    <updated>2017-09-04T06:15:42.419Z</updated>
+    
+    <content type="html">&lt;p&gt;Geoserver 是一款用 Java 编写的开源地图服务器，允许用户共享和编辑地理空间数据。利用 GeoServer 可以很方便的发布基于开放标准的地理空间数据。&lt;/p&gt;
+&lt;p&gt;这份用户手册从各个方面综合性地介绍了 GeoServer，无论你是新手还是老司机，都希望这份文档对你有所帮助。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;简介&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 简介&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;安装&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;安装部署 GeoServer&lt;/p&gt;
+&lt;h2 id=&quot;入门指南&quot;&gt;&lt;a href=&quot;#入门指南&quot; class=&quot;headerlink&quot; title=&quot;入门指南&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;入门指南&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 入门教程&lt;/p&gt;
+&lt;h2 id=&quot;Web-管理界面&quot;&gt;&lt;a href=&quot;#Web-管理界面&quot; class=&quot;headerlink&quot; title=&quot;Web 管理界面&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;Web 管理界面&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 的 Web 端管理界面介绍&lt;/p&gt;
+&lt;h2 id=&quot;地理数据的管理&quot;&gt;&lt;a href=&quot;#地理数据的管理&quot; class=&quot;headerlink&quot; title=&quot;地理数据的管理&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;地理数据的管理&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;如何加载和发布各类数据源？&lt;/p&gt;
+&lt;h2 id=&quot;图层样式&quot;&gt;&lt;a href=&quot;#图层样式&quot; class=&quot;headerlink&quot; title=&quot;图层样式&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;图层样式&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;如何渲染地图数据？&lt;/p&gt;
+&lt;h2 id=&quot;支持的地图服务类型&quot;&gt;&lt;a href=&quot;#支持的地图服务类型&quot; class=&quot;headerlink&quot; title=&quot;支持的地图服务类型&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;支持的地图服务类型&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 都支持哪些标准的 OGC 地图服务？&lt;/p&gt;
+&lt;h2 id=&quot;请求过滤&quot;&gt;&lt;a href=&quot;#请求过滤&quot; class=&quot;headerlink&quot; title=&quot;请求过滤&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;请求过滤&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;如何提高请求响应的速度？&lt;/p&gt;
+&lt;h2 id=&quot;服务配置&quot;&gt;&lt;a href=&quot;#服务配置&quot; class=&quot;headerlink&quot; title=&quot;服务配置&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;服务配置&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 的管理配置项&lt;/p&gt;
+&lt;h2 id=&quot;GeoServer-文件目录&quot;&gt;&lt;a href=&quot;#GeoServer-文件目录&quot; class=&quot;headerlink&quot; title=&quot;GeoServer 文件目录&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;GeoServer 文件目录&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 的安装和配置文件目录结构&lt;/p&gt;
+&lt;h2 id=&quot;GeoServer-的最佳实践&quot;&gt;&lt;a href=&quot;#GeoServer-的最佳实践&quot; class=&quot;headerlink&quot; title=&quot;GeoServer 的最佳实践&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;GeoServer 的最佳实践&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 在生产环境下的最佳实践&lt;/p&gt;
+&lt;h2 id=&quot;REST-接口&quot;&gt;&lt;a href=&quot;#REST-接口&quot; class=&quot;headerlink&quot; title=&quot;REST 接口&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;REST 接口&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;通过 RESTful 接口编程的方式来和服务交互&lt;/p&gt;
+&lt;h2 id=&quot;安全策略&quot;&gt;&lt;a href=&quot;#安全策略&quot; class=&quot;headerlink&quot; title=&quot;安全策略&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;安全策略&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;对数据和服务的访问约束和安全策略&lt;/p&gt;
+&lt;h2 id=&quot;缓存&quot;&gt;&lt;a href=&quot;#缓存&quot; class=&quot;headerlink&quot; title=&quot;缓存&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;缓存&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;加速 GeoServer 的瓦片缓存&lt;/p&gt;
+&lt;h2 id=&quot;扩展&quot;&gt;&lt;a href=&quot;#扩展&quot; class=&quot;headerlink&quot; title=&quot;扩展&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;扩展&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;给 GeoServer 提供扩展功能&lt;/p&gt;
+&lt;h2 id=&quot;第三方扩展模块&quot;&gt;&lt;a href=&quot;#第三方扩展模块&quot; class=&quot;headerlink&quot; title=&quot;第三方扩展模块&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;第三方扩展模块&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 的第三方扩展模块&lt;/p&gt;
+&lt;h2 id=&quot;其它教程&quot;&gt;&lt;a href=&quot;#其它教程&quot; class=&quot;headerlink&quot; title=&quot;其它教程&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;其它教程&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;其它访问 GeoServer 地图服务的技巧&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Geoserver 是一款用 Java 编写的开源地图服务器，允许用户共享和编辑地理空间数据。利用 GeoServer 可以很方便的发布基于开放标准的地理空间数据。&lt;/p&gt;
+&lt;p&gt;这份用户手册从各个方面综合性地介绍了 GeoServer，无论你是新手还是老司机，都希望这份文档对你有所帮助。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
+    
+    
+      <category term="geoserver" scheme="http://www.novgis.com/tags/geoserver/"/>
+    
+  </entry>
+  
+  <entry>
     <title>程序员要有一个独立博客 —— GitHub Pages 与 Hexo 建站经过</title>
     <link href="http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html"/>
     <id>http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html</id>
     <published>2016-04-26T14:57:20.000Z</published>
-    <updated>2016-05-19T15:05:06.853Z</updated>
+    <updated>2017-09-04T03:37:09.098Z</updated>
     
     <content type="html">&lt;p&gt;这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;这篇文章应该算是&lt;a href=&quot;http://www.cnfeat.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;陈素封&lt;/a&gt;老师&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这篇文章&lt;/a&gt;的实践篇，加入了一些我经历过的坑，记录下来，以防换了环境再来部署又要走弯路。下面以我的博客 &lt;a href=&quot;http://www.novgis.com&quot;&gt;www.novgis.com&lt;/a&gt; 为例，介绍我在 Windows 7 环境下是如何实践搭建独立博客的过程。&lt;/p&gt;
@@ -144,8 +208,6 @@
     
     </summary>
     
-    
-      <category term="建站" scheme="http://www.novgis.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
