@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2017-09-04T06:38:52.098Z</updated>
+  <updated>2017-09-04T06:51:23.338Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,18 +16,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>一、GeoServer 简介</title>
-    <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html"/>
-    <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html</id>
-    <published>2017-09-04T03:40:36.000Z</published>
-    <updated>2017-09-04T06:38:52.098Z</updated>
+    <title>二、GeoServer 安装部署[译]</title>
+    <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html"/>
+    <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html</id>
+    <published>2017-09-04T06:42:42.000Z</published>
+    <updated>2017-09-04T06:51:23.338Z</updated>
     
-    <content type="html">&lt;p&gt;本节是对 GeoServer 项目的概述，介绍项目的背景以及 GeoServer 的应用领域。对于想直接上手操作的童孩，请跳过本节，从&lt;a href=&quot;&quot;&gt;安装部署&lt;/a&gt;章节开始学习。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;GeoServer-概述&quot;&gt;&lt;a href=&quot;#GeoServer-概述&quot; class=&quot;headerlink&quot; title=&quot;GeoServer 概述&quot;&gt;&lt;/a&gt;GeoServer 概述&lt;/h1&gt;&lt;h1 id=&quot;GeoServer-的由来&quot;&gt;&lt;a href=&quot;#GeoServer-的由来&quot; class=&quot;headerlink&quot; title=&quot;GeoServer 的由来&quot;&gt;&lt;/a&gt;GeoServer 的由来&lt;/h1&gt;&lt;h1 id=&quot;参与项目&quot;&gt;&lt;a href=&quot;#参与项目&quot; class=&quot;headerlink&quot; title=&quot;参与项目&quot;&gt;&lt;/a&gt;参与项目&lt;/h1&gt;&lt;h1 id=&quot;许可&quot;&gt;&lt;a href=&quot;#许可&quot; class=&quot;headerlink&quot; title=&quot;许可&quot;&gt;&lt;/a&gt;许可&lt;/h1&gt;</content>
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+</content>
     
     <summary type="html">
     
-      &lt;p&gt;本节是对 GeoServer 项目的概述，介绍项目的背景以及 GeoServer 的应用领域。对于想直接上手操作的童孩，请跳过本节，从&lt;a href=&quot;&quot;&gt;安装部署&lt;/a&gt;章节开始学习。&lt;br&gt;
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
     
     </summary>
     
@@ -39,16 +40,76 @@
   </entry>
   
   <entry>
-    <title>GeoServer-2.11.1 用户手册[译]</title>
+    <title>一、GeoServer 简介[译]</title>
+    <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html"/>
+    <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html</id>
+    <published>2017-09-04T03:40:36.000Z</published>
+    <updated>2017-09-04T09:24:29.010Z</updated>
+    
+    <content type="html">&lt;p&gt;本节是对 GeoServer 项目的概述，介绍项目的背景以及 GeoServer 的应用领域。对于想直接上手操作的童孩，请跳过本节，从&lt;a href=&quot;http://novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安装部署&lt;/a&gt;章节开始学习。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/stable/en/user/introduction/index.html#introduction&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;GeoServer-概述&quot;&gt;&lt;a href=&quot;#GeoServer-概述&quot; class=&quot;headerlink&quot; title=&quot;GeoServer 概述&quot;&gt;&lt;/a&gt;GeoServer 概述&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;Geoserver 是一款用 Java 编写的开源地图服务器，允许用户共享和编辑地理空间数据。利用 GeoServer 可以很方便的发布基于开放标准的地理空间数据。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 是由开源社区驱动的项目，其开发、测试和技术支持都是由世界各地的开源贡献者或组织进行维护。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 是对 OGC 发布的 WFS、WCS、WMS等地图协议的参考实现，构建了 Web 地理空间信息技术的核心组件。&lt;/p&gt;
+&lt;h1 id=&quot;GeoServer-的由来&quot;&gt;&lt;a href=&quot;#GeoServer-的由来&quot; class=&quot;headerlink&quot; title=&quot;GeoServer 的由来&quot;&gt;&lt;/a&gt;GeoServer 的由来&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;2001 年一个位于纽约的非营利性孵化机构 TOPP 创建了 GeoServer 项目，旨在构建一套工具来辅助政府公开政务信息。GeoServer 项目的最初设想就是通过对地理空间数据的共享使得公民可以参与政府的一些城市规划等工作。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 的创始人设想了一套类似于万维网的 Web 地理空间信息技术(Geospatial Web)。像万维网人们可以搜索和下载文本信息一样简单，通过 Web 地理空间信息技术，人们可以搜索和下载地理空间数据，而数据的提供者则可以通过这项技术在网络上发布直接供用户访问的地理空间数据，这与以往通过非常繁琐的技术共享地理信息数据完全相反。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer的技术人员先前创建了 &lt;a href=&quot;http://www.geotools.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GeoTools&lt;/a&gt; 项目，一套开源的 GIS Java 套件，用于处理 shapfiles、Oracle databases、ARCSDE等各类地理空间数据。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;在 GeoServer 项目创建的同时期，OpenGIS 联盟（现今的 OGC）也正在着手制定 WFS 和 WMS 标准。WFS 协议通过 GML 数据交换格式定义一套协议使得地理空间数据可以在网络上直接访问。WMS 定义了一套由地理空间数据创建的地图的瓦片格式的协议来实现地理空间数据的共享。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;另外一些与 GeoServer 相关的项目，比如 Refractions Research 创建的 PostGIS，提供了一款开源的地理空间数据库； MetaCarta 创建的 OpenLayers，提供了 Web 端的地图可视化框架。这些项目都对发挥 GeoServer 的功能起到很大的促进作用。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;过去十年间，GeoServer 实现了对来自不同数据源的地理空间数据的读取和发布，接下来的十年，GeoServer 将继续有效地推进地理空间数据共享的使命。&lt;/p&gt;
+&lt;h1 id=&quot;参与项目&quot;&gt;&lt;a href=&quot;#参与项目&quot; class=&quot;headerlink&quot; title=&quot;参与项目&quot;&gt;&lt;/a&gt;参与项目&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 因你而精彩！&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 完全由开源社区驱动，不分用户和开发者、不分生产者和消费者，有许多种方式参与到 GeoServer 项目的研发当中，任何人都是项目的宝贵的贡献者。&lt;/p&gt;
+&lt;h2 id=&quot;参与开发&quot;&gt;&lt;a href=&quot;#参与开发&quot; class=&quot;headerlink&quot; title=&quot;参与开发&quot;&gt;&lt;/a&gt;参与开发&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;最直接的参与 GeoServer 项目的方式就是参与开发。开发者们一开始可以通过一些 BUG 修复或一些小的补丁程序参与进来，进而在掌握整个系统架构之后有更大的参与力度。而我们的开发人员也非常乐意帮助你来学习这套系统，有很好的代码注释和完善的文档支持。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;项目地址在 &lt;a href=&quot;https://www.github.com/geoserver/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt; 上，任何人都可以提交 pull requests，通过项目组的评估后您的提交将得到采纳。了解更多关于如何贡献代码，我们建议您订阅 GeoServer 的开发者邮件。&lt;a href=&quot;#邮件列表&quot;&gt;下面&lt;/a&gt;会提到如何订阅邮件。&lt;/p&gt;
+&lt;h2 id=&quot;文档修正&quot;&gt;&lt;a href=&quot;#文档修正&quot; class=&quot;headerlink&quot; title=&quot;文档修正&quot;&gt;&lt;/a&gt;文档修正&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;另外一个参与项目的重要途径是参与文档修正。无论是新增一些教程或是修正一些错误，都将使得项目更健全。而您不必像上面那样参与开发。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;我们的官方文档也可以通过在 GitHub 上提交 pull requests，通过项目组评审后将合并到主版本中。&lt;/p&gt;
+&lt;h2 id=&quot;邮件订阅&quot;&gt;&lt;a href=&quot;#邮件订阅&quot; class=&quot;headerlink&quot; title=&quot;邮件订阅&quot;&gt;&lt;/a&gt;邮件订阅&lt;/h2&gt;&lt;p&gt;GeoServer 维护着两组邮件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://lists.sourceforge.net/lists/listinfo/geoserver-users&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GeoServer 用户&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://lists.sourceforge.net/lists/listinfo/geoserver-devel&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GeoServer 开发者&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;用户邮件主要是针对在使用 GeoServer 过程中的用户，而开发者邮件更多关注的是开发者的问题，如果有人在这里提问而你知晓答案，烦请为他们提供帮助。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;这些邮件对学习 GeoServer 的新手是一个很好的资源，可以在上面提出问题和参与贡献代码。&lt;/p&gt;
+&lt;h2 id=&quot;IRC&quot;&gt;&lt;a href=&quot;#IRC&quot; class=&quot;headerlink&quot; title=&quot;IRC&quot;&gt;&lt;/a&gt;IRC&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;用户可以加入 GeoServer 的网络即时聊天频道，来在线实时协作。GeoServer 的项目组开发者也偶尔会在频道中回复大家。&lt;/p&gt;
+&lt;h2 id=&quot;BUG-提交&quot;&gt;&lt;a href=&quot;#BUG-提交&quot; class=&quot;headerlink&quot; title=&quot;BUG 提交&quot;&gt;&lt;/a&gt;BUG 提交&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;如果在使用 GeoServer 过程中出现问题，可以通过上面的邮件反馈给我们。GeoServer 使用 JIRA 进行 BUG 跟踪，管理问题。你可能得首先在网站上创建一个账户。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 鼓励所有人通过 JIRA 或者 GItHub 提交问题或解决问题的方案。&lt;/p&gt;
+&lt;h2 id=&quot;翻译文档&quot;&gt;&lt;a href=&quot;#翻译文档&quot; class=&quot;headerlink&quot; title=&quot;翻译文档&quot;&gt;&lt;/a&gt;翻译文档&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;参与 GeoServer 文档的翻译。&lt;/p&gt;
+&lt;h2 id=&quot;优化建议&quot;&gt;&lt;a href=&quot;#优化建议&quot; class=&quot;headerlink&quot; title=&quot;优化建议&quot;&gt;&lt;/a&gt;优化建议&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;可以通过邮件或者 GiHub 提出您的优化建议。&lt;/p&gt;
+&lt;h2 id=&quot;宣传&quot;&gt;&lt;a href=&quot;#宣传&quot; class=&quot;headerlink&quot; title=&quot;宣传&quot;&gt;&lt;/a&gt;宣传&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;加大 GeoServer 的宣传力度。&lt;/p&gt;
+&lt;h2 id=&quot;赞助&quot;&gt;&lt;a href=&quot;#赞助&quot; class=&quot;headerlink&quot; title=&quot;赞助&quot;&gt;&lt;/a&gt;赞助&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;对 GeoServer 提供赞助。&lt;/p&gt;
+&lt;h1 id=&quot;许可&quot;&gt;&lt;a href=&quot;#许可&quot; class=&quot;headerlink&quot; title=&quot;许可&quot;&gt;&lt;/a&gt;许可&lt;/h1&gt;&lt;p&gt;此处查看许可明细 &lt;a href=&quot;http://docs.geoserver.org/stable/en/user/_downloads/LICENSE.txt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;LICENSE.txt&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;GeoServer 采用 &lt;a href=&quot;GNU General Public License&quot;&gt;GNU General Public License&lt;/a&gt; 开源协议，是一款免费软件：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;GeoServer, open geospatial information server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Copyright (C) 2014-2016 Open Source Geospatial Foundation.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Copyright (C) 2001-2014 OpenPlans&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This program is free software; you can redistribute it and/or modify&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;it under the terms of the GNU General Public License as published by&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;the Free Software Foundation; either version 2 of the License, or&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(at your option) any later version (collectively, &amp;quot;GPL&amp;quot;).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;As an exception to the terms of the GPL, you may copy, modify,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;propagate, and distribute a work formed by combining GeoServer with the&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Eclipse Libraries, or a work derivative of such a combination, even if&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;such copying, modification, propagation, or distribution would otherwise&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;violate the terms of the GPL. Nothing in this exception exempts you from&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;complying with the GPL in all respects for all of the code used other&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;than the Eclipse Libraries. You may include this exception and its grant&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;of permissions when you distribute GeoServer.  Inclusion of this notice&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;with such a distribution constitutes a grant of such permissions.  If&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;you do not wish to grant these permissions, remove this paragraph from&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;your distribution. &amp;quot;GeoServer&amp;quot; means the GeoServer software licensed&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;under version 2 or any later version of the GPL, or a work based on such&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;software and licensed under the GPL. &amp;quot;Eclipse Libraries&amp;quot; means Eclipse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Modeling Framework Project and XML Schema Definition software&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;distributed by the Eclipse Foundation and licensed under the Eclipse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Public License Version 1.0 (&amp;quot;EPL&amp;quot;), or a work based on such software and&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;licensed under the EPL.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This program is distributed in the hope that it will be useful,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;but WITHOUT ANY WARRANTY; without even the implied warranty of&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;GNU General Public License for more details.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;You should have received a copy of the GNU General Public License&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;along with this program; if not, write to the Free Software&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Foundation, Inc., 51 Franklin Street, Suite 500, Boston, MA 02110-1335  USA&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;GeoServer 基于 Apache Software Foundation 开源许可 &lt;a href=&quot;http://docs.geoserver.org/stable/en/user/_downloads/apache-2.0.txt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Apache License Version 2.0&lt;/a&gt; 和 &lt;a href=&quot;http://docs.geoserver.org/stable/en/user/_downloads/apache-1.1.txt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Apache License Version 1.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;开发工具基于 &lt;a href=&quot;http://docs.geoserver.org/stable/en/user/_downloads/epl-1.0.txt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Eclipse Public License&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本节是对 GeoServer 项目的概述，介绍项目的背景以及 GeoServer 的应用领域。对于想直接上手操作的童孩，请跳过本节，从&lt;a href=&quot;http://novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html&quot;&gt;安装部署&lt;/a&gt;章节开始学习。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/stable/en/user/introduction/index.html#introduction&quot;&gt;原文地址&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
+    
+    
+      <category term="geoserver" scheme="http://www.novgis.com/tags/geoserver/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GeoServer 用户手册[译]</title>
     <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html"/>
     <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html</id>
     <published>2017-09-04T03:00:00.000Z</published>
-    <updated>2017-09-04T06:39:04.834Z</updated>
+    <updated>2017-09-04T08:37:40.087Z</updated>
     
     <content type="html">&lt;p&gt;Geoserver 是一款用 Java 编写的开源地图服务器，允许用户共享和编辑地理空间数据。利用 GeoServer 可以很方便的发布基于开放标准的地理空间数据。&lt;/p&gt;
 &lt;p&gt;这份用户手册从各个方面综合性地介绍了 GeoServer，无论你是新手还是老司机，都希望这份文档对你有所帮助。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;简介&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 简介&lt;/p&gt;
+&lt;p&gt;本系列文章是我对学习 &lt;a href=&quot;http://docs.geoserver.org/2.11.1/user/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GeoServer (v2.11.1)&lt;/a&gt; 过程的总结，如有错误，欢迎指正！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/stable/en/user/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;简介&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 简介&lt;/p&gt;
 &lt;h2 id=&quot;安装部署&quot;&gt;&lt;a href=&quot;#安装部署&quot; class=&quot;headerlink&quot; title=&quot;安装部署&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;安装部署&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;安装部署 GeoServer&lt;/p&gt;
 &lt;h2 id=&quot;入门指南&quot;&gt;&lt;a href=&quot;#入门指南&quot; class=&quot;headerlink&quot; title=&quot;入门指南&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;入门指南&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 入门教程&lt;/p&gt;
 &lt;h2 id=&quot;Web-管理界面&quot;&gt;&lt;a href=&quot;#Web-管理界面&quot; class=&quot;headerlink&quot; title=&quot;Web 管理界面&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;Web 管理界面&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 的 Web 端管理界面介绍&lt;/p&gt;
@@ -71,6 +132,8 @@
     
       &lt;p&gt;Geoserver 是一款用 Java 编写的开源地图服务器，允许用户共享和编辑地理空间数据。利用 GeoServer 可以很方便的发布基于开放标准的地理空间数据。&lt;/p&gt;
 &lt;p&gt;这份用户手册从各个方面综合性地介绍了 GeoServer，无论你是新手还是老司机，都希望这份文档对你有所帮助。&lt;/p&gt;
+&lt;p&gt;本系列文章是我对学习 &lt;a href=&quot;http://docs.geoserver.org/2.11.1/user/&quot;&gt;GeoServer (v2.11.1)&lt;/a&gt; 过程的总结，如有错误，欢迎指正！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/stable/en/user/index.html&quot;&gt;原文地址&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
