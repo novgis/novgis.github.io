@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2017-09-04T03:44:33.939Z</updated>
+  <updated>2017-09-04T06:38:52.098Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,23 +16,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>简介</title>
+    <title>一、GeoServer 简介</title>
     <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html"/>
     <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html</id>
     <published>2017-09-04T03:40:36.000Z</published>
-    <updated>2017-09-04T03:44:33.939Z</updated>
+    <updated>2017-09-04T06:38:52.098Z</updated>
     
-    <content type="html">&lt;p&gt;Geoserver 简介&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</content>
+    <content type="html">&lt;p&gt;本节是对 GeoServer 项目的概述，介绍项目的背景以及 GeoServer 的应用领域。对于想直接上手操作的童孩，请跳过本节，从&lt;a href=&quot;&quot;&gt;安装部署&lt;/a&gt;章节开始学习。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;GeoServer-概述&quot;&gt;&lt;a href=&quot;#GeoServer-概述&quot; class=&quot;headerlink&quot; title=&quot;GeoServer 概述&quot;&gt;&lt;/a&gt;GeoServer 概述&lt;/h1&gt;&lt;h1 id=&quot;GeoServer-的由来&quot;&gt;&lt;a href=&quot;#GeoServer-的由来&quot; class=&quot;headerlink&quot; title=&quot;GeoServer 的由来&quot;&gt;&lt;/a&gt;GeoServer 的由来&lt;/h1&gt;&lt;h1 id=&quot;参与项目&quot;&gt;&lt;a href=&quot;#参与项目&quot; class=&quot;headerlink&quot; title=&quot;参与项目&quot;&gt;&lt;/a&gt;参与项目&lt;/h1&gt;&lt;h1 id=&quot;许可&quot;&gt;&lt;a href=&quot;#许可&quot; class=&quot;headerlink&quot; title=&quot;许可&quot;&gt;&lt;/a&gt;许可&lt;/h1&gt;</content>
     
     <summary type="html">
     
-      &lt;p&gt;Geoserver 简介&lt;br&gt;
+      &lt;p&gt;本节是对 GeoServer 项目的概述，介绍项目的背景以及 GeoServer 的应用领域。对于想直接上手操作的童孩，请跳过本节，从&lt;a href=&quot;&quot;&gt;安装部署&lt;/a&gt;章节开始学习。&lt;br&gt;
     
     </summary>
     
-      <category term="geoserver" scheme="http://www.novgis.com/categories/geoserver/"/>
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
     
+    
+      <category term="geoserver" scheme="http://www.novgis.com/tags/geoserver/"/>
     
   </entry>
   
@@ -41,13 +43,13 @@
     <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html"/>
     <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html</id>
     <published>2017-09-04T03:00:00.000Z</published>
-    <updated>2017-09-04T06:15:42.419Z</updated>
+    <updated>2017-09-04T06:39:04.834Z</updated>
     
     <content type="html">&lt;p&gt;Geoserver 是一款用 Java 编写的开源地图服务器，允许用户共享和编辑地理空间数据。利用 GeoServer 可以很方便的发布基于开放标准的地理空间数据。&lt;/p&gt;
 &lt;p&gt;这份用户手册从各个方面综合性地介绍了 GeoServer，无论你是新手还是老司机，都希望这份文档对你有所帮助。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;简介&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 简介&lt;/p&gt;
-&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;安装&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;安装部署 GeoServer&lt;/p&gt;
+&lt;h2 id=&quot;安装部署&quot;&gt;&lt;a href=&quot;#安装部署&quot; class=&quot;headerlink&quot; title=&quot;安装部署&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;安装部署&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;安装部署 GeoServer&lt;/p&gt;
 &lt;h2 id=&quot;入门指南&quot;&gt;&lt;a href=&quot;#入门指南&quot; class=&quot;headerlink&quot; title=&quot;入门指南&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;入门指南&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 入门教程&lt;/p&gt;
 &lt;h2 id=&quot;Web-管理界面&quot;&gt;&lt;a href=&quot;#Web-管理界面&quot; class=&quot;headerlink&quot; title=&quot;Web 管理界面&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;Web 管理界面&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 的 Web 端管理界面介绍&lt;/p&gt;
 &lt;h2 id=&quot;地理数据的管理&quot;&gt;&lt;a href=&quot;#地理数据的管理&quot; class=&quot;headerlink&quot; title=&quot;地理数据的管理&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;地理数据的管理&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;如何加载和发布各类数据源？&lt;/p&gt;
