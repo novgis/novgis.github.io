@@ -15,7 +15,7 @@
 <meta property="og:image" content="http://docs.geoserver.org/2.7.6/user/_images/win_download.png">
 <meta property="og:image" content="http://docs.geoserver.org/2.7.6/user/_images/win_welcome.png">
 <meta property="og:image" content="http://docs.geoserver.org/2.7.6/user/_images/success.png">
-<meta property="og:updated_time" content="2017-09-04T15:27:41.428Z">
+<meta property="og:updated_time" content="2017-09-04T16:12:35.136Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="二、GeoServer 安装部署[译]">
 <meta name="twitter:description" content="有很多方式在各操作系统中安装 GeoServer，本节就来讨论这些方式。">
@@ -276,7 +276,19 @@
 <li>启动成功后，在浏览器中输入 <code>http://localhost:8080/geoserver</code> 即可访问 GeoServer 的 Web 管理器界面<br> <img src="http://docs.geoserver.org/2.7.6/user/_images/success.png" alt=""></li>
 <li><strong>卸载</strong> 执行 GeoServer 安装目录中的 <em>uninstall.exe</em>，或者通过系统的卸载程序卸载</li>
 </ol>
-<h1 id="版本更新"><a href="#版本更新" class="headerlink" title="版本更新"></a>版本更新</h1>
+<h1 id="版本更新"><a href="#版本更新" class="headerlink" title="版本更新"></a>版本更新</h1><blockquote>
+<p><strong>警告：</strong> GeoServer 版本升级有可能是不可逆的，版本升级后 data directory 有可能就不再支持旧版本了，所以在进行版本升级前请仔细阅读 <a href="http://docs.geoserver.org/2.7.6/user/datadirectory/migrating.html#migrating-data-directory" target="_blank" rel="external">版本迁移需知</a></p>
+</blockquote>
+<p>正常的 GeoServer 版本迁移处理流程如下：</p>
+<ol>
+<li>备份现有的 <em>data directory</em>，比如拷贝一份到其他目录中</li>
+<li>确保 <em>data directory</em> 不在 GeoServer 的安装目录下</li>
+<li>卸载旧版本安装新版本，也可以直接覆盖</li>
+<li>将新版本的 <em>data directory</em> 重新指定为之前备份的目录</li>
+</ol>
+<p>注意一些特殊版本的更新：</p>
+<p>从 GeoServer 2.6 开始，WFS 服务产生的 GeoJSON 将不再使用非标准的坐标参考系(CRS)，为了向后兼容需要将 <code>GEOSERVER_GEOJSON_LEGACY_CRS=true</code> 参数设置为系统属性、上下文参数或环境变量</p>
+
       
     </div>
     
@@ -284,6 +296,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/blog/2017-09-05/geoserver-user-manual-03-getting-started.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          三、GeoServer 入门教程
+        
+      </div>
+    </a>
   
   
     <a href="/blog/2017-09-04/geoserver-user-manual-01-introduction.html" id="article-nav-older" class="article-nav-link-wrap">

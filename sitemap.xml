@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html</loc>
+    <loc>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html</loc>
     
-    <lastmod>2017-09-04T15:27:41.428Z</lastmod>
+    <lastmod>2017-09-04T16:17:34.353Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html</loc>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-03-getting-started.html</loc>
     
-    <lastmod>2017-09-04T14:29:47.309Z</lastmod>
+    <lastmod>2017-09-04T16:16:52.131Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html</loc>
+    
+    <lastmod>2017-09-04T16:12:35.136Z</lastmod>
     
   </url>
   
@@ -30,14 +37,14 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/develope/index.html</loc>
+    <loc>http://www.novgis.com/categories/gis/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/gis/index.html</loc>
+    <loc>http://www.novgis.com/categories/develope/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     

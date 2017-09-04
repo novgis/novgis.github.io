@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.novgis.com/"/>
-  <updated>2017-09-04T15:27:41.428Z</updated>
+  <updated>2017-09-04T16:16:52.131Z</updated>
   <id>http://www.novgis.com/</id>
   
   <author>
@@ -16,11 +16,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>三、GeoServer 入门教程</title>
+    <link href="http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-03-getting-started.html"/>
+    <id>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-03-getting-started.html</id>
+    <published>2017-09-04T16:16:06.000Z</published>
+    <updated>2017-09-04T16:16:52.131Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+    
+    </summary>
+    
+      <category term="gis" scheme="http://www.novgis.com/categories/gis/"/>
+    
+    
+      <category term="geoserver" scheme="http://www.novgis.com/tags/geoserver/"/>
+    
+  </entry>
+  
+  <entry>
     <title>二、GeoServer 安装部署[译]</title>
     <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html"/>
     <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html</id>
     <published>2017-09-04T06:42:42.000Z</published>
-    <updated>2017-09-04T15:27:41.428Z</updated>
+    <updated>2017-09-04T16:12:35.136Z</updated>
     
     <content type="html">&lt;p&gt;有很多方式在各操作系统中安装 GeoServer，本节就来讨论这些方式。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;如果您用的是 Windows 或 OS X 系统，我们建议您使用 installers 进行安装。&lt;/p&gt;
@@ -52,7 +76,19 @@
 &lt;li&gt;启动成功后，在浏览器中输入 &lt;code&gt;http://localhost:8080/geoserver&lt;/code&gt; 即可访问 GeoServer 的 Web 管理器界面&lt;br&gt; &lt;img src=&quot;http://docs.geoserver.org/2.7.6/user/_images/success.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;卸载&lt;/strong&gt; 执行 GeoServer 安装目录中的 &lt;em&gt;uninstall.exe&lt;/em&gt;，或者通过系统的卸载程序卸载&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&quot;版本更新&quot;&gt;&lt;a href=&quot;#版本更新&quot; class=&quot;headerlink&quot; title=&quot;版本更新&quot;&gt;&lt;/a&gt;版本更新&lt;/h1&gt;</content>
+&lt;h1 id=&quot;版本更新&quot;&gt;&lt;a href=&quot;#版本更新&quot; class=&quot;headerlink&quot; title=&quot;版本更新&quot;&gt;&lt;/a&gt;版本更新&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;警告：&lt;/strong&gt; GeoServer 版本升级有可能是不可逆的，版本升级后 data directory 有可能就不再支持旧版本了，所以在进行版本升级前请仔细阅读 &lt;a href=&quot;http://docs.geoserver.org/2.7.6/user/datadirectory/migrating.html#migrating-data-directory&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;版本迁移需知&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;正常的 GeoServer 版本迁移处理流程如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;备份现有的 &lt;em&gt;data directory&lt;/em&gt;，比如拷贝一份到其他目录中&lt;/li&gt;
+&lt;li&gt;确保 &lt;em&gt;data directory&lt;/em&gt; 不在 GeoServer 的安装目录下&lt;/li&gt;
+&lt;li&gt;卸载旧版本安装新版本，也可以直接覆盖&lt;/li&gt;
+&lt;li&gt;将新版本的 &lt;em&gt;data directory&lt;/em&gt; 重新指定为之前备份的目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;注意一些特殊版本的更新：&lt;/p&gt;
+&lt;p&gt;从 GeoServer 2.6 开始，WFS 服务产生的 GeoJSON 将不再使用非标准的坐标参考系(CRS)，为了向后兼容需要将 &lt;code&gt;GEOSERVER_GEOJSON_LEGACY_CRS=true&lt;/code&gt; 参数设置为系统属性、上下文参数或环境变量&lt;/p&gt;
+</content>
     
     <summary type="html">
     
@@ -131,7 +167,7 @@
     <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html"/>
     <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html</id>
     <published>2017-09-04T03:00:00.000Z</published>
-    <updated>2017-09-04T14:29:47.309Z</updated>
+    <updated>2017-09-04T16:17:34.353Z</updated>
     
     <content type="html">&lt;p&gt;Geoserver 是一款用 Java 编写的开源地图服务器，允许用户共享和编辑地理空间数据。利用 GeoServer 可以很方便的发布基于开放标准的地理空间数据。&lt;/p&gt;
 &lt;p&gt;这份用户手册从各个方面综合性地介绍了 GeoServer，无论你是新手还是老司机，都希望这份文档对你有所帮助。&lt;/p&gt;
@@ -139,7 +175,7 @@
 &lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/2.7.6/user/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;简介&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 简介&lt;/p&gt;
 &lt;h2 id=&quot;安装部署&quot;&gt;&lt;a href=&quot;#安装部署&quot; class=&quot;headerlink&quot; title=&quot;安装部署&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安装部署&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;安装部署 GeoServer&lt;/p&gt;
-&lt;h2 id=&quot;入门指南&quot;&gt;&lt;a href=&quot;#入门指南&quot; class=&quot;headerlink&quot; title=&quot;入门指南&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;入门指南&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 入门教程&lt;/p&gt;
+&lt;h2 id=&quot;入门教程&quot;&gt;&lt;a href=&quot;#入门教程&quot; class=&quot;headerlink&quot; title=&quot;入门教程&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://novgis.com/blog/2017-09-04/geoserver-user-manual-03-getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;入门教程&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 入门教程&lt;/p&gt;
 &lt;h2 id=&quot;Web-管理界面&quot;&gt;&lt;a href=&quot;#Web-管理界面&quot; class=&quot;headerlink&quot; title=&quot;Web 管理界面&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;Web 管理界面&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 的 Web 端管理界面介绍&lt;/p&gt;
 &lt;h2 id=&quot;地理数据的管理&quot;&gt;&lt;a href=&quot;#地理数据的管理&quot; class=&quot;headerlink&quot; title=&quot;地理数据的管理&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;地理数据的管理&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;如何加载和发布各类数据源？&lt;/p&gt;
 &lt;h2 id=&quot;图层样式&quot;&gt;&lt;a href=&quot;#图层样式&quot; class=&quot;headerlink&quot; title=&quot;图层样式&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;图层样式&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;如何渲染地图数据？&lt;/p&gt;
