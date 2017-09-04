@@ -6,16 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>二、GeoServer 安装部署[译] | GIS create our future</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
+  <meta name="description" content="有很多方式在各操作系统中安装 GeoServer，本节就来讨论这些方式。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二、GeoServer 安装部署[译]">
 <meta property="og:url" content="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html">
 <meta property="og:site_name" content="GIS create our future">
-<meta property="og:description">
-<meta property="og:updated_time" content="2017-09-04T06:51:23.338Z">
+<meta property="og:description" content="有很多方式在各操作系统中安装 GeoServer，本节就来讨论这些方式。">
+<meta property="og:image" content="http://docs.geoserver.org/2.7.6/user/_images/win_download.png">
+<meta property="og:image" content="http://docs.geoserver.org/2.7.6/user/_images/win_welcome.png">
+<meta property="og:image" content="http://docs.geoserver.org/2.7.6/user/_images/success.png">
+<meta property="og:updated_time" content="2017-09-04T15:27:41.428Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="二、GeoServer 安装部署[译]">
-<meta name="twitter:description">
+<meta name="twitter:description" content="有很多方式在各操作系统中安装 GeoServer，本节就来讨论这些方式。">
+<meta name="twitter:image" content="http://docs.geoserver.org/2.7.6/user/_images/win_download.png">
   
     <link rel="alternative" href="/atom.xml" title="GIS create our future" type="application/atom+xml">
   
@@ -242,8 +246,37 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-
+        <p>有很多方式在各操作系统中安装 GeoServer，本节就来讨论这些方式。<br><a id="more"></a></p>
+<p>如果您用的是 Windows 或 OS X 系统，我们建议您使用 installers 进行安装。</p>
+<ul>
+<li><a href="#Windows安装程序">Windows 安装程序</a></li>
+<li>Windows 二进制文件安装[未译]</li>
+<li>Mac OS X 安装程序 [未译]</li>
+<li>Mac OS X 二进制文件安装 [未译]</li>
+<li>Linux 二进制文件安装 [未译]</li>
+<li>Web archive [未译]</li>
+<li><a href="#版本更新">版本更新</a></li>
+</ul>
+<h1 id="Windows安装程序"><a href="#Windows安装程序" class="headerlink" title="Windows安装程序"></a>Windows安装程序</h1><p>Windows安装包提供了最方便的方式来安装 GeoServer，无需各种配置文件和命令行设置。</p>
+<ol>
+<li><p>确定系统已正确安装 Java Runtime Environment(JRE)。GeoServer(v2.7.6) 安装的先决条件是 Java 7 运行时，最好是 Oracle JRE，OpenJDK 也能勉强使用。您可以从<a href="http://www.oracle.com/technetwork/java/javase/downloads/" target="_blank" rel="external">这里</a>下载 Oracle JRE 7。</p>
+<blockquote>
+<p><strong>注意：</strong> GeoServer v2.7.6 暂时还不支持 Java 8， 更多有关 GeoServer 和 JRE 版本支持请参考 <a href="http://docs.geoserver.org/2.7.6/user/production/java.html#production-java" target="_blank" rel="external">Java Consideration</a></p>
+</blockquote>
+</li>
+<li><p>打开<a href="http://geoserver.org/download" target="_blank" rel="external">下载</a>页面</p>
+</li>
+<li>选择您要下载的版本号，如果没有特别需求，请选择<a href="http://geoserver.org/release/stable/" target="_blank" rel="external">稳定版</a></li>
+<li>点击 Windows Installer 链接下载 GeoServer Windows 安装包<br> <img src="http://docs.geoserver.org/2.7.6/user/_images/win_download.png" alt="Windows Installer"></li>
+<li>下载结束运行 GeoServer 安装程序<br> <img src="http://docs.geoserver.org/2.7.6/user/_images/win_welcome.png" alt=""><blockquote>
+<p>此处省略一万步… 很简单，一路 Next！</p>
+</blockquote>
+</li>
+<li>安装完成后，如果 GeoServer 被部署为 Windows 服务，则已经启动；否则在开始菜单中找到 GeoServer 目录，点击 <em>Start GeoServer</em> 即可启动</li>
+<li>启动成功后，在浏览器中输入 <code>http://localhost:8080/geoserver</code> 即可访问 GeoServer 的 Web 管理器界面<br> <img src="http://docs.geoserver.org/2.7.6/user/_images/success.png" alt=""></li>
+<li><strong>卸载</strong> 执行 GeoServer 安装目录中的 <em>uninstall.exe</em>，或者通过系统的卸载程序卸载</li>
+</ol>
+<h1 id="版本更新"><a href="#版本更新" class="headerlink" title="版本更新"></a>版本更新</h1>
       
     </div>
     
