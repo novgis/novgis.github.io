@@ -2,23 +2,121 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html</loc>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-03-getting-started.html</loc>
     
-    <lastmod>2017-09-04T16:20:54.680Z</lastmod>
+    <lastmod>2017-09-05T03:01:40.888Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-17-tutorials.html</loc>
+    
+    <lastmod>2017-09-05T02:46:47.178Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-16-community-modules.html</loc>
+    
+    <lastmod>2017-09-05T02:46:26.631Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-15-extensions.html</loc>
+    
+    <lastmod>2017-09-05T02:46:07.383Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-14-geowebcache.html</loc>
+    
+    <lastmod>2017-09-05T02:45:50.826Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-13-security.html</loc>
+    
+    <lastmod>2017-09-05T02:45:31.168Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-12-REST.html</loc>
+    
+    <lastmod>2017-09-05T02:45:10.676Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html</loc>
     
-    <lastmod>2017-09-04T16:17:34.353Z</lastmod>
+    <lastmod>2017-09-05T02:44:49.310Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-03-getting-started.html</loc>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-11-running-in-a-production-environment.html</loc>
     
-    <lastmod>2017-09-04T16:16:52.131Z</lastmod>
+    <lastmod>2017-09-05T02:44:44.127Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-10-geoserver-data-directory.html</loc>
+    
+    <lastmod>2017-09-05T02:44:29.824Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-09-server-configuration.html</loc>
+    
+    <lastmod>2017-09-05T02:43:57.498Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-08-filtering.html</loc>
+    
+    <lastmod>2017-09-05T02:43:35.072Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-07-services.html</loc>
+    
+    <lastmod>2017-09-05T02:42:43.708Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-06-styling.html</loc>
+    
+    <lastmod>2017-09-05T02:41:51.095Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-05-data-management.html</loc>
+    
+    <lastmod>2017-09-05T02:41:22.508Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-04-web-administration-interface.html</loc>
+    
+    <lastmod>2017-09-05T02:40:27.283Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html</loc>
+    
+    <lastmod>2017-09-04T16:20:54.680Z</lastmod>
     
   </url>
   
@@ -37,14 +135,14 @@
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/gis/index.html</loc>
+    <loc>http://www.novgis.com/categories/develope/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.novgis.com/categories/develope/index.html</loc>
+    <loc>http://www.novgis.com/categories/gis/index.html</loc>
     
     <lastmod>2016-05-06T09:30:15.403Z</lastmod>
     

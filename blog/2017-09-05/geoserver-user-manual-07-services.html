@@ -4,26 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>三、GeoServer 入门教程[译] | GIS create our future</title>
+  <title>七、服务类型 | GIS create our future</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本节通过几个简单的常用功能模块快速入门 GeoServer。
-原文地址">
+  <meta name="description" content="原文地址">
 <meta property="og:type" content="article">
-<meta property="og:title" content="三、GeoServer 入门教程[译]">
-<meta property="og:url" content="http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-03-getting-started.html">
+<meta property="og:title" content="七、服务类型">
+<meta property="og:url" content="http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-07-services.html">
 <meta property="og:site_name" content="GIS create our future">
-<meta property="og:description" content="本节通过几个简单的常用功能模块快速入门 GeoServer。
-原文地址">
-<meta property="og:image" content="http://docs.geoserver.org/stable/en/user/_images/web-admin.png">
-<meta property="og:image" content="http://docs.geoserver.org/stable/en/user/_images/login-page.png">
-<meta property="og:image" content="http://docs.geoserver.org/stable/en/user/_images/logged_in.png">
-<meta property="og:image" content="http://docs.geoserver.org/stable/en/user/_images/preview_list1.png">
-<meta property="og:updated_time" content="2017-09-05T03:01:40.888Z">
+<meta property="og:description" content="原文地址">
+<meta property="og:updated_time" content="2017-09-05T02:42:43.708Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="三、GeoServer 入门教程[译]">
-<meta name="twitter:description" content="本节通过几个简单的常用功能模块快速入门 GeoServer。
-原文地址">
-<meta name="twitter:image" content="http://docs.geoserver.org/stable/en/user/_images/web-admin.png">
+<meta name="twitter:title" content="七、服务类型">
+<meta name="twitter:description" content="原文地址">
   
     <link rel="alternative" href="/atom.xml" title="GIS create our future" type="application/atom+xml">
   
@@ -209,11 +201,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-geoserver-user-manual-03-getting-started" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-geoserver-user-manual-07-services" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/blog/2017-09-05/geoserver-user-manual-03-getting-started.html" class="article-date">
-  	<time datetime="2017-09-04T16:16:06.000Z" itemprop="datePublished">2017-09-05</time>
+      <a href="/blog/2017-09-05/geoserver-user-manual-07-services.html" class="article-date">
+  	<time datetime="2017-09-05T02:32:33.000Z" itemprop="datePublished">2017-09-05</time>
 </a>
     </div>
   
@@ -226,7 +218,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      三、GeoServer 入门教程[译]
+      七、服务类型
     </h1>
   
 
@@ -250,37 +242,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本节通过几个简单的常用功能模块快速入门 GeoServer。</p>
-<p><a href="http://docs.geoserver.org/stable/en/user/gettingstarted/index.html#getting-started" target="_blank" rel="external">原文地址</a><br><a id="more"></a></p>
-<ul>
-<li><a href="#Web管理界面简介">Web 管理界面简介</a></li>
-<li><a href="#发布一份shapefile文件">发布一份 shapfile 文件</a></li>
-<li><a href="#发布一张PostGIS表">发布一张 PostGIS 表</a></li>
-</ul>
-<h1 id="Web管理界面简介"><a href="#Web管理界面简介" class="headerlink" title="Web管理界面简介"></a>Web管理界面简介</h1><p>GeoServer 通过 Web 管理界面管理所有配置项，包括新增、发布地理空间数据以及服务的一些配置等。</p>
-<p>访问 Web 管理界面的地址格式 <code>http://&lt;host&gt;:&lt;port&gt;/geoserver</code>，本机安装默认地址为 <code>http://localhost:8080/geoserver</code></p>
-<p>启动 GeoServer 服务之后，访问如上链接，浏览器将显示 GeoServer 的欢迎页：</p>
-<p><img src="http://docs.geoserver.org/stable/en/user/_images/web-admin.png" alt=""></p>
-<h2 id="管理员登录"><a href="#管理员登录" class="headerlink" title="管理员登录"></a>管理员登录</h2><p>用户必须先通过授权登录之后，才能管理服务的配置和数据。</p>
-<p>在欢迎页右上角输入用户认证信息登录管理器，本机安装默认用户名 <code>admin</code>，默认密码 <code>geoserver</code></p>
-<p><img src="http://docs.geoserver.org/stable/en/user/_images/login-page.png" alt=""></p>
-<blockquote>
-<p><strong>注意：</strong>详细了解用户配置请参阅 <em><a href="http://novgis.com/blog/2017-09-05/geoserver-user-manual-13-security.html" target="_blank" rel="external">Security</a></em> 章节介绍</p>
-</blockquote>
-<p>管理员登录后，左侧目录树将展示所有的管理功能：</p>
-<p><img src="http://docs.geoserver.org/stable/en/user/_images/logged_in.png" alt=""></p>
-<h2 id="图层预览"><a href="#图层预览" class="headerlink" title="图层预览"></a>图层预览</h2><ol>
-<li><p>点击左侧目录树中 <strong><em>Layer Preview</em></strong>。</p>
-<p> <img src="http://docs.geoserver.org/stable/en/user/_images/preview_list1.png" alt=""></p>
-</li>
-<li>在图层预览管理页中加载了当前 GeoServer 服务器上所有的图层信息，并提供在线预览和导出为其它格式的功能。</li>
-<li>点击列表表头可按字母顺序排序，方便查找。</li>
-<li>另外在图层太多的时候，可以通过列表右上角的搜索框输入查询条件，按回车键后列表将展示您的搜索结果</li>
-</ol>
-<blockquote>
-<p><strong>注意：</strong>详细了解图层预览请参阅 <em><a href="http://novgis.com/blog/2017-09-05/geoserver-user-manual-05-data-management.html" target="_blank" rel="external">五、数据管理</a></em> 章节介绍</p>
-</blockquote>
-<h1 id="发布一份shapefile文件"><a href="#发布一份shapefile文件" class="headerlink" title="发布一份shapefile文件"></a>发布一份shapefile文件</h1><h1 id="发布一张PostGIS表"><a href="#发布一张PostGIS表" class="headerlink" title="发布一张PostGIS表"></a>发布一张PostGIS表</h1>
+        <p><a href="">原文地址</a><br><a id="more"></a></p>
+
       
     </div>
     
@@ -289,18 +252,18 @@
     
 <nav id="article-nav">
   
-    <a href="/blog/2017-09-05/geoserver-user-manual-04-web-administration-interface.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/blog/2017-09-05/geoserver-user-manual-08-filtering.html" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          四、Web 管理界面
+          八、请求过滤
         
       </div>
     </a>
   
   
-    <a href="/blog/2017-09-04/geoserver-user-manual-02-installation.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">二、GeoServer 安装部署[译]</div>
+    <a href="/blog/2017-09-05/geoserver-user-manual-06-styling.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">六、图层样式</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -316,7 +279,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="geoserver-user-manual-03-getting-started" data-title="三、GeoServer 入门教程[译]" data-url="http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-03-getting-started.html"></div>
+	<div class="ds-thread" data-thread-key="geoserver-user-manual-07-services" data-title="七、服务类型" data-url="http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-07-services.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
