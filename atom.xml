@@ -520,7 +520,7 @@
     <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html"/>
     <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html</id>
     <published>2017-09-04T03:00:00.000Z</published>
-    <updated>2017-09-05T02:44:49.310Z</updated>
+    <updated>2017-09-05T03:17:17.135Z</updated>
     
     <content type="html">&lt;p&gt;Geoserver 是一款用 Java 编写的开源地图服务器，允许用户共享和编辑地理空间数据。利用 GeoServer 可以很方便的发布基于开放标准的地理空间数据。&lt;/p&gt;
 &lt;p&gt;这份用户手册从各个方面综合性地介绍了 GeoServer，无论你是新手还是老司机，都希望这份文档对你有所帮助。&lt;/p&gt;
@@ -566,7 +566,7 @@
     <link href="http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html"/>
     <id>http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html</id>
     <published>2016-04-26T14:57:20.000Z</published>
-    <updated>2017-09-04T03:37:09.098Z</updated>
+    <updated>2017-09-05T03:20:28.603Z</updated>
     
     <content type="html">&lt;p&gt;这是一篇记录我搭建独立博客过程的文章，主要介绍了搭建前的域名注册、GitHub 账号注册等准备工作，搭建过程中 Hexo、GitHub 的部署配置以及参考资料目录。希望对各位看客有所帮助，也给自己新的战场起个开篇，坚持写作与分享。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;这篇文章应该算是&lt;a href=&quot;http://www.cnfeat.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;陈素封&lt;/a&gt;老师&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这篇文章&lt;/a&gt;的实践篇，加入了一些我经历过的坑，记录下来，以防换了环境再来部署又要走弯路。下面以我的博客 &lt;a href=&quot;http://www.novgis.com&quot;&gt;www.novgis.com&lt;/a&gt; 为例，介绍我在 Windows 7 环境下是如何实践搭建独立博客的过程。&lt;/p&gt;
@@ -680,6 +680,7 @@
 &lt;p&gt;[4] &lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo官方文档&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[5] &lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool&amp;amp;utm_medium=referral&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo你的博客&lt;/a&gt; by 不如&lt;/p&gt;
 &lt;p&gt;[6] &lt;a href=&quot;https://xuanwo.org/2014/08/14/hexo-usual-problem/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo常见问题解决方案&lt;/a&gt; by Xuanwo&lt;/p&gt;
+&lt;p&gt;[7] &lt;a href=&quot;http://www.jianshu.com/p/42a4efcdf8d7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;解决Hexo博客文章置顶问题&lt;/a&gt; by zhwhong&lt;/p&gt;
 &lt;h1 id=&quot;Tips&quot;&gt;&lt;a href=&quot;#Tips&quot; class=&quot;headerlink&quot; title=&quot;Tips&quot;&gt;&lt;/a&gt;Tips&lt;/h1&gt;&lt;h3 id=&quot;localhost-4000-不能访问本地-blog-的解决方案&quot;&gt;&lt;a href=&quot;#localhost-4000-不能访问本地-blog-的解决方案&quot; class=&quot;headerlink&quot; title=&quot;localhost:4000 不能访问本地 blog 的解决方案&quot;&gt;&lt;/a&gt;localhost:4000 不能访问本地 blog 的解决方案&lt;/h3&gt;&lt;p&gt;第一步想到的是执行 &lt;code&gt;hexo clean&lt;/code&gt; 命令，然后再 &lt;code&gt;hexo s -g&lt;/code&gt;，大部分情况下这种方式都能行得通，但是有时不行。那么就要想是不是 4000 端口被占用了，那么可以试着在执行时使用 -p 选项指定其他端口&lt;code&gt;hexo s -p 9100&lt;/code&gt;，访问时输入 localhost:9100 。&lt;/p&gt;
 &lt;h3 id=&quot;中文排版段首缩进&quot;&gt;&lt;a href=&quot;#中文排版段首缩进&quot; class=&quot;headerlink&quot; title=&quot;中文排版段首缩进&quot;&gt;&lt;/a&gt;中文排版段首缩进&lt;/h3&gt;&lt;p&gt;首先，Markdown 语言不负责实现段首缩进。段首缩进这件事，应该是 CSS 或者其他排版工具的事情，Markdown 奉行的是样式和内容分开的哲学。所以即使手动输入空格 &lt;code&gt;&amp;amp;nbsp;&lt;/code&gt; 也是很不推荐的做法。这里推荐使用全角空格，切换到全角模式下（一般的中文输入法都是按 shift + space）输入两个空格就行了。这个相对 &lt;code&gt;&amp;amp;nbsp;&lt;/code&gt; 来说稍微干净一点，而且宽度是整整两个汉字，很整齐。&lt;/p&gt;
 &lt;h3 id=&quot;给-yilia-主题添加文章分类&quot;&gt;&lt;a href=&quot;#给-yilia-主题添加文章分类&quot; class=&quot;headerlink&quot; title=&quot;给 yilia 主题添加文章分类&quot;&gt;&lt;/a&gt;给 yilia 主题添加文章分类&lt;/h3&gt;</content>
