@@ -342,7 +342,7 @@
     <link href="http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-03-getting-started.html"/>
     <id>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-03-getting-started.html</id>
     <published>2017-09-04T16:16:06.000Z</published>
-    <updated>2017-09-05T03:01:40.888Z</updated>
+    <updated>2017-09-05T03:47:13.957Z</updated>
     
     <content type="html">&lt;p&gt;本节通过几个简单的常用功能模块快速入门 GeoServer。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/stable/en/user/gettingstarted/index.html#getting-started&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -359,7 +359,7 @@
 &lt;p&gt;在欢迎页右上角输入用户认证信息登录管理器，本机安装默认用户名 &lt;code&gt;admin&lt;/code&gt;，默认密码 &lt;code&gt;geoserver&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://docs.geoserver.org/stable/en/user/_images/login-page.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;详细了解用户配置请参阅 &lt;em&gt;&lt;a href=&quot;http://novgis.com/blog/2017-09-05/geoserver-user-manual-13-security.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Security&lt;/a&gt;&lt;/em&gt; 章节介绍&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;详细了解用户配置请参阅 &lt;em&gt;&lt;a href=&quot;http://novgis.com/blog/2017-09-05/geoserver-user-manual-13-security.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;十三、安全策略&lt;/a&gt;&lt;/em&gt; 章节介绍&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;管理员登录后，左侧目录树将展示所有的管理功能：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://docs.geoserver.org/stable/en/user/_images/logged_in.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -374,7 +374,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;详细了解图层预览请参阅 &lt;em&gt;&lt;a href=&quot;http://novgis.com/blog/2017-09-05/geoserver-user-manual-05-data-management.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;五、数据管理&lt;/a&gt;&lt;/em&gt; 章节介绍&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;发布一份shapefile文件&quot;&gt;&lt;a href=&quot;#发布一份shapefile文件&quot; class=&quot;headerlink&quot; title=&quot;发布一份shapefile文件&quot;&gt;&lt;/a&gt;发布一份shapefile文件&lt;/h1&gt;&lt;h1 id=&quot;发布一张PostGIS表&quot;&gt;&lt;a href=&quot;#发布一张PostGIS表&quot; class=&quot;headerlink&quot; title=&quot;发布一张PostGIS表&quot;&gt;&lt;/a&gt;发布一张PostGIS表&lt;/h1&gt;</content>
+&lt;h1 id=&quot;发布一份shapefile文件&quot;&gt;&lt;a href=&quot;#发布一份shapefile文件&quot; class=&quot;headerlink&quot; title=&quot;发布一份shapefile文件&quot;&gt;&lt;/a&gt;发布一份shapefile文件&lt;/h1&gt;&lt;h2 id=&quot;准备-shapefile-数据&quot;&gt;&lt;a href=&quot;#准备-shapefile-数据&quot; class=&quot;headerlink&quot; title=&quot;准备 shapefile 数据&quot;&gt;&lt;/a&gt;准备 shapefile 数据&lt;/h2&gt;&lt;h2 id=&quot;创建工作空间&quot;&gt;&lt;a href=&quot;#创建工作空间&quot; class=&quot;headerlink&quot; title=&quot;创建工作空间&quot;&gt;&lt;/a&gt;创建工作空间&lt;/h2&gt;&lt;h2 id=&quot;创建数据存储&quot;&gt;&lt;a href=&quot;#创建数据存储&quot; class=&quot;headerlink&quot; title=&quot;创建数据存储&quot;&gt;&lt;/a&gt;创建数据存储&lt;/h2&gt;&lt;h2 id=&quot;新建图层&quot;&gt;&lt;a href=&quot;#新建图层&quot; class=&quot;headerlink&quot; title=&quot;新建图层&quot;&gt;&lt;/a&gt;新建图层&lt;/h2&gt;&lt;h2 id=&quot;预览图层&quot;&gt;&lt;a href=&quot;#预览图层&quot; class=&quot;headerlink&quot; title=&quot;预览图层&quot;&gt;&lt;/a&gt;预览图层&lt;/h2&gt;&lt;h1 id=&quot;发布一张PostGIS表&quot;&gt;&lt;a href=&quot;#发布一张PostGIS表&quot; class=&quot;headerlink&quot; title=&quot;发布一张PostGIS表&quot;&gt;&lt;/a&gt;发布一张PostGIS表&lt;/h1&gt;</content>
     
     <summary type="html">
     
@@ -520,12 +520,12 @@
     <link href="http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html"/>
     <id>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html</id>
     <published>2017-09-04T03:00:00.000Z</published>
-    <updated>2017-09-05T03:17:17.135Z</updated>
+    <updated>2017-09-06T01:19:25.684Z</updated>
     
     <content type="html">&lt;p&gt;Geoserver 是一款用 Java 编写的开源地图服务器，允许用户共享和编辑地理空间数据。利用 GeoServer 可以很方便的发布基于开放标准的地理空间数据。&lt;/p&gt;
 &lt;p&gt;这份用户手册从各个方面综合性地介绍了 GeoServer，无论你是新手还是老司机，都希望这份文档对你有所帮助。&lt;/p&gt;
-&lt;p&gt;本系列文章是我对学习 &lt;a href=&quot;http://docs.geoserver.org/2.7.6/user/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GeoServer (v2.7.6)&lt;/a&gt; 过程的总结，如有错误，欢迎指正！&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/2.7.6/user/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本系列文章是我对学习 &lt;a href=&quot;http://docs.geoserver.org/stable/en/user/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GeoServer (v2.11.2)&lt;/a&gt; 过程的总结，如有错误，欢迎指正！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/stable/en/user/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://novgis.com/blog/2017-09-04/geoserver-user-manual-01-introduction.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;简介&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 简介&lt;/p&gt;
 &lt;h2 id=&quot;安装部署&quot;&gt;&lt;a href=&quot;#安装部署&quot; class=&quot;headerlink&quot; title=&quot;安装部署&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://novgis.com/blog/2017-09-04/geoserver-user-manual-02-installation.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安装部署&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;安装部署 GeoServer&lt;/p&gt;
 &lt;h2 id=&quot;入门教程&quot;&gt;&lt;a href=&quot;#入门教程&quot; class=&quot;headerlink&quot; title=&quot;入门教程&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://novgis.com/blog/2017-09-04/geoserver-user-manual-03-getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;入门教程&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;GeoServer 入门教程&lt;/p&gt;
@@ -549,8 +549,8 @@
     
       &lt;p&gt;Geoserver 是一款用 Java 编写的开源地图服务器，允许用户共享和编辑地理空间数据。利用 GeoServer 可以很方便的发布基于开放标准的地理空间数据。&lt;/p&gt;
 &lt;p&gt;这份用户手册从各个方面综合性地介绍了 GeoServer，无论你是新手还是老司机，都希望这份文档对你有所帮助。&lt;/p&gt;
-&lt;p&gt;本系列文章是我对学习 &lt;a href=&quot;http://docs.geoserver.org/2.7.6/user/index.html&quot;&gt;GeoServer (v2.7.6)&lt;/a&gt; 过程的总结，如有错误，欢迎指正！&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/2.7.6/user/index.html&quot;&gt;原文地址&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;本系列文章是我对学习 &lt;a href=&quot;http://docs.geoserver.org/stable/en/user/&quot;&gt;GeoServer (v2.11.2)&lt;/a&gt; 过程的总结，如有错误，欢迎指正！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://docs.geoserver.org/stable/en/user/&quot;&gt;原文地址&lt;/a&gt;&lt;br&gt;
     
     </summary>
     

@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html</loc>
-    
-    <lastmod>2017-09-05T03:20:28.603Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.novgis.com/blog/2017-09-04/geoserver-user-manual-catalog.html</loc>
     
-    <lastmod>2017-09-05T03:17:17.135Z</lastmod>
+    <lastmod>2017-09-06T01:19:25.684Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.novgis.com/blog/2017-09-05/geoserver-user-manual-03-getting-started.html</loc>
     
-    <lastmod>2017-09-05T03:01:40.888Z</lastmod>
+    <lastmod>2017-09-05T03:47:13.957Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.novgis.com/blog/2016-04-26/build-my-blog-with-hexo.html</loc>
+    
+    <lastmod>2017-09-05T03:20:28.603Z</lastmod>
     
   </url>
   
